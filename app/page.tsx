@@ -1,101 +1,289 @@
-import Image from "next/image";
+'use client';
+
+import React from 'react';
+import { ChevronRight, Shield, Clock, Handshake, FileText, Building, DollarSign, Umbrella, AlertTriangle } from 'lucide-react';
+
+interface CardProps {
+  children: React.ReactNode;
+  className?: string;
+}
+
+const Card: React.FC<CardProps> = ({ children, className = '' }) => (
+  <div className={`p-6 rounded-lg shadow-lg ${className}`}>
+    {children}
+  </div>
+);
+
+const CardHeader: React.FC<CardProps> = ({ children }) => (
+  <div className="mb-4">{children}</div>
+);
+
+const CardTitle: React.FC<CardProps> = ({ children }) => (
+  <h3 className="text-xl font-semibold text-black">{children}</h3>
+);
+
+const CardContent: React.FC<CardProps> = ({ children }) => (
+  <div>{children}</div>
+);
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-gray-50">
+      {/* Hero Section */}
+      <section className="bg-white">
+        <div className="container mx-auto px-6 py-16">
+          <div className="flex flex-col items-center text-center">
+            <h1 className="text-4xl md:text-6xl font-bold text-black mb-6">
+              Secure Construction Escrow Agreements,{' '}
+              <span className="text-blue-700">Made Simple</span>
+            </h1>
+            <p className="text-xl text-gray-800 mb-8 max-w-2xl">
+              Protect all parties with AI-powered escrow agreements that adapt to your specific construction, remodel, or reconstruction project needs.
+            </p>
+            <button className="bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold flex items-center hover:bg-blue-800 transition-colors">
+              Create Your Agreement <ChevronRight className="ml-2" />
+            </button>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      {/* Benefits Grid */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-12 text-black">Benefits for All Parties</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="bg-white">
+              <CardHeader>
+                <CardTitle>
+                  <div className="flex items-center">
+                    <Shield className="mr-2 text-blue-700" />
+                    Protection & Security
+                  </div>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-800">Funds are securely held and only released when project milestones are verified, protecting both homeowners and contractors.</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white">
+              <CardHeader>
+                <CardTitle>
+                  <div className="flex items-center">
+                    <Clock className="mr-2 text-blue-700" />
+                    Quick Setup
+                  </div>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-800">Generate custom agreements in minutes, not days. Our AI system handles all the complexity while keeping it simple for you.</p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white">
+              <CardHeader>
+                <CardTitle>
+                  <div className="flex items-center">
+                    <Building className="mr-2 text-blue-700" />
+                    Project Flexibility
+                  </div>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-800">Whether it's a small remodel or major reconstruction, our agreements adapt to your specific project needs.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Insurance Benefits Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-12 text-black">
+            Enhanced Protection for Insurance Providers
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <Card className="bg-blue-50">
+              <CardHeader>
+                <CardTitle>
+                  <div className="flex items-center">
+                    <Umbrella className="mr-2 text-blue-700" />
+                    Fraud Prevention
+                  </div>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-4 text-gray-800">
+                  <li className="flex items-start">
+                    <Shield className="mr-2 h-5 w-5 text-blue-700 mt-1 flex-shrink-0" />
+                    <span>Direct payment to escrow prevents contractors from absconding with funds</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Shield className="mr-2 h-5 w-5 text-blue-700 mt-1 flex-shrink-0" />
+                    <span>Funds remain recoverable in cases of fraudulent claims</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Shield className="mr-2 h-5 w-5 text-blue-700 mt-1 flex-shrink-0" />
+                    <span>Verified milestone completion before fund release</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-blue-50">
+              <CardHeader>
+                <CardTitle>
+                  <div className="flex items-center">
+                    <AlertTriangle className="mr-2 text-blue-700" />
+                    Risk Mitigation
+                  </div>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-4 text-gray-800">
+                  <li className="flex items-start">
+                    <Shield className="mr-2 h-5 w-5 text-blue-700 mt-1 flex-shrink-0" />
+                    <span>Documented proof of fund allocation and project progress</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Shield className="mr-2 h-5 w-5 text-blue-700 mt-1 flex-shrink-0" />
+                    <span>Reduced exposure to contractor-related claims</span>
+                  </li>
+                  <li className="flex items-start">
+                    <Shield className="mr-2 h-5 w-5 text-blue-700 mt-1 flex-shrink-0" />
+                    <span>Clear audit trail for all transactions and approvals</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Proof Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-12 text-black">Real Stories from Real People</h2>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Success Stories */}
+            <div className="space-y-8">
+              <h3 className="text-2xl font-semibold text-blue-700 mb-6">Protected Projects</h3>
+              
+              <Card className="bg-white">
+                <CardContent>
+                  <p className="text-gray-800 mb-4">
+                    "The escrow agreement saved us from disaster. Our contractor had to meet clear milestones before receiving payment, and everything went smoothly. The peace of mind was worth every penny."
+                  </p>
+                  <div className="flex items-center">
+                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                      <span className="text-blue-700 font-semibold">JM</span>
+                    </div>
+                    <div className="ml-4">
+                      <p className="font-semibold text-black">James Morrison</p>
+                      <p className="text-sm text-gray-700">Home Renovation Project</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white">
+                <CardContent>
+                  <p className="text-gray-800 mb-4">
+                    "As an insurance agent, I now recommend this service to all my clients doing renovations. It's the best protection against contractor fraud I've seen in 20 years."
+                  </p>
+                  <div className="flex items-center">
+                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                      <span className="text-blue-700 font-semibold">SK</span>
+                    </div>
+                    <div className="ml-4">
+                      <p className="font-semibold text-black">Sarah Klein</p>
+                      <p className="text-sm text-gray-700">Insurance Professional</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Cautionary Tales */}
+            <div className="space-y-8">
+              <h3 className="text-2xl font-semibold text-red-700 mb-6">Cautionary Tales</h3>
+              
+              <Card className="bg-red-50">
+                <CardContent>
+                  <p className="text-gray-800 mb-4">
+                    "I wish I had known about this service. We paid our contractor $45,000 upfront for a home addition, and they disappeared after demolition. The money was gone, and we had to take out another loan to finish the project."
+                  </p>
+                  <div className="flex items-center">
+                    <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+                      <span className="text-red-700 font-semibold">RP</span>
+                    </div>
+                    <div className="ml-4">
+                      <p className="font-semibold text-black">Robert Peterson</p>
+                      <p className="text-sm text-gray-700">Home Addition Project</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-red-50">
+                <CardContent>
+                  <p className="text-gray-800 mb-4">
+                    "After Hurricane Ian, we handed over our insurance payout to a contractor who never completed the work. If we had used an escrow service, we could have recovered the funds. Now we're still fighting in court."
+                  </p>
+                  <div className="flex items-center">
+                    <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+                      <span className="text-red-700 font-semibold">ML</span>
+                    </div>
+                    <div className="ml-4">
+                      <p className="font-semibold text-black">Maria Lopez</p>
+                      <p className="text-sm text-gray-700">Storm Damage Reconstruction</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="bg-blue-700 text-white py-16">
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold mb-6">Ready to Protect Your Project?</h2>
+          <p className="text-xl mb-8 max-w-2xl mx-auto">
+            Create your custom escrow agreement today and ensure a smooth, secure construction project for all parties.
+          </p>
+          <button className="bg-white text-blue-700 px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center hover:bg-gray-100 transition-colors">
+            Start Your Agreement <ChevronRight className="ml-2" />
+          </button>
+        </div>
+      </section>
+
+      {/* Trust Indicators */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-12">
+            <div className="flex items-center">
+              <FileText className="text-blue-700 mr-2" />
+              <span className="text-gray-800">Legal Compliant</span>
+            </div>
+            <div className="flex items-center">
+              <Shield className="text-blue-700 mr-2" />
+              <span className="text-gray-800">Bank-Level Security</span>
+            </div>
+            <div className="flex items-center">
+              <Handshake className="text-blue-700 mr-2" />
+              <span className="text-gray-800">Trusted by Thousands</span>
+            </div>
+            <div className="flex items-center">
+              <DollarSign className="text-blue-700 mr-2" />
+              <span className="text-gray-800">Money-Back Guarantee</span>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
