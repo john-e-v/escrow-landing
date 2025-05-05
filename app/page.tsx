@@ -256,9 +256,9 @@ export default function Home() {
       {/* CTA Section */}
       <section className="bg-blue-700 text-white py-16">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-6">Ready to Protect Your Project?</h2>
+          <h2 className="text-3xl font-bold mb-6">Ready to Protect Your Projects?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Create your custom escrow agreement today and ensure a smooth, secure construction project for all parties.
+            Create your tailored escrow agreement today and ensure smooth, secure construction projects for all parties.
           </p>
           <a 
   href="https://www.calendly.com/clrblt" 
