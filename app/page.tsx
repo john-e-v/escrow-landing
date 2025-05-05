@@ -40,9 +40,14 @@ export default function Home() {
             <p className="text-xl text-gray-800 mb-8 max-w-2xl">
               Protect all parties with AI-powered escrow agreements that adapt to your specific construction, remodel, or reconstruction project needs.
             </p>
-            <button className="bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold flex items-center hover:bg-blue-800 transition-colors">
-              Create Your Agreement <ChevronRight className="ml-2" />
-            </button>
+            <a 
+  href="https://www.calendly.com/clrblt" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold flex items-center hover:bg-blue-800 transition-colors cursor-pointer"
+>
+  Schedule a Demo <ChevronRight className="ml-2" />
+</a>
           </div>
         </div>
       </section>
@@ -255,9 +260,14 @@ export default function Home() {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Create your custom escrow agreement today and ensure a smooth, secure construction project for all parties.
           </p>
-          <button className="bg-white text-blue-700 px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center hover:bg-gray-100 transition-colors">
-            Start Your Agreement <ChevronRight className="ml-2" />
-          </button>
+          <a 
+  href="https://www.calendly.com/clrblt" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="bg-white text-blue-700 px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center hover:bg-gray-100 transition-colors cursor-pointer"
+>
+  Schedule a Demo <ChevronRight className="ml-2" />
+</a>
         </div>
       </section>
 
@@ -279,7 +289,7 @@ export default function Home() {
             </div>
             <div className="flex items-center">
               <DollarSign className="text-blue-700 mr-2" />
-              <span className="text-gray-800">Money-Back Guarantee</span>
+              <span className="text-gray-800">Paykeeper Powered</span>
             </div>
           </div>
         </div>
