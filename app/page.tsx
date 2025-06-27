@@ -38,7 +38,7 @@ export default function Home() {
               <span className="text-blue-700">Made Simple</span>
             </h1>
             <p className="text-xl text-gray-800 mb-8 max-w-2xl">
-              Protect all parties with AI-powered escrow agreements that adapt to your specific construction, remodel, or reconstruction project needs.
+              Protect your projects with escrow agreements. Clients know their funds are safe. Contractors know they will be paid for their work. No hassles, no stress, just an honest payment system. This is escrow at scale.
             </p>
             <a 
   href="https://www.calendly.com/clrblt" 
@@ -81,7 +81,7 @@ export default function Home() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-800">Generate custom agreements in minutes, not days. Our AI system handles all the complexity while keeping it simple for you.</p>
+                <p className="text-gray-800">Generate custom agreements in minutes, not days. Our system handles all the complexity while keeping it simple for you.</p>
               </CardContent>
             </Card>
 
@@ -106,7 +106,7 @@ export default function Home() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12 text-black">
-            Enhanced Protection for Insurance Providers
+            Enhanced Protection
           </h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <Card className="bg-blue-50">
@@ -122,7 +122,7 @@ export default function Home() {
                 <ul className="space-y-4 text-gray-800">
                   <li className="flex items-start">
                     <Shield className="mr-2 h-5 w-5 text-blue-700 mt-1 flex-shrink-0" />
-                    <span>Direct payment to escrow prevents contractors from absconding with funds</span>
+                    <span>Direct payment to escrow prevents contractors from disapearing with project funds</span>
                   </li>
                   <li className="flex items-start">
                     <Shield className="mr-2 h-5 w-5 text-blue-700 mt-1 flex-shrink-0" />
@@ -153,7 +153,7 @@ export default function Home() {
                   </li>
                   <li className="flex items-start">
                     <Shield className="mr-2 h-5 w-5 text-blue-700 mt-1 flex-shrink-0" />
-                    <span>Reduced exposure to contractor-related claims</span>
+                    <span>Prevent what a contract protects against. Filing a lien, enforcing a contract, takes time and money.</span>
                   </li>
                   <li className="flex items-start">
                     <Shield className="mr-2 h-5 w-5 text-blue-700 mt-1 flex-shrink-0" />
