@@ -34,11 +34,11 @@ export default function Home() {
         <div className="container mx-auto px-6 py-16">
           <div className="flex flex-col items-center text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-black mb-6">
-              Secure Project Escrow Agreements,{' '}
+              Project Escrow,{' '}
               <span className="text-blue-700">Made Simple</span>
             </h1>
             <p className="text-xl text-gray-800 mb-8 max-w-2xl">
-              Protect your money with escrow agreements. Clients know their funds are safe. Contractors know they will be paid for their work. No hassles, no stress, just an honest payment system. This is escrow at scale.
+              Protect your money with an escrow payment system. Clients pay upfront knowing their funds are safe. Contractors know they will be paid for their work. No hassles, no stress, just an honest payment system. This is escrow at scale.
             </p>
             <a 
   href="https://www.calendly.com/clrblt" 
