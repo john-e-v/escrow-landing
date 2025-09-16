@@ -1,3 +1,4 @@
+import styles from './PricingSection.module.css';
 'use client';
 
 import React, { useState, useEffect } from 'react';
@@ -34,7 +35,7 @@ const PricingAccordion: React.FC = () => {
 
   const pricingData = [
     {
-      title: 'Implementation Fees',
+      title: 'Implementation Fee Schedule',
       content: (
         <ul>
           <li>No integration, Manual Use: $500</li>
@@ -44,7 +45,7 @@ const PricingAccordion: React.FC = () => {
       ),
     },
     {
-      title: 'Pricing Tiers (12-month commitment, adjustable upon renewal)',
+      title: 'Pricing Tiers (must stay on plan for 12 months, can change upon renewal)',
       content: (
         <table>
           <thead>
@@ -61,12 +62,12 @@ const PricingAccordion: React.FC = () => {
             </tr>
           </thead>
           <tbody>
-            <tr><td>SMB</td><td>$0</td><td>3.00%</td><td>$3,600</td><td>$4,500</td><td>$15,000</td><td>$60,000</td><td>$90,000</td><td>$120,000</td></tr>
-            <tr><td>SMB</td><td>$499</td><td>2.49%</td><td>$3,487</td><td>$4,234</td><td>$12,949</td><td>$50,299</td><td>$75,199</td><td>$99,999</td></tr>
-            <tr><td>Mid Market</td><td>$1,499</td><td>1.79%</td><td>$3,647</td><td>$4,184</td><td>$10,449</td><td>$37,299</td><td>$55,199</td><td>$73,099</td></tr>
-            <tr><td>Enterprise - LowVol</td><td>$2,999</td><td>1.39%</td><td>$4,667</td><td>$5,084</td><td>$9,949</td><td>$30,799</td><td>$44,699</td><td>$58,599</td></tr>
-            <tr><td>Enterprise - MidVol</td><td>$7,499</td><td>1.26%</td><td>$9,011</td><td>$9,389</td><td>$13,799</td><td>$32,699</td><td>$45,299</td><td>$57,899</td></tr>
-            <tr><td>Enterprise - HighVol</td><td>$10,999</td><td>1.14%</td><td>$12,367</td><td>$12,709</td><td>$16,699</td><td>$33,799</td><td>$45,199</td><td>$56,599</td></tr>
+            <tr><td>SMB</td><td>$0</td><td>2.30%</td><td>$2,760</td><td>$3,450</td><td>$11,500</td><td>$46,000</td><td>$69,000</td><td>$92,000</td></tr>
+            <tr><td>SMB</td><td>$499</td><td>1.79%</td><td>$2,647</td><td>$2,684</td><td>$8,949</td><td>$35,799</td><td>$53,699</td><td>$71,599</td></tr>
+            <tr><td>Mid Market</td><td>$1,499</td><td>1.39%</td><td>$2,167</td><td>$2,084</td><td>$6,949</td><td>$27,799</td><td>$41,699</td><td>$55,599</td></tr>
+            <tr><td>Enterprise - LowVol</td><td>$2,999</td><td>1.26%</td><td>$2,011</td><td>$1,889</td><td>$6,299</td><td>$25,199</td><td>$37,799</td><td>$50,599</td></tr>
+            <tr><td>Enterprise - MidVol</td><td>$7,499</td><td>1.14%</td><td>$1,367</td><td>$1,709</td><td>$5,699</td><td>$22,799</td><td>$34,199</td><td>$45,599</td></tr>
+            <tr><td>Enterprise - HighVol</td><td>$10,999</td><td>0.98%</td><td>$1,167</td><td>$1,469</td><td>$4,899</td><td>$19,599</td><td>$29,399</td><td>$39,199</td></tr>
           </tbody>
         </table>
       ),
@@ -257,7 +258,7 @@ export default function Home() {
       </section>
 
       {/* Pricing Section */}
-      <section className="pricing-section py-16 bg-white">
+      <section className={`${styles['pricing-section']} py-16 bg-white`}>
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12 text-black">Pricing</h2>
           <PricingAccordion />
