@@ -1,6 +1,5 @@
 "use client";
 
-import styles from './PricingSection.module.css';
 import React, { useState } from 'react';
 import { ChevronRight, Shield, Clock, Handshake, FileText, Building, DollarSign, Umbrella, AlertTriangle } from 'lucide-react';
 
@@ -25,7 +24,7 @@ const CardContent: React.FC<CardProps> = ({ children }) => (
   <div>{children}</div>
 );
 
-// Pricing Accordion Component (inline)
+// Pricing Accordion Component with inline styles
 const PricingAccordion: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
@@ -37,88 +36,208 @@ const PricingAccordion: React.FC = () => {
     {
       title: 'Implementation Fee Schedule',
       content: (
-        <ul className={styles.accordionList}>
-          <li>No integration, Manual Use: $500</li>
-          <li>Create Escrow/Change Order API: $3,000</li>
-          <li>Full API access + webhooks: $8,500</li>
+        <ul style={{ 
+          marginTop: '0.5rem',
+          paddingLeft: '1.5rem',
+          listStyleType: 'disc'
+        }}>
+          <li style={{ marginBottom: '0.5rem' }}>No integration, Manual Use: $500</li>
+          <li style={{ marginBottom: '0.5rem' }}>Create Escrow/Change Order API: $3,000</li>
+          <li style={{ marginBottom: '0.5rem' }}>Full API access + webhooks: $8,500</li>
         </ul>
       ),
     },
     {
       title: 'Pricing Tiers (must stay on plan for 12 months, can change upon renewal)',
       content: (
-        <table className={styles.accordionTable}>
-          <thead>
-            <tr>
-              <th>Plan</th>
-              <th>Monthly Fee</th>
-              <th>Transaction %</th>
-              <th>$120,000</th>
-              <th>$150,000</th>
-              <th>$500,000</th>
-              <th>$2,000,000</th>
-              <th>$3,000,000</th>
-              <th>$4,000,000</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>SMB</td><td>$0</td><td>2.30%</td><td>$2,760</td><td>$3,450</td><td>$11,500</td><td>$46,000</td><td>$69,000</td><td>$92,000</td></tr>
-            <tr><td>SMB</td><td>$499</td><td>1.79%</td><td>$2,647</td><td>$2,684</td><td>$8,949</td><td>$35,799</td><td>$53,699</td><td>$71,599</td></tr>
-            <tr><td>Mid Market</td><td>$1,499</td><td>1.39%</td><td>$2,167</td><td>$2,084</td><td>$6,949</td><td>$27,799</td><td>$41,699</td><td>$55,599</td></tr>
-            <tr><td>Enterprise - LowVol</td><td>$2,999</td><td>1.26%</td><td>$2,011</td><td>$1,889</td><td>$6,299</td><td>$25,199</td><td>$37,799</td><td>$50,599</td></tr>
-            <tr><td>Enterprise - MidVol</td><td>$7,499</td><td>1.14%</td><td>$1,367</td><td>$1,709</td><td>$5,699</td><td>$22,799</td><td>$34,199</td><td>$45,599</td></tr>
-            <tr><td>Enterprise - HighVol</td><td>$10,999</td><td>0.98%</td><td>$1,167</td><td>$1,469</td><td>$4,899</td><td>$19,599</td><td>$29,399</td><td>$39,199</td></tr>
-          </tbody>
-        </table>
+        <div style={{ overflowX: 'auto', marginTop: '0.5rem' }}>
+          <table style={{
+            width: '100%',
+            borderCollapse: 'collapse',
+            fontSize: '0.875rem',
+            minWidth: '600px'
+          }}>
+            <thead>
+              <tr>
+                <th style={{ border: '1px solid #e5e7eb', padding: '0.5rem', backgroundColor: '#f3f4f6', fontWeight: 600, textAlign: 'left' }}>Plan</th>
+                <th style={{ border: '1px solid #e5e7eb', padding: '0.5rem', backgroundColor: '#f3f4f6', fontWeight: 600, textAlign: 'left' }}>Monthly Fee</th>
+                <th style={{ border: '1px solid #e5e7eb', padding: '0.5rem', backgroundColor: '#f3f4f6', fontWeight: 600, textAlign: 'left' }}>Transaction %</th>
+                <th style={{ border: '1px solid #e5e7eb', padding: '0.5rem', backgroundColor: '#f3f4f6', fontWeight: 600, textAlign: 'left' }}>$120,000</th>
+                <th style={{ border: '1px solid #e5e7eb', padding: '0.5rem', backgroundColor: '#f3f4f6', fontWeight: 600, textAlign: 'left' }}>$150,000</th>
+                <th style={{ border: '1px solid #e5e7eb', padding: '0.5rem', backgroundColor: '#f3f4f6', fontWeight: 600, textAlign: 'left' }}>$500,000</th>
+                <th style={{ border: '1px solid #e5e7eb', padding: '0.5rem', backgroundColor: '#f3f4f6', fontWeight: 600, textAlign: 'left' }}>$2,000,000</th>
+                <th style={{ border: '1px solid #e5e7eb', padding: '0.5rem', backgroundColor: '#f3f4f6', fontWeight: 600, textAlign: 'left' }}>$3,000,000</th>
+                <th style={{ border: '1px solid #e5e7eb', padding: '0.5rem', backgroundColor: '#f3f4f6', fontWeight: 600, textAlign: 'left' }}>$4,000,000</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style={{ backgroundColor: '#ffffff' }}>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>SMB</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$0</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>2.30%</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$2,760</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$3,450</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$11,500</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$46,000</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$69,000</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$92,000</td>
+              </tr>
+              <tr style={{ backgroundColor: '#f9fafb' }}>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>SMB</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$499</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>1.79%</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$2,647</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$2,684</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$8,949</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$35,799</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$53,699</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$71,599</td>
+              </tr>
+              <tr style={{ backgroundColor: '#ffffff' }}>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>Mid Market</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$1,499</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>1.39%</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$2,167</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$2,084</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$6,949</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$27,799</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$41,699</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$55,599</td>
+              </tr>
+              <tr style={{ backgroundColor: '#f9fafb' }}>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>Enterprise - LowVol</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$2,999</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>1.26%</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$2,011</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$1,889</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$6,299</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$25,199</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$37,799</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$50,599</td>
+              </tr>
+              <tr style={{ backgroundColor: '#ffffff' }}>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>Enterprise - MidVol</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$7,499</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>1.14%</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$1,367</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$1,709</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$5,699</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$22,799</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$34,199</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$45,599</td>
+              </tr>
+              <tr style={{ backgroundColor: '#f9fafb' }}>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>Enterprise - HighVol</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$10,999</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>0.98%</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$1,167</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$1,469</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$4,899</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$19,599</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$29,399</td>
+                <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>$39,199</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       ),
     },
     {
       title: 'Custom Pricing for High Ticket Projects',
       content: (
-        <table className={styles.accordionTable}>
-          <thead>
-            <tr>
-              <th>Project Amount</th>
-              <th>Transaction Fee</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>100k - 250k</td><td>2.30%</td></tr>
-            <tr><td>251k - 500k</td><td>1.96%</td></tr>
-            <tr><td>501k - 1,000k</td><td>1.15%</td></tr>
-            <tr><td>1,001k - 2,000k</td><td>0.98%</td></tr>
-            <tr><td>2,001k - 3,000k</td><td>0.86%</td></tr>
-            <tr><td>3,001k - 5,000k</td><td>0.71%</td></tr>
-            <tr><td>5,001k - 7,000k</td><td>0.54%</td></tr>
-            <tr><td>7,001k - 10,000k</td><td>0.41%</td></tr>
-            <tr><td>10,001k - 15,000k</td><td>0.32%</td></tr>
-            <tr><td>15,001k - 20,000k</td><td>0.29%</td></tr>
-            <tr><td>above 20,000k</td><td>0.28%</td></tr>
-          </tbody>
-        </table>
+        <div style={{ overflowX: 'auto', marginTop: '0.5rem' }}>
+          <table style={{
+            width: '100%',
+            borderCollapse: 'collapse',
+            fontSize: '0.875rem'
+          }}>
+            <thead>
+              <tr>
+                <th style={{ border: '1px solid #e5e7eb', padding: '0.5rem', backgroundColor: '#f3f4f6', fontWeight: 600, textAlign: 'left' }}>Project Amount</th>
+                <th style={{ border: '1px solid #e5e7eb', padding: '0.5rem', backgroundColor: '#f3f4f6', fontWeight: 600, textAlign: 'left' }}>Transaction Fee</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ['100k - 250k', '2.30%'],
+                ['251k - 500k', '1.96%'],
+                ['501k - 1,000k', '1.15%'],
+                ['1,001k - 2,000k', '0.98%'],
+                ['2,001k - 3,000k', '0.86%'],
+                ['3,001k - 5,000k', '0.71%'],
+                ['5,001k - 7,000k', '0.54%'],
+                ['7,001k - 10,000k', '0.41%'],
+                ['10,001k - 15,000k', '0.32%'],
+                ['15,001k - 20,000k', '0.29%'],
+                ['above 20,000k', '0.28%']
+              ].map(([amount, fee], index) => (
+                <tr key={index} style={{ backgroundColor: index % 2 === 0 ? '#ffffff' : '#f9fafb' }}>
+                  <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>{amount}</td>
+                  <td style={{ border: '1px solid #e5e7eb', padding: '0.5rem' }}>{fee}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       ),
     },
   ];
 
   return (
-    <div className={styles.pricingAccordion}>
+    <div style={{
+      maxWidth: '800px',
+      margin: '0 auto'
+    }}>
       {pricingData.map((item, index) => (
-        <div key={index} className={styles.accordionItem}>
+        <div 
+          key={index} 
+          style={{
+            borderBottom: '1px solid #e5e7eb'
+          }}
+        >
           <button
-            className={styles.accordionHeader}
             onClick={() => handleAccordionClick(index)}
+            style={{
+              width: '100%',
+              textAlign: 'left',
+              padding: '1rem',
+              fontWeight: 600,
+              fontSize: '1.125rem',
+              backgroundColor: activeIndex === index ? '#f3f4f6' : '#f9fafb',
+              cursor: 'pointer',
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              border: 'none',
+              transition: 'background-color 0.2s ease'
+            }}
+            onMouseEnter={(e) => {
+              if (activeIndex !== index) {
+                e.currentTarget.style.backgroundColor = '#f3f4f6';
+              }
+            }}
+            onMouseLeave={(e) => {
+              if (activeIndex !== index) {
+                e.currentTarget.style.backgroundColor = '#f9fafb';
+              }
+            }}
           >
-            {item.title}
+            <span>{item.title}</span>
             <ChevronRight 
-              className={`transition-transform duration-200 ${
-                activeIndex === index ? 'rotate-90' : ''
-              }`} 
+              style={{
+                transform: activeIndex === index ? 'rotate(90deg)' : 'rotate(0deg)',
+                transition: 'transform 0.2s ease'
+              }}
             />
           </button>
           <div
-            className={`${styles.accordionContent} ${
-              activeIndex === index ? styles.accordionContentOpen : ''
-            }`}
+            style={{
+              maxHeight: activeIndex === index ? '1000px' : '0',
+              overflow: 'hidden',
+              transition: 'max-height 0.3s ease, padding 0.3s ease',
+              padding: activeIndex === index ? '1rem' : '0 1rem',
+              backgroundColor: '#ffffff'
+            }}
           >
             {item.content}
           </div>
@@ -264,7 +383,7 @@ export default function Home() {
       </section>
 
       {/* Pricing Section */}
-      <section className={styles.pricingSection}>
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12 text-black">Pricing</h2>
           <PricingAccordion />
