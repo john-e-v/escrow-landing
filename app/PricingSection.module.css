@@ -1,72 +1,53 @@
+/* PricingSection.module.css */
+
 .pricing-section {
-  padding: 20px;
+  background-color: #ffffff;
+  padding: 4rem 0;
 }
 
-.pricing-section .pricing-accordion .accordion-item {
-  margin-bottom: 10px;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.pricing-accordion {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.pricing-section .accordion-header {
-  background-color: #f4f4f4;
-  border: 1px solid #ddd;
+.accordion-item {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.accordion-header {
   width: 100%;
-  padding: 12px;
   text-align: left;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  background-color: #f9fafb;
   cursor: pointer;
-  font-size: 1.1rem;
-  color: #1a202c; /* Even darker for readability */
-  border-radius: 0.5rem 0.5rem 0 0;
-  transition: background-color 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.pricing-section .accordion-header:hover {
-  background-color: #e0e0e0;
+.accordion-content {
+  padding: 1rem;
+  background-color: #ffffff;
+  display: none; /* controlled via inline style in JSX */
 }
 
-.pricing-section .accordion-content {
-  display: none;
-  padding: 12px;
-  border: 1px solid #ddd;
-  border-top: none;
-  background-color: #fff;
-  color: #1a202c; /* Darker font */
-  border-radius: 0 0 0.5rem 0.5rem;
-}
-
-.pricing-section .accordion-content table {
+.accordion-content ul,
+.accordion-content table {
+  margin-top: 0.5rem;
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.9rem;
-  color: #1a202c;
 }
 
-@media (max-width: 640px) {
-  .pricing-section .accordion-content table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
-  .pricing-section .accordion-content th,
-  .pricing-section .accordion-content td {
-    min-width: 100px;
-  }
-}
-
-.pricing-section .accordion-content th,
-.pricing-section .accordion-content td {
-  border: 1px solid #ddd;
-  padding: 8px;
+.accordion-content table th,
+.accordion-content table td {
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem;
   text-align: left;
 }
 
-.pricing-section .accordion-content th {
-  background-color: #f4f4f4;
-  font-weight: bold;
-}
-
-.pricing-section .accordion-content[style*="display: block"] {
-  display: block;
+.accordion-content table th {
+  background-color: #f3f4f6;
+  font-weight: 600;
 }
