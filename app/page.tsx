@@ -165,7 +165,104 @@ export default function Home() {
           </div>
         </div>
       </section>
+<section class="pricing-section">
+  <h2>Pricing</h2>
+  <div class="pricing-accordion">
+    <!-- Implementation Fees -->
+    <div class="accordion-item">
+      <button class="accordion-header">Implementation Fees</button>
+      <div class="accordion-content">
+        <ul>
+          <li>No integration, Manual Use: $500</li>
+          <li>Create Escrow/Change Order API: $3,000</li>
+          <li>Full API access + webhooks: $8,500</li>
+        </ul>
+      </div>
+    </div>
 
+    <!-- Pricing Tiers -->
+    <div class="accordion-item">
+      <button class="accordion-header">Pricing Tiers (12-month commitment, adjustable upon renewal)</button>
+      <div class="accordion-content">
+        <table>
+          <thead>
+            <tr>
+              <th>Plan</th>
+              <th>Monthly Fee</th>
+              <th>Transaction %</th>
+              <th>$120,000</th>
+              <th>$150,000</th>
+              <th>$500,000</th>
+              <th>$2,000,000</th>
+              <th>$3,000,000</th>
+              <th>$4,000,000</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>SMB</td><td>$0</td><td>3.00%</td><td>$3,600</td><td>$4,500</td><td>$15,000</td><td>$60,000</td><td>$90,000</td><td>$120,000</td></tr>
+            <tr><td>SMB</td><td>$499</td><td>2.49%</td><td>$3,487</td><td>$4,234</td><td>$12,949</td><td>$50,299</td><td>$75,199</td><td>$99,999</td></tr>
+            <tr><td>Mid Market</td><td>$1,499</td><td>1.79%</td><td>$3,647</td><td>$4,184</td><td>$10,449</td><td>$37,299</td><td>$55,199</td><td>$73,099</td></tr>
+            <tr><td>Enterprise - LowVol</td><td>$2,999</td><td>1.39%</td><td>$4,667</td><td>$5,084</td><td>$9,949</td><td>$30,799</td><td>$44,699</td><td>$58,599</td></tr>
+            <tr><td>Enterprise - MidVol</td><td>$7,499</td><td>1.26%</td><td>$9,011</td><td>$9,389</td><td>$13,799</td><td>$32,699</td><td>$45,299</td><td>$57,899</td></tr>
+            <tr><td>Enterprise - HighVol</td><td>$10,999</td><td>1.14%</td><td>$12,367</td><td>$12,709</td><td>$16,699</td><td>$33,799</td><td>$45,199</td><td>$56,599</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Custom Pricing -->
+    <div class="accordion-item">
+      <button class="accordion-header">Custom Pricing for High Ticket Projects</button>
+      <div class="accordion-content">
+        <table>
+          <thead>
+            <tr>
+              <th>Project Amount</th>
+              <th>Transaction Fee</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>100k - 250k</td><td>2.30%</td></tr>
+            <tr><td>251k - 500k</td><td>1.96%</td></tr>
+            <tr><td>501k - 1,000k</td><td>1.15%</td></tr>
+            <tr><td>1,001k - 2,000k</td><td>0.98%</td></tr>
+            <tr><td>2,001k - 3,000k</td><td>0.86%</td></tr>
+            <tr><td>3,001k - 5,000k</td><td>0.71%</td></tr>
+            <tr><td>5,001k - 7,000k</td><td>0.54%</td></tr>
+            <tr><td>7,001k - 10,000k</td><td>0.41%</td></tr>
+            <tr><td>10,001k - 15,000k</td><td>0.32%</td></tr>
+            <tr><td>15,001k - 20,000k</td><td>0.29%</td></tr>
+            <tr><td>above 20,000k</td><td>0.28%</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.pricing-section { padding: 20px; }
+.pricing-accordion .accordion-item { margin-bottom: 10px; }
+.accordion-header { background-color: #f4f4f4; border: 1px solid #ddd; width: 100%; padding: 10px; text-align: left; cursor: pointer; }
+.accordion-content { display: none; padding: 10px; border: 1px solid #ddd; border-top: none; }
+.accordion-content table { width: 100%; border-collapse: collapse; }
+.accordion-content th, .accordion-content td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+.accordion-content th { background-color: #f4f4f4; }
+</style>
+
+<script>
+document.querySelectorAll('.accordion-header').forEach(button => {
+  button.addEventListener('click', () => {
+    const content = button.nextElementSibling;
+    if (content.style.display === 'block') {
+      content.style.display = 'none';
+    } else {
+      document.querySelectorAll('.accordion-content').forEach(item => item.style.display = 'none');
+      content.style.display = 'block';
+    }
+  });
+});
+</script>
       {/* Social Proof Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-6">
