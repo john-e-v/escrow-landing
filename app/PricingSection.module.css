@@ -2,14 +2,14 @@
   padding: 20px;
 }
 
-.pricing-accordion .accordion-item {
+.pricing-section .pricing-accordion .accordion-item {
   margin-bottom: 10px;
-  border-radius: 0.5rem; /* Matches Card component radius */
-  overflow: hidden; /* Ensures radius applies to content */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.accordion-header {
+.pricing-section .accordion-header {
   background-color: #f4f4f4;
   border: 1px solid #ddd;
   width: 100%;
@@ -17,58 +17,56 @@
   text-align: left;
   cursor: pointer;
   font-size: 1.1rem;
-  color: #333; /* Darker font color for readability */
-  border-radius: 0.5rem 0.5rem 0 0; /* Radius only on top edges */
-  transition: background-color 0.3s; /* Smooth hover effect */
+  color: #1a202c; /* Even darker for readability */
+  border-radius: 0.5rem 0.5rem 0 0;
+  transition: background-color 0.3s;
 }
 
-.accordion-header:hover {
-  background-color: #e0e0e0; /* Lighter on hover */
+.pricing-section .accordion-header:hover {
+  background-color: #e0e0e0;
 }
 
-.accordion-content {
+.pricing-section .accordion-content {
   display: none;
   padding: 12px;
   border: 1px solid #ddd;
   border-top: none;
   background-color: #fff;
-  color: #333; /* Darker font color for readability */
-  border-radius: 0 0 0.5rem 0.5rem; /* Radius only on bottom edges */
+  color: #1a202c; /* Darker font */
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 
-.accordion-content table {
+.pricing-section .accordion-content table {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.9rem;
-  color: #333; /* Darker font color */
+  color: #1a202c;
 }
 
-/* Responsive table with horizontal scroll on mobile */
-@media (max-width: 640px) { /* Tailwind's sm breakpoint */
-  .accordion-content table {
+@media (max-width: 640px) {
+  .pricing-section .accordion-content table {
     display: block;
     overflow-x: auto;
     white-space: nowrap;
   }
-  .accordion-content th,
-  .accordion-content td {
-    min-width: 100px; /* Ensures columns don't collapse too much */
+  .pricing-section .accordion-content th,
+  .pricing-section .accordion-content td {
+    min-width: 100px;
   }
 }
 
-.accordion-content th,
-.accordion-content td {
+.pricing-section .accordion-content th,
+.pricing-section .accordion-content td {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
 }
 
-.accordion-content th {
+.pricing-section .accordion-content th {
   background-color: #f4f4f4;
   font-weight: bold;
 }
 
-/* Ensure active accordion content is visible */
-.accordion-content[style*="display: block"] {
+.pricing-section .accordion-content[style*="display: block"] {
   display: block;
 }
