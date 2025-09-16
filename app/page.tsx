@@ -1,7 +1,7 @@
 import styles from './PricingSection.module.css';
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react'; // Explicitly import React
 import { ChevronRight, Shield, Clock, Handshake, FileText, Building, DollarSign, Umbrella, AlertTriangle } from 'lucide-react';
 
 interface CardProps {
