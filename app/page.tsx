@@ -25,7 +25,7 @@ const CardContent: React.FC<CardProps> = ({ children }) => (
   <div>{children}</div>
 );
 
-// Pricing Accordion Component
+// Pricing Accordion Component (inline)
 const PricingAccordion: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
@@ -101,17 +101,17 @@ const PricingAccordion: React.FC = () => {
   ];
 
   return (
-    <div className="pricing-accordion">
+    <div className={styles['pricing-accordion']}>
       {pricingData.map((item, index) => (
-        <div key={index} className="accordion-item">
+        <div key={index} className={styles['accordion-item']}>
           <button
-            className="accordion-header bg-gray-200 border border-gray-300 w-full p-4 text-left cursor-pointer"
+            className={styles['accordion-header']}
             onClick={() => handleAccordionClick(index)}
           >
             {item.title}
           </button>
           <div
-            className="accordion-content border border-gray-300 border-t-0 p-4"
+            className={styles['accordion-content']}
             style={{ display: activeIndex === index ? 'block' : 'none' }}
           >
             {item.content}
@@ -121,7 +121,6 @@ const PricingAccordion: React.FC = () => {
     </div>
   );
 };
-
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
