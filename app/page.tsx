@@ -37,7 +37,7 @@ const PricingAccordion: React.FC = () => {
     {
       title: 'Implementation Fee Schedule',
       content: (
-        <ul>
+        <ul className={styles.accordionList}>
           <li>No integration, Manual Use: $500</li>
           <li>Create Escrow/Change Order API: $3,000</li>
           <li>Full API access + webhooks: $8,500</li>
@@ -47,7 +47,7 @@ const PricingAccordion: React.FC = () => {
     {
       title: 'Pricing Tiers (must stay on plan for 12 months, can change upon renewal)',
       content: (
-        <table>
+        <table className={styles.accordionTable}>
           <thead>
             <tr>
               <th>Plan</th>
@@ -75,7 +75,7 @@ const PricingAccordion: React.FC = () => {
     {
       title: 'Custom Pricing for High Ticket Projects',
       content: (
-        <table>
+        <table className={styles.accordionTable}>
           <thead>
             <tr>
               <th>Project Amount</th>
@@ -101,18 +101,24 @@ const PricingAccordion: React.FC = () => {
   ];
 
   return (
-    <div className={styles['pricing-accordion']}>
+    <div className={styles.pricingAccordion}>
       {pricingData.map((item, index) => (
-        <div key={index} className={styles['accordion-item']}>
+        <div key={index} className={styles.accordionItem}>
           <button
-            className={styles['accordion-header']}
+            className={styles.accordionHeader}
             onClick={() => handleAccordionClick(index)}
           >
             {item.title}
+            <ChevronRight 
+              className={`transition-transform duration-200 ${
+                activeIndex === index ? 'rotate-90' : ''
+              }`} 
+            />
           </button>
           <div
-            className={styles['accordion-content']}
-            style={{ display: activeIndex === index ? 'block' : 'none' }}
+            className={`${styles.accordionContent} ${
+              activeIndex === index ? styles.accordionContentOpen : ''
+            }`}
           >
             {item.content}
           </div>
@@ -121,6 +127,7 @@ const PricingAccordion: React.FC = () => {
     </div>
   );
 };
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
@@ -257,7 +264,7 @@ export default function Home() {
       </section>
 
       {/* Pricing Section */}
-      <section className={`${styles['pricing-section']} py-16 bg-white`}>
+      <section className={styles.pricingSection}>
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12 text-black">Pricing</h2>
           <PricingAccordion />
