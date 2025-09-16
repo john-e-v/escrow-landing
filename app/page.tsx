@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ChevronRight, Shield, Clock, Handshake, FileText, Building, DollarSign, Umbrella, AlertTriangle } from 'lucide-react';
 
 interface CardProps {
@@ -9,9 +9,7 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ children, className = '' }) => (
-  <div className={`p-6 rounded-lg shadow-lg ${className}`}>
-    {children}
-  </div>
+  <div className={`p-6 rounded-lg shadow-lg ${className}`}>{children}</div>
 );
 
 const CardHeader: React.FC<CardProps> = ({ children }) => (
@@ -25,6 +23,103 @@ const CardTitle: React.FC<CardProps> = ({ children }) => (
 const CardContent: React.FC<CardProps> = ({ children }) => (
   <div>{children}</div>
 );
+
+// Pricing Accordion Component
+const PricingAccordion: React.FC = () => {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  const handleAccordionClick = (index: number) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
+  const pricingData = [
+    {
+      title: 'Implementation Fees',
+      content: (
+        <ul>
+          <li>No integration, Manual Use: $500</li>
+          <li>Create Escrow/Change Order API: $3,000</li>
+          <li>Full API access + webhooks: $8,500</li>
+        </ul>
+      ),
+    },
+    {
+      title: 'Pricing Tiers (12-month commitment, adjustable upon renewal)',
+      content: (
+        <table>
+          <thead>
+            <tr>
+              <th>Plan</th>
+              <th>Monthly Fee</th>
+              <th>Transaction %</th>
+              <th>$120,000</th>
+              <th>$150,000</th>
+              <th>$500,000</th>
+              <th>$2,000,000</th>
+              <th>$3,000,000</th>
+              <th>$4,000,000</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>SMB</td><td>$0</td><td>3.00%</td><td>$3,600</td><td>$4,500</td><td>$15,000</td><td>$60,000</td><td>$90,000</td><td>$120,000</td></tr>
+            <tr><td>SMB</td><td>$499</td><td>2.49%</td><td>$3,487</td><td>$4,234</td><td>$12,949</td><td>$50,299</td><td>$75,199</td><td>$99,999</td></tr>
+            <tr><td>Mid Market</td><td>$1,499</td><td>1.79%</td><td>$3,647</td><td>$4,184</td><td>$10,449</td><td>$37,299</td><td>$55,199</td><td>$73,099</td></tr>
+            <tr><td>Enterprise - LowVol</td><td>$2,999</td><td>1.39%</td><td>$4,667</td><td>$5,084</td><td>$9,949</td><td>$30,799</td><td>$44,699</td><td>$58,599</td></tr>
+            <tr><td>Enterprise - MidVol</td><td>$7,499</td><td>1.26%</td><td>$9,011</td><td>$9,389</td><td>$13,799</td><td>$32,699</td><td>$45,299</td><td>$57,899</td></tr>
+            <tr><td>Enterprise - HighVol</td><td>$10,999</td><td>1.14%</td><td>$12,367</td><td>$12,709</td><td>$16,699</td><td>$33,799</td><td>$45,199</td><td>$56,599</td></tr>
+          </tbody>
+        </table>
+      ),
+    },
+    {
+      title: 'Custom Pricing for High Ticket Projects',
+      content: (
+        <table>
+          <thead>
+            <tr>
+              <th>Project Amount</th>
+              <th>Transaction Fee</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>100k - 250k</td><td>2.30%</td></tr>
+            <tr><td>251k - 500k</td><td>1.96%</td></tr>
+            <tr><td>501k - 1,000k</td><td>1.15%</td></tr>
+            <tr><td>1,001k - 2,000k</td><td>0.98%</td></tr>
+            <tr><td>2,001k - 3,000k</td><td>0.86%</td></tr>
+            <tr><td>3,001k - 5,000k</td><td>0.71%</td></tr>
+            <tr><td>5,001k - 7,000k</td><td>0.54%</td></tr>
+            <tr><td>7,001k - 10,000k</td><td>0.41%</td></tr>
+            <tr><td>10,001k - 15,000k</td><td>0.32%</td></tr>
+            <tr><td>15,001k - 20,000k</td><td>0.29%</td></tr>
+            <tr><td>above 20,000k</td><td>0.28%</td></tr>
+          </tbody>
+        </table>
+      ),
+    },
+  ];
+
+  return (
+    <div className="pricing-accordion">
+      {pricingData.map((item, index) => (
+        <div key={index} className="accordion-item">
+          <button
+            className="accordion-header bg-gray-200 border border-gray-300 w-full p-4 text-left cursor-pointer"
+            onClick={() => handleAccordionClick(index)}
+          >
+            {item.title}
+          </button>
+          <div
+            className="accordion-content border border-gray-300 border-t-0 p-4"
+            style={{ display: activeIndex === index ? 'block' : 'none' }}
+          >
+            {item.content}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
 
 export default function Home() {
   return (
@@ -40,14 +135,14 @@ export default function Home() {
             <p className="text-xl text-gray-800 mb-8 max-w-2xl">
               Protect your money with an escrow payment system. Clients pay upfront knowing their funds are safe. Contractors know they will be paid for their work. No hassles, no stress, just an honest payment system.
             </p>
-            <a 
-  href="https://www.calendly.com/clrblt" 
-  target="_blank" 
-  rel="noopener noreferrer" 
-  className="bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold flex items-center hover:bg-blue-800 transition-colors cursor-pointer"
->
-  Schedule a Demo <ChevronRight className="ml-2" />
-</a>
+            <a
+              href="https://www.calendly.com/clrblt"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold flex items-center hover:bg-blue-800 transition-colors cursor-pointer"
+            >
+              Schedule a Demo <ChevronRight className="ml-2" />
+            </a>
           </div>
         </div>
       </section>
@@ -70,7 +165,6 @@ export default function Home() {
                 <p className="text-gray-800">Funds are securely held and only released when project milestones are verified, protecting both homeowners and contractors.</p>
               </CardContent>
             </Card>
-
             <Card className="bg-white">
               <CardHeader>
                 <CardTitle>
@@ -84,7 +178,6 @@ export default function Home() {
                 <p className="text-gray-800">Generate custom agreements in minutes, not days. Our system handles all the complexity while keeping it simple for you.</p>
               </CardContent>
             </Card>
-
             <Card className="bg-white">
               <CardHeader>
                 <CardTitle>
@@ -105,9 +198,7 @@ export default function Home() {
       {/* Insurance Benefits Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12 text-black">
-            Enhanced Protection
-          </h2>
+          <h2 className="text-3xl font-bold text-center mb-12 text-black">Enhanced Protection</h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <Card className="bg-blue-50">
               <CardHeader>
@@ -122,7 +213,7 @@ export default function Home() {
                 <ul className="space-y-4 text-gray-800">
                   <li className="flex items-start">
                     <Shield className="mr-2 h-5 w-5 text-blue-700 mt-1 flex-shrink-0" />
-                    <span>Direct payment to escrow prevents contractors from disapearing with project funds</span>
+                    <span>Direct payment to escrow prevents contractors from disappearing with project funds</span>
                   </li>
                   <li className="flex items-start">
                     <Shield className="mr-2 h-5 w-5 text-blue-700 mt-1 flex-shrink-0" />
@@ -135,7 +226,6 @@ export default function Home() {
                 </ul>
               </CardContent>
             </Card>
-
             <Card className="bg-blue-50">
               <CardHeader>
                 <CardTitle>
@@ -165,114 +255,23 @@ export default function Home() {
           </div>
         </div>
       </section>
-<section class="pricing-section">
-  <h2>Pricing</h2>
-  <div class="pricing-accordion">
-    <!-- Implementation Fees -->
-    <div class="accordion-item">
-      <button class="accordion-header">Implementation Fees</button>
-      <div class="accordion-content">
-        <ul>
-          <li>No integration, Manual Use: $500</li>
-          <li>Create Escrow/Change Order API: $3,000</li>
-          <li>Full API access + webhooks: $8,500</li>
-        </ul>
-      </div>
-    </div>
 
-    <!-- Pricing Tiers -->
-    <div class="accordion-item">
-      <button class="accordion-header">Pricing Tiers (12-month commitment, adjustable upon renewal)</button>
-      <div class="accordion-content">
-        <table>
-          <thead>
-            <tr>
-              <th>Plan</th>
-              <th>Monthly Fee</th>
-              <th>Transaction %</th>
-              <th>$120,000</th>
-              <th>$150,000</th>
-              <th>$500,000</th>
-              <th>$2,000,000</th>
-              <th>$3,000,000</th>
-              <th>$4,000,000</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>SMB</td><td>$0</td><td>3.00%</td><td>$3,600</td><td>$4,500</td><td>$15,000</td><td>$60,000</td><td>$90,000</td><td>$120,000</td></tr>
-            <tr><td>SMB</td><td>$499</td><td>2.49%</td><td>$3,487</td><td>$4,234</td><td>$12,949</td><td>$50,299</td><td>$75,199</td><td>$99,999</td></tr>
-            <tr><td>Mid Market</td><td>$1,499</td><td>1.79%</td><td>$3,647</td><td>$4,184</td><td>$10,449</td><td>$37,299</td><td>$55,199</td><td>$73,099</td></tr>
-            <tr><td>Enterprise - LowVol</td><td>$2,999</td><td>1.39%</td><td>$4,667</td><td>$5,084</td><td>$9,949</td><td>$30,799</td><td>$44,699</td><td>$58,599</td></tr>
-            <tr><td>Enterprise - MidVol</td><td>$7,499</td><td>1.26%</td><td>$9,011</td><td>$9,389</td><td>$13,799</td><td>$32,699</td><td>$45,299</td><td>$57,899</td></tr>
-            <tr><td>Enterprise - HighVol</td><td>$10,999</td><td>1.14%</td><td>$12,367</td><td>$12,709</td><td>$16,699</td><td>$33,799</td><td>$45,199</td><td>$56,599</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
+      {/* Pricing Section */}
+      <section className="pricing-section py-16 bg-white">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-center mb-12 text-black">Pricing</h2>
+          <PricingAccordion />
+        </div>
+      </section>
 
-    <!-- Custom Pricing -->
-    <div class="accordion-item">
-      <button class="accordion-header">Custom Pricing for High Ticket Projects</button>
-      <div class="accordion-content">
-        <table>
-          <thead>
-            <tr>
-              <th>Project Amount</th>
-              <th>Transaction Fee</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>100k - 250k</td><td>2.30%</td></tr>
-            <tr><td>251k - 500k</td><td>1.96%</td></tr>
-            <tr><td>501k - 1,000k</td><td>1.15%</td></tr>
-            <tr><td>1,001k - 2,000k</td><td>0.98%</td></tr>
-            <tr><td>2,001k - 3,000k</td><td>0.86%</td></tr>
-            <tr><td>3,001k - 5,000k</td><td>0.71%</td></tr>
-            <tr><td>5,001k - 7,000k</td><td>0.54%</td></tr>
-            <tr><td>7,001k - 10,000k</td><td>0.41%</td></tr>
-            <tr><td>10,001k - 15,000k</td><td>0.32%</td></tr>
-            <tr><td>15,001k - 20,000k</td><td>0.29%</td></tr>
-            <tr><td>above 20,000k</td><td>0.28%</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-</section>
-
-<style>
-.pricing-section { padding: 20px; }
-.pricing-accordion .accordion-item { margin-bottom: 10px; }
-.accordion-header { background-color: #f4f4f4; border: 1px solid #ddd; width: 100%; padding: 10px; text-align: left; cursor: pointer; }
-.accordion-content { display: none; padding: 10px; border: 1px solid #ddd; border-top: none; }
-.accordion-content table { width: 100%; border-collapse: collapse; }
-.accordion-content th, .accordion-content td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-.accordion-content th { background-color: #f4f4f4; }
-</style>
-
-<script>
-document.querySelectorAll('.accordion-header').forEach(button => {
-  button.addEventListener('click', () => {
-    const content = button.nextElementSibling;
-    if (content.style.display === 'block') {
-      content.style.display = 'none';
-    } else {
-      document.querySelectorAll('.accordion-content').forEach(item => item.style.display = 'none');
-      content.style.display = 'block';
-    }
-  });
-});
-</script>
       {/* Social Proof Section */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12 text-black">Real Stories from Real People</h2>
-          
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {/* Success Stories */}
             <div className="space-y-8">
               <h3 className="text-2xl font-semibold text-blue-700 mb-6">Protected Projects</h3>
-              
               <Card className="bg-white">
                 <CardContent>
                   <p className="text-gray-800 mb-4">
@@ -289,7 +288,6 @@ document.querySelectorAll('.accordion-header').forEach(button => {
                   </div>
                 </CardContent>
               </Card>
-
               <Card className="bg-white">
                 <CardContent>
                   <p className="text-gray-800 mb-4">
@@ -311,7 +309,6 @@ document.querySelectorAll('.accordion-header').forEach(button => {
             {/* Cautionary Tales */}
             <div className="space-y-8">
               <h3 className="text-2xl font-semibold text-red-700 mb-6">Cautionary Tales</h3>
-              
               <Card className="bg-red-50">
                 <CardContent>
                   <p className="text-gray-800 mb-4">
@@ -328,7 +325,6 @@ document.querySelectorAll('.accordion-header').forEach(button => {
                   </div>
                 </CardContent>
               </Card>
-
               <Card className="bg-red-50">
                 <CardContent>
                   <p className="text-gray-800 mb-4">
@@ -357,14 +353,14 @@ document.querySelectorAll('.accordion-header').forEach(button => {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Create your tailored escrow agreement today and ensure smooth, secure construction projects for all parties.
           </p>
-          <a 
-  href="https://www.calendly.com/clrblt" 
-  target="_blank" 
-  rel="noopener noreferrer" 
-  className="bg-white text-blue-700 px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center hover:bg-gray-100 transition-colors cursor-pointer"
->
-  Schedule a Demo <ChevronRight className="ml-2" />
-</a>
+          <a
+            href="https://www.calendly.com/clrblt"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white text-blue-700 px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center hover:bg-gray-100 transition-colors cursor-pointer"
+          >
+            Schedule a Demo <ChevronRight className="ml-2" />
+          </a>
         </div>
       </section>
 
