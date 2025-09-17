@@ -24,12 +24,11 @@ const CardContent: React.FC<CardProps> = ({ children }) => (
   <div>{children}</div>
 );
 
-// Cache-busting Pricing Accordion Component
+// Updated Pricing Accordion Component with Correct Data
 const PricingAccordion: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const [forceUpdate, setForceUpdate] = useState(0);
 
-  // Force component to re-render and bypass cache
   useEffect(() => {
     setForceUpdate(Date.now());
   }, []);
@@ -74,6 +73,20 @@ const PricingAccordion: React.FC = () => {
       content: (
         <div>
           <div style={{
+            background: '#f0f9ff',
+            border: '2px solid #0ea5e9',
+            borderRadius: '8px',
+            padding: '15px',
+            margin: '15px 0',
+            color: '#0c4a6e',
+            fontWeight: '500'
+          }}>
+            <h4 style={{ margin: '0 0 10px 0', color: '#0c4a6e', fontSize: '16px' }}>📊 How to Read This Table:</h4>
+            <p style={{ margin: '0 0 8px 0' }}><strong>Monthly Volume Levels:</strong> The dollar amounts ($120,000, $150,000, etc.) represent your total monthly transaction volume. Find your expected monthly volume to see your total cost (monthly fee + transaction fees).</p>
+            <p style={{ margin: '0' }}><strong>Example:</strong> If you process $500,000/month and choose the Mid Market plan, you'll pay $1,499/month + $10,449 in transaction fees = $11,948 total monthly cost.</p>
+          </div>
+          
+          <div style={{
             background: '#1e40af',
             color: '#ffffff',
             borderRadius: '8px',
@@ -83,8 +96,9 @@ const PricingAccordion: React.FC = () => {
             fontWeight: 'bold',
             textAlign: 'center'
           }}>
-            📱 On mobile: Scroll right to see all pricing columns →
+            📱 On mobile: Scroll right to see all monthly volume levels →
           </div>
+          
           <div style={{ 
             overflowX: 'auto',
             WebkitOverflowScrolling: 'touch',
@@ -95,14 +109,56 @@ const PricingAccordion: React.FC = () => {
             <table style={{
               width: '100%',
               borderCollapse: 'collapse',
-              minWidth: '800px',
+              minWidth: '900px',
               fontSize: '14px',
               background: '#ffffff',
               fontFamily: 'system-ui, -apple-system, sans-serif'
             }}>
               <thead>
                 <tr style={{ backgroundColor: '#1e40af' }}>
-                  {['Plan', 'Monthly Fee', 'Transaction %', '$120,000', '$150,000', '$500,000', '$2,000,000', '$3,000,000', '$4,000,000'].map((header, i) => (
+                  <th style={{
+                    border: '2px solid #000000',
+                    padding: '15px 10px',
+                    backgroundColor: '#1e40af',
+                    fontWeight: 'bold',
+                    textAlign: 'left',
+                    color: '#ffffff',
+                    fontSize: '14px',
+                    verticalAlign: 'middle'
+                  }} rowSpan={2}>Plan</th>
+                  <th style={{
+                    border: '2px solid #000000',
+                    padding: '15px 10px',
+                    backgroundColor: '#1e40af',
+                    fontWeight: 'bold',
+                    textAlign: 'left',
+                    color: '#ffffff',
+                    fontSize: '14px',
+                    verticalAlign: 'middle'
+                  }} rowSpan={2}>Monthly Fee</th>
+                  <th style={{
+                    border: '2px solid #000000',
+                    padding: '15px 10px',
+                    backgroundColor: '#1e40af',
+                    fontWeight: 'bold',
+                    textAlign: 'left',
+                    color: '#ffffff',
+                    fontSize: '14px',
+                    verticalAlign: 'middle'
+                  }} rowSpan={2}>Transaction %</th>
+                  <th style={{
+                    border: '2px solid #000000',
+                    padding: '15px 10px',
+                    backgroundColor: '#1e40af',
+                    fontWeight: 'bold',
+                    textAlign: 'center',
+                    color: '#ffffff',
+                    fontSize: '14px',
+                    borderBottom: '1px solid #000000'
+                  }} colSpan={6}>Monthly Volume Levels (Total Monthly Cost)</th>
+                </tr>
+                <tr style={{ backgroundColor: '#1e40af' }}>
+                  {['$120,000', '$150,000', '$500,000', '$2,000,000', '$3,000,000', '$4,000,000'].map((header, i) => (
                     <th key={i} style={{
                       border: '2px solid #000000',
                       padding: '15px 10px',
@@ -110,20 +166,19 @@ const PricingAccordion: React.FC = () => {
                       fontWeight: 'bold',
                       textAlign: 'left',
                       color: '#ffffff',
-                      fontSize: '14px',
-                      fontFamily: 'system-ui, -apple-system, sans-serif'
+                      fontSize: '14px'
                     }}>{header}</th>
                   ))}
                 </tr>
               </thead>
               <tbody>
                 {[
-                  ['SMB', '$0', '2.30%', '$2,760', '$3,450', '$11,500', '$46,000', '$69,000', '$92,000'],
-                  ['SMB', '$499', '1.79%', '$2,647', '$2,684', '$8,949', '$35,799', '$53,699', '$71,599'],
-                  ['Mid Market', '$1,499', '1.39%', '$2,167', '$2,084', '$6,949', '$27,799', '$41,699', '$55,599'],
-                  ['Enterprise - LowVol', '$2,999', '1.26%', '$2,011', '$1,889', '$6,299', '$25,199', '$37,799', '$50,599'],
-                  ['Enterprise - MidVol', '$7,499', '1.14%', '$1,367', '$1,709', '$5,699', '$22,799', '$34,199', '$45,599'],
-                  ['Enterprise - HighVol', '$10,999', '0.98%', '$1,167', '$1,469', '$4,899', '$19,599', '$29,399', '$39,199']
+                  ['SMB', '$0', '3.00%', '$3,600', '$4,500', '$15,000', '$60,000', '$90,000', '$120,000'],
+                  ['SMB', '$499', '2.49%', '$3,487', '$4,234', '$12,949', '$50,299', '$75,199', '$100,099'],
+                  ['Mid Market', '$1,499', '1.79%', '$3,647', '$4,184', '$10,449', '$37,299', '$55,199', '$73,099'],
+                  ['Enterprise - LowVol', '$2,999', '1.39%', '$4,667', '$5,084', '$9,949', '$30,799', '$44,699', '$58,599'],
+                  ['Enterprise - MidVol', '$7,499', '1.26%', '$9,011', '$9,389', '$13,799', '$32,699', '$45,299', '$57,899'],
+                  ['Enterprise - HighVol', '$10,999', '1.14%', '$12,367', '$12,709', '$16,699', '$33,799', '$45,199', '$56,599']
                 ].map((row, rowIndex) => (
                   <tr key={rowIndex} style={{
                     backgroundColor: rowIndex % 2 === 0 ? '#ffffff' : '#e0f2fe'
@@ -228,7 +283,7 @@ const PricingAccordion: React.FC = () => {
 
   return (
     <div 
-      key={forceUpdate} // Forces re-render
+      key={forceUpdate}
       style={{
         maxWidth: '900px',
         margin: '0 auto',
@@ -239,7 +294,6 @@ const PricingAccordion: React.FC = () => {
         border: '4px solid #1e40af'
       }}
     >
-      {/* Cache buster indicator */}
       <div style={{
         background: '#10b981',
         color: '#ffffff',
@@ -248,7 +302,7 @@ const PricingAccordion: React.FC = () => {
         fontSize: '14px',
         fontWeight: 'bold'
       }}>
-        ✅ NEW STYLING LOADED - Version: {new Date().toLocaleTimeString()}
+        ✅ CORRECTED PRICING - Updated: {new Date().toLocaleTimeString()}
       </div>
       
       {pricingData.map((item, index) => (
@@ -313,6 +367,311 @@ const PricingAccordion: React.FC = () => {
           </div>
         </div>
       ))}
+    </div>
+  );
+};
+
+// Contact Form Component
+const ContactForm: React.FC = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    company: '',
+    phone: '',
+    address: '',
+    workType: '',
+    monthlyPlan: '',
+    integration: '',
+    additionalInfo: ''
+  });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    // Here you would typically send the data to your backend
+    // For now, we'll just log it and show a success message
+    console.log('Form submission to john@clrblt.com:', formData);
+    
+    // Simulate API call
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    
+    alert('Thank you! Your information has been submitted. You will receive your master service agreement within 24 hours.');
+    
+    // Reset form
+    setFormData({
+      name: '',
+      email: '',
+      company: '',
+      phone: '',
+      address: '',
+      workType: '',
+      monthlyPlan: '',
+      integration: '',
+      additionalInfo: ''
+    });
+    
+    setIsSubmitting(false);
+  };
+
+  const formGroupStyle = {
+    display: 'flex',
+    flexDirection: 'column' as const,
+    marginBottom: '1.5rem'
+  };
+
+  const labelStyle = {
+    fontWeight: '600' as const,
+    marginBottom: '0.5rem',
+    color: '#374151',
+    fontSize: '0.95rem'
+  };
+
+  const inputStyle = {
+    padding: '0.875rem',
+    border: '2px solid #d1d5db',
+    borderRadius: '8px',
+    fontSize: '1rem',
+    transition: 'border-color 0.2s ease',
+    fontFamily: 'inherit'
+  };
+
+  const focusStyle = {
+    borderColor: '#1e40af',
+    outline: 'none',
+    boxShadow: '0 0 0 3px rgba(30, 64, 175, 0.1)'
+  };
+
+  return (
+    <div style={{
+      maxWidth: '800px',
+      margin: '0 auto',
+      padding: '0 1.5rem'
+    }}>
+      <div style={{
+        background: '#ffffff',
+        borderRadius: '12px',
+        padding: '2.5rem',
+        boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)',
+        color: '#1f2937'
+      }}>
+        <div style={{
+          background: '#dbeafe',
+          border: '1px solid #3b82f6',
+          color: '#1e40af',
+          padding: '1rem',
+          borderRadius: '8px',
+          marginBottom: '1.5rem',
+          textAlign: 'center',
+          fontWeight: '500'
+        }}>
+          📧 Your master service agreement will be customized based on your selections and emailed within 24 hours
+        </div>
+        
+        <form onSubmit={handleSubmit}>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+            gap: '1.5rem',
+            marginBottom: '1.5rem'
+          }}>
+            <div style={formGroupStyle}>
+              <label style={labelStyle}>Full Name *</label>
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+                required
+                placeholder="John Smith"
+                style={inputStyle}
+                onFocus={(e) => Object.assign(e.target.style, focusStyle)}
+                onBlur={(e) => Object.assign(e.target.style, inputStyle)}
+              />
+            </div>
+            
+            <div style={formGroupStyle}>
+              <label style={labelStyle}>Email Address *</label>
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                required
+                placeholder="john@company.com"
+                style={inputStyle}
+                onFocus={(e) => Object.assign(e.target.style, focusStyle)}
+                onBlur={(e) => Object.assign(e.target.style, inputStyle)}
+              />
+            </div>
+            
+            <div style={formGroupStyle}>
+              <label style={labelStyle}>Company Name *</label>
+              <input
+                type="text"
+                name="company"
+                value={formData.company}
+                onChange={handleInputChange}
+                required
+                placeholder="ABC Construction LLC"
+                style={inputStyle}
+                onFocus={(e) => Object.assign(e.target.style, focusStyle)}
+                onBlur={(e) => Object.assign(e.target.style, inputStyle)}
+              />
+            </div>
+            
+            <div style={formGroupStyle}>
+              <label style={labelStyle}>Phone Number</label>
+              <input
+                type="tel"
+                name="phone"
+                value={formData.phone}
+                onChange={handleInputChange}
+                placeholder="(555) 123-4567"
+                style={inputStyle}
+                onFocus={(e) => Object.assign(e.target.style, focusStyle)}
+                onBlur={(e) => Object.assign(e.target.style, inputStyle)}
+              />
+            </div>
+          </div>
+          
+          <div style={formGroupStyle}>
+            <label style={labelStyle}>Company Address *</label>
+            <input
+              type="text"
+              name="address"
+              value={formData.address}
+              onChange={handleInputChange}
+              required
+              placeholder="123 Main Street, City, State, ZIP"
+              style={inputStyle}
+              onFocus={(e) => Object.assign(e.target.style, focusStyle)}
+              onBlur={(e) => Object.assign(e.target.style, inputStyle)}
+            />
+          </div>
+          
+          <div style={formGroupStyle}>
+            <label style={labelStyle}>Type of Work You Do *</label>
+            <textarea
+              name="workType"
+              value={formData.workType}
+              onChange={handleInputChange}
+              required
+              placeholder="e.g., Home renovations, commercial construction, roofing, plumbing, electrical work, etc."
+              style={{
+                ...inputStyle,
+                resize: 'vertical',
+                minHeight: '100px'
+              }}
+              onFocus={(e) => Object.assign(e.target.style, focusStyle)}
+              onBlur={(e) => Object.assign(e.target.style, { ...inputStyle, resize: 'vertical', minHeight: '100px' })}
+            />
+          </div>
+          
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+            gap: '1.5rem',
+            marginBottom: '1.5rem'
+          }}>
+            <div style={formGroupStyle}>
+              <label style={labelStyle}>Monthly Plan *</label>
+              <select
+                name="monthlyPlan"
+                value={formData.monthlyPlan}
+                onChange={handleInputChange}
+                required
+                style={inputStyle}
+                onFocus={(e) => Object.assign(e.target.style, focusStyle)}
+                onBlur={(e) => Object.assign(e.target.style, inputStyle)}
+              >
+                <option value="">Select a plan...</option>
+                <option value="SMB - $0/month (3.00% transaction fee)">SMB - $0/month (3.00% transaction fee)</option>
+                <option value="SMB - $499/month (2.49% transaction fee)">SMB - $499/month (2.49% transaction fee)</option>
+                <option value="Mid Market - $1,499/month (1.79% transaction fee)">Mid Market - $1,499/month (1.79% transaction fee)</option>
+                <option value="Enterprise - LowVol - $2,999/month (1.39% transaction fee)">Enterprise - LowVol - $2,999/month (1.39% transaction fee)</option>
+                <option value="Enterprise - MidVol - $7,499/month (1.26% transaction fee)">Enterprise - MidVol - $7,499/month (1.26% transaction fee)</option>
+                <option value="Enterprise - HighVol - $10,999/month (1.14% transaction fee)">Enterprise - HighVol - $10,999/month (1.14% transaction fee)</option>
+              </select>
+            </div>
+            
+            <div style={formGroupStyle}>
+              <label style={labelStyle}>Integration Needed *</label>
+              <select
+                name="integration"
+                value={formData.integration}
+                onChange={handleInputChange}
+                required
+                style={inputStyle}
+                onFocus={(e) => Object.assign(e.target.style, focusStyle)}
+                onBlur={(e) => Object.assign(e.target.style, inputStyle)}
+              >
+                <option value="">Select integration level...</option>
+                <option value="No integration, Manual Use - $500">No integration, Manual Use - $500</option>
+                <option value="Create Escrow/Change Order API - $3,000">Create Escrow/Change Order API - $3,000</option>
+                <option value="Full API access + webhooks - $8,500">Full API access + webhooks - $8,500</option>
+              </select>
+            </div>
+          </div>
+          
+          <div style={formGroupStyle}>
+            <label style={labelStyle}>Additional Information (Optional)</label>
+            <textarea
+              name="additionalInfo"
+              value={formData.additionalInfo}
+              onChange={handleInputChange}
+              placeholder="Any specific requirements, questions, or additional details about your business..."
+              style={{
+                ...inputStyle,
+                resize: 'vertical',
+                minHeight: '100px'
+              }}
+              onFocus={(e) => Object.assign(e.target.style, focusStyle)}
+              onBlur={(e) => Object.assign(e.target.style, { ...inputStyle, resize: 'vertical', minHeight: '100px' })}
+            />
+          </div>
+          
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            style={{
+              width: '100%',
+              background: isSubmitting ? '#6b7280' : '#1e40af',
+              color: 'white',
+              padding: '1rem 2rem',
+              border: 'none',
+              borderRadius: '8px',
+              fontSize: '1.125rem',
+              fontWeight: '600',
+              cursor: isSubmitting ? 'not-allowed' : 'pointer',
+              transition: 'background-color 0.2s ease',
+              marginTop: '1rem'
+            }}
+            onMouseEnter={(e) => {
+              if (!isSubmitting) {
+                e.currentTarget.style.backgroundColor = '#1d4ed8';
+              }
+            }}
+            onMouseLeave={(e) => {
+              if (!isSubmitting) {
+                e.currentTarget.style.backgroundColor = '#1e40af';
+              }
+            }}
+          >
+            {isSubmitting ? 'Sending...' : 'Send My Master Service Agreement'}
+          </button>
+        </form>
+      </div>
     </div>
   );
 };
@@ -452,7 +811,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Pricing Section - CACHE-BUSTING VERSION */}
+      {/* Pricing Section - CORRECTED VERSION */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12 text-black">Pricing</h2>
@@ -542,21 +901,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* Contact Form Section - REPLACES CTA Section */}
       <section className="bg-blue-700 text-white py-16">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-6">Ready to Protect Your Projects?</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Create your tailored escrow agreement today and ensure smooth, secure construction projects for all parties.
+            Fill out the form below and a master service agreement will be sent to your email within 24 hours. Get started with secure escrow payments for your construction projects today.
           </p>
-          <a
-            href="https://www.calendly.com/clrblt"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-white text-blue-700 px-8 py-4 rounded-lg text-lg font-semibold inline-flex items-center hover:bg-gray-100 transition-colors cursor-pointer"
-          >
-            Schedule a Demo <ChevronRight className="ml-2" />
-          </a>
+          <ContactForm />
         </div>
       </section>
 
