@@ -37,162 +37,116 @@ const PricingAccordion: React.FC = () => {
       title: 'Implementation Fee Schedule',
       content: (
         <ul style={{ 
-          marginTop: '0.5rem',
-          paddingLeft: '1.5rem',
+          margin: '15px 0',
+          paddingLeft: '20px',
           listStyleType: 'disc',
-          color: '#374151' // Proper dark gray text
+          color: '#374151',
+          fontSize: '1rem'
         }}>
-          <li style={{ marginBottom: '0.5rem' }}>No integration, Manual Use: $500</li>
-          <li style={{ marginBottom: '0.5rem' }}>Create Escrow/Change Order API: $3,000</li>
-          <li style={{ marginBottom: '0.5rem' }}>Full API access + webhooks: $8,500</li>
+          <li style={{ marginBottom: '8px' }}>No integration, Manual Use: $500</li>
+          <li style={{ marginBottom: '8px' }}>Create Escrow/Change Order API: $3,000</li>
+          <li style={{ marginBottom: '8px' }}>Full API access + webhooks: $8,500</li>
         </ul>
       ),
     },
     {
       title: 'Pricing Tiers (must stay on plan for 12 months, can change upon renewal)',
       content: (
-        <div style={{ 
-          overflowX: 'auto', 
-          marginTop: '0.5rem',
-          WebkitOverflowScrolling: 'touch' // Smooth scrolling on mobile
-        }}>
-          <table style={{
-            width: '100%',
-            borderCollapse: 'collapse',
+        <div>
+          <div style={{
+            background: '#dbeafe',
+            border: '1px solid #3b82f6',
+            borderRadius: '6px',
+            padding: '12px',
+            margin: '15px 0',
             fontSize: '0.875rem',
-            minWidth: '800px', // Forces horizontal scroll on mobile
-            color: '#374151' // Dark gray text
+            color: '#1e40af'
           }}>
-            <thead>
-              <tr>
-                <th style={{ 
-                  border: '1px solid #d1d5db', 
-                  padding: '0.75rem 0.5rem', 
-                  backgroundColor: '#f3f4f6', 
-                  fontWeight: 600, 
-                  textAlign: 'left',
-                  color: '#111827' // Very dark text for headers
-                }}>Plan</th>
-                <th style={{ 
-                  border: '1px solid #d1d5db', 
-                  padding: '0.75rem 0.5rem', 
-                  backgroundColor: '#f3f4f6', 
-                  fontWeight: 600, 
-                  textAlign: 'left',
-                  color: '#111827'
-                }}>Monthly Fee</th>
-                <th style={{ 
-                  border: '1px solid #d1d5db', 
-                  padding: '0.75rem 0.5rem', 
-                  backgroundColor: '#f3f4f6', 
-                  fontWeight: 600, 
-                  textAlign: 'left',
-                  color: '#111827'
-                }}>Transaction %</th>
-                <th style={{ 
-                  border: '1px solid #d1d5db', 
-                  padding: '0.75rem 0.5rem', 
-                  backgroundColor: '#f3f4f6', 
-                  fontWeight: 600, 
-                  textAlign: 'left',
-                  color: '#111827'
-                }}>$120,000</th>
-                <th style={{ 
-                  border: '1px solid #d1d5db', 
-                  padding: '0.75rem 0.5rem', 
-                  backgroundColor: '#f3f4f6', 
-                  fontWeight: 600, 
-                  textAlign: 'left',
-                  color: '#111827'
-                }}>$150,000</th>
-                <th style={{ 
-                  border: '1px solid #d1d5db', 
-                  padding: '0.75rem 0.5rem', 
-                  backgroundColor: '#f3f4f6', 
-                  fontWeight: 600, 
-                  textAlign: 'left',
-                  color: '#111827'
-                }}>$500,000</th>
-                <th style={{ 
-                  border: '1px solid #d1d5db', 
-                  padding: '0.75rem 0.5rem', 
-                  backgroundColor: '#f3f4f6', 
-                  fontWeight: 600, 
-                  textAlign: 'left',
-                  color: '#111827'
-                }}>$2,000,000</th>
-                <th style={{ 
-                  border: '1px solid #d1d5db', 
-                  padding: '0.75rem 0.5rem', 
-                  backgroundColor: '#f3f4f6', 
-                  fontWeight: 600, 
-                  textAlign: 'left',
-                  color: '#111827'
-                }}>$3,000,000</th>
-                <th style={{ 
-                  border: '1px solid #d1d5db', 
-                  padding: '0.75rem 0.5rem', 
-                  backgroundColor: '#f3f4f6', 
-                  fontWeight: 600, 
-                  textAlign: 'left',
-                  color: '#111827'
-                }}>$4,000,000</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                ['SMB', '$0', '2.30%', '$2,760', '$3,450', '$11,500', '$46,000', '$69,000', '$92,000'],
-                ['SMB', '$499', '1.79%', '$2,647', '$2,684', '$8,949', '$35,799', '$53,699', '$71,599'],
-                ['Mid Market', '$1,499', '1.39%', '$2,167', '$2,084', '$6,949', '$27,799', '$41,699', '$55,599'],
-                ['Enterprise - LowVol', '$2,999', '1.26%', '$2,011', '$1,889', '$6,299', '$25,199', '$37,799', '$50,599'],
-                ['Enterprise - MidVol', '$7,499', '1.14%', '$1,367', '$1,709', '$5,699', '$22,799', '$34,199', '$45,599'],
-                ['Enterprise - HighVol', '$10,999', '0.98%', '$1,167', '$1,469', '$4,899', '$19,599', '$29,399', '$39,199']
-              ].map((row, rowIndex) => (
-                <tr key={rowIndex} style={{ backgroundColor: rowIndex % 2 === 0 ? '#ffffff' : '#f9fafb' }}>
-                  {row.map((cell, cellIndex) => (
-                    <td key={cellIndex} style={{ 
-                      border: '1px solid #d1d5db', 
-                      padding: '0.75rem 0.5rem',
-                      color: '#374151' // Dark gray text for data cells
-                    }}>{cell}</td>
+            📱 On mobile: Scroll right to see all pricing columns →
+          </div>
+          <div style={{ 
+            overflowX: 'auto',
+            WebkitOverflowScrolling: 'touch',
+            border: '1px solid #d1d5db',
+            borderRadius: '6px'
+          }}>
+            <table style={{
+              width: '100%',
+              borderCollapse: 'collapse',
+              minWidth: '800px',
+              fontSize: '0.9rem',
+              background: 'white'
+            }}>
+              <thead>
+                <tr>
+                  {['Plan', 'Monthly Fee', 'Transaction %', '$120,000', '$150,000', '$500,000', '$2,000,000', '$3,000,000', '$4,000,000'].map((header, i) => (
+                    <th key={i} style={{
+                      border: '1px solid #d1d5db',
+                      padding: '12px 8px',
+                      backgroundColor: '#f3f4f6',
+                      fontWeight: 600,
+                      textAlign: 'left',
+                      color: '#111827',
+                      fontSize: '0.875rem'
+                    }}>{header}</th>
                   ))}
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {[
+                  ['SMB', '$0', '2.30%', '$2,760', '$3,450', '$11,500', '$46,000', '$69,000', '$92,000'],
+                  ['SMB', '$499', '1.79%', '$2,647', '$2,684', '$8,949', '$35,799', '$53,699', '$71,599'],
+                  ['Mid Market', '$1,499', '1.39%', '$2,167', '$2,084', '$6,949', '$27,799', '$41,699', '$55,599'],
+                  ['Enterprise - LowVol', '$2,999', '1.26%', '$2,011', '$1,889', '$6,299', '$25,199', '$37,799', '$50,599'],
+                  ['Enterprise - MidVol', '$7,499', '1.14%', '$1,367', '$1,709', '$5,699', '$22,799', '$34,199', '$45,599'],
+                  ['Enterprise - HighVol', '$10,999', '0.98%', '$1,167', '$1,469', '$4,899', '$19,599', '$29,399', '$39,199']
+                ].map((row, rowIndex) => (
+                  <tr key={rowIndex} style={{
+                    backgroundColor: rowIndex % 2 === 0 ? '#ffffff' : '#f8fafc'
+                  }}>
+                    {row.map((cell, cellIndex) => (
+                      <td key={cellIndex} style={{
+                        border: '1px solid #d1d5db',
+                        padding: '12px 8px',
+                        color: '#374151',
+                        fontSize: '0.875rem'
+                      }}>{cell}</td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       ),
     },
     {
       title: 'Custom Pricing for High Ticket Projects',
       content: (
-        <div style={{ 
-          overflowX: 'auto', 
-          marginTop: '0.5rem',
-          WebkitOverflowScrolling: 'touch'
-        }}>
+        <div style={{ marginTop: '15px' }}>
           <table style={{
             width: '100%',
             borderCollapse: 'collapse',
-            fontSize: '0.875rem',
-            minWidth: '400px', // Smaller minimum for this table
-            color: '#374151'
+            fontSize: '0.9rem',
+            border: '1px solid #d1d5db',
+            borderRadius: '6px',
+            overflow: 'hidden'
           }}>
             <thead>
               <tr>
-                <th style={{ 
-                  border: '1px solid #d1d5db', 
-                  padding: '0.75rem', 
-                  backgroundColor: '#f3f4f6', 
-                  fontWeight: 600, 
+                <th style={{
+                  border: '1px solid #d1d5db',
+                  padding: '12px',
+                  backgroundColor: '#f3f4f6',
+                  fontWeight: 600,
                   textAlign: 'left',
                   color: '#111827'
                 }}>Project Amount</th>
-                <th style={{ 
-                  border: '1px solid #d1d5db', 
-                  padding: '0.75rem', 
-                  backgroundColor: '#f3f4f6', 
-                  fontWeight: 600, 
+                <th style={{
+                  border: '1px solid #d1d5db',
+                  padding: '12px',
+                  backgroundColor: '#f3f4f6',
+                  fontWeight: 600,
                   textAlign: 'left',
                   color: '#111827'
                 }}>Transaction Fee</th>
@@ -212,15 +166,17 @@ const PricingAccordion: React.FC = () => {
                 ['15,001k - 20,000k', '0.29%'],
                 ['above 20,000k', '0.28%']
               ].map(([amount, fee], index) => (
-                <tr key={index} style={{ backgroundColor: index % 2 === 0 ? '#ffffff' : '#f9fafb' }}>
-                  <td style={{ 
-                    border: '1px solid #d1d5db', 
-                    padding: '0.75rem',
+                <tr key={index} style={{
+                  backgroundColor: index % 2 === 0 ? '#ffffff' : '#f8fafc'
+                }}>
+                  <td style={{
+                    border: '1px solid #d1d5db',
+                    padding: '12px',
                     color: '#374151'
                   }}>{amount}</td>
-                  <td style={{ 
-                    border: '1px solid #d1d5db', 
-                    padding: '0.75rem',
+                  <td style={{
+                    border: '1px solid #d1d5db',
+                    padding: '12px',
                     color: '#374151'
                   }}>{fee}</td>
                 </tr>
@@ -236,37 +192,36 @@ const PricingAccordion: React.FC = () => {
     <div style={{
       maxWidth: '900px',
       margin: '0 auto',
-      padding: '0 1rem' // Add padding for mobile
+      background: 'white',
+      borderRadius: '12px',
+      boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+      overflow: 'hidden'
     }}>
       {pricingData.map((item, index) => (
-        <div 
-          key={index} 
-          style={{
-            borderBottom: '1px solid #e5e7eb',
-            marginBottom: '0'
-          }}
-        >
+        <div key={index} style={{
+          borderBottom: index < pricingData.length - 1 ? '2px solid #e5e7eb' : 'none'
+        }}>
           <button
             onClick={() => handleAccordionClick(index)}
             style={{
               width: '100%',
-              textAlign: 'left',
-              padding: '1.25rem 1rem',
-              fontWeight: 600,
-              fontSize: '1.125rem',
+              padding: '20px',
               backgroundColor: activeIndex === index ? '#e5e7eb' : '#f9fafb',
+              border: 'none',
+              textAlign: 'left',
+              fontSize: '1.125rem',
+              fontWeight: 600,
+              color: '#111827',
               cursor: 'pointer',
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
-              border: 'none',
               transition: 'background-color 0.2s ease',
-              color: '#111827', // Very dark text for button
               lineHeight: '1.4'
             }}
             onMouseEnter={(e) => {
               if (activeIndex !== index) {
-                e.currentTarget.style.backgroundColor = '#e5e7eb';
+                e.currentTarget.style.backgroundColor = '#f3f4f6';
               }
             }}
             onMouseLeave={(e) => {
@@ -275,8 +230,8 @@ const PricingAccordion: React.FC = () => {
               }
             }}
           >
-            <span style={{ paddingRight: '1rem' }}>{item.title}</span>
-            <ChevronRight 
+            <span style={{ paddingRight: '15px' }}>{item.title}</span>
+            <ChevronRight
               style={{
                 transform: activeIndex === index ? 'rotate(90deg)' : 'rotate(0deg)',
                 transition: 'transform 0.2s ease',
@@ -290,8 +245,8 @@ const PricingAccordion: React.FC = () => {
             style={{
               maxHeight: activeIndex === index ? '2000px' : '0',
               overflow: 'hidden',
-              transition: 'max-height 0.4s ease, padding 0.4s ease',
-              padding: activeIndex === index ? '1.5rem 1rem' : '0 1rem',
+              transition: 'max-height 0.3s ease, padding 0.3s ease',
+              padding: activeIndex === index ? '25px' : '0 25px',
               backgroundColor: '#ffffff'
             }}
           >
@@ -438,7 +393,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Pricing Section - Fixed styling */}
+      {/* Pricing Section - FIXED VERSION */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12 text-black">Pricing</h2>
