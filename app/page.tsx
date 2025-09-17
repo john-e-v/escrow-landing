@@ -24,7 +24,7 @@ const CardContent: React.FC<CardProps> = ({ children }) => (
   <div>{children}</div>
 );
 
-// Fixed Pricing Accordion Component
+// Bulletproof Pricing Accordion Component with Strong Style Overrides
 const PricingAccordion: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
@@ -40,12 +40,25 @@ const PricingAccordion: React.FC = () => {
           margin: '15px 0',
           paddingLeft: '20px',
           listStyleType: 'disc',
-          color: '#374151',
-          fontSize: '1rem'
+          color: '#000000 !important', // Force black text
+          fontSize: '16px',
+          fontWeight: 'normal'
         }}>
-          <li style={{ marginBottom: '8px' }}>No integration, Manual Use: $500</li>
-          <li style={{ marginBottom: '8px' }}>Create Escrow/Change Order API: $3,000</li>
-          <li style={{ marginBottom: '8px' }}>Full API access + webhooks: $8,500</li>
+          <li style={{ 
+            marginBottom: '8px',
+            color: '#000000 !important',
+            fontSize: '16px'
+          }}>No integration, Manual Use: $500</li>
+          <li style={{ 
+            marginBottom: '8px',
+            color: '#000000 !important',
+            fontSize: '16px'
+          }}>Create Escrow/Change Order API: $3,000</li>
+          <li style={{ 
+            marginBottom: '8px',
+            color: '#000000 !important',
+            fontSize: '16px'
+          }}>Full API access + webhooks: $8,500</li>
         </ul>
       ),
     },
@@ -54,40 +67,44 @@ const PricingAccordion: React.FC = () => {
       content: (
         <div>
           <div style={{
-            background: '#dbeafe',
-            border: '1px solid #3b82f6',
-            borderRadius: '6px',
-            padding: '12px',
+            background: '#dbeafe !important',
+            border: '2px solid #3b82f6 !important',
+            borderRadius: '8px',
+            padding: '15px',
             margin: '15px 0',
-            fontSize: '0.875rem',
-            color: '#1e40af'
+            fontSize: '14px',
+            color: '#1e40af !important',
+            fontWeight: 'bold'
           }}>
             📱 On mobile: Scroll right to see all pricing columns →
           </div>
           <div style={{ 
             overflowX: 'auto',
             WebkitOverflowScrolling: 'touch',
-            border: '1px solid #d1d5db',
-            borderRadius: '6px'
+            border: '2px solid #000000 !important',
+            borderRadius: '8px',
+            backgroundColor: '#ffffff !important'
           }}>
             <table style={{
               width: '100%',
               borderCollapse: 'collapse',
               minWidth: '800px',
-              fontSize: '0.9rem',
-              background: 'white'
+              fontSize: '14px',
+              background: '#ffffff !important',
+              fontFamily: 'Arial, sans-serif'
             }}>
               <thead>
                 <tr>
                   {['Plan', 'Monthly Fee', 'Transaction %', '$120,000', '$150,000', '$500,000', '$2,000,000', '$3,000,000', '$4,000,000'].map((header, i) => (
                     <th key={i} style={{
-                      border: '1px solid #d1d5db',
+                      border: '1px solid #000000 !important',
                       padding: '12px 8px',
-                      backgroundColor: '#f3f4f6',
-                      fontWeight: 600,
+                      backgroundColor: '#f3f4f6 !important',
+                      fontWeight: 'bold',
                       textAlign: 'left',
-                      color: '#111827',
-                      fontSize: '0.875rem'
+                      color: '#000000 !important',
+                      fontSize: '14px',
+                      fontFamily: 'Arial, sans-serif'
                     }}>{header}</th>
                   ))}
                 </tr>
@@ -102,14 +119,16 @@ const PricingAccordion: React.FC = () => {
                   ['Enterprise - HighVol', '$10,999', '0.98%', '$1,167', '$1,469', '$4,899', '$19,599', '$29,399', '$39,199']
                 ].map((row, rowIndex) => (
                   <tr key={rowIndex} style={{
-                    backgroundColor: rowIndex % 2 === 0 ? '#ffffff' : '#f8fafc'
+                    backgroundColor: rowIndex % 2 === 0 ? '#ffffff !important' : '#f8fafc !important'
                   }}>
                     {row.map((cell, cellIndex) => (
                       <td key={cellIndex} style={{
-                        border: '1px solid #d1d5db',
+                        border: '1px solid #000000 !important',
                         padding: '12px 8px',
-                        color: '#374151',
-                        fontSize: '0.875rem'
+                        color: '#000000 !important',
+                        fontSize: '14px',
+                        fontFamily: 'Arial, sans-serif',
+                        fontWeight: 'normal'
                       }}>{cell}</td>
                     ))}
                   </tr>
@@ -127,28 +146,34 @@ const PricingAccordion: React.FC = () => {
           <table style={{
             width: '100%',
             borderCollapse: 'collapse',
-            fontSize: '0.9rem',
-            border: '1px solid #d1d5db',
-            borderRadius: '6px',
-            overflow: 'hidden'
+            fontSize: '14px',
+            border: '2px solid #000000 !important',
+            borderRadius: '8px',
+            overflow: 'hidden',
+            backgroundColor: '#ffffff !important',
+            fontFamily: 'Arial, sans-serif'
           }}>
             <thead>
               <tr>
                 <th style={{
-                  border: '1px solid #d1d5db',
-                  padding: '12px',
-                  backgroundColor: '#f3f4f6',
-                  fontWeight: 600,
+                  border: '1px solid #000000 !important',
+                  padding: '15px',
+                  backgroundColor: '#f3f4f6 !important',
+                  fontWeight: 'bold',
                   textAlign: 'left',
-                  color: '#111827'
+                  color: '#000000 !important',
+                  fontSize: '14px',
+                  fontFamily: 'Arial, sans-serif'
                 }}>Project Amount</th>
                 <th style={{
-                  border: '1px solid #d1d5db',
-                  padding: '12px',
-                  backgroundColor: '#f3f4f6',
-                  fontWeight: 600,
+                  border: '1px solid #000000 !important',
+                  padding: '15px',
+                  backgroundColor: '#f3f4f6 !important',
+                  fontWeight: 'bold',
                   textAlign: 'left',
-                  color: '#111827'
+                  color: '#000000 !important',
+                  fontSize: '14px',
+                  fontFamily: 'Arial, sans-serif'
                 }}>Transaction Fee</th>
               </tr>
             </thead>
@@ -167,17 +192,23 @@ const PricingAccordion: React.FC = () => {
                 ['above 20,000k', '0.28%']
               ].map(([amount, fee], index) => (
                 <tr key={index} style={{
-                  backgroundColor: index % 2 === 0 ? '#ffffff' : '#f8fafc'
+                  backgroundColor: index % 2 === 0 ? '#ffffff !important' : '#f8fafc !important'
                 }}>
                   <td style={{
-                    border: '1px solid #d1d5db',
-                    padding: '12px',
-                    color: '#374151'
+                    border: '1px solid #000000 !important',
+                    padding: '15px',
+                    color: '#000000 !important',
+                    fontSize: '14px',
+                    fontFamily: 'Arial, sans-serif',
+                    fontWeight: 'normal'
                   }}>{amount}</td>
                   <td style={{
-                    border: '1px solid #d1d5db',
-                    padding: '12px',
-                    color: '#374151'
+                    border: '1px solid #000000 !important',
+                    padding: '15px',
+                    color: '#000000 !important',
+                    fontSize: '14px',
+                    fontFamily: 'Arial, sans-serif',
+                    fontWeight: 'normal'
                   }}>{fee}</td>
                 </tr>
               ))}
@@ -192,62 +223,69 @@ const PricingAccordion: React.FC = () => {
     <div style={{
       maxWidth: '900px',
       margin: '0 auto',
-      background: 'white',
+      background: '#ffffff !important',
       borderRadius: '12px',
-      boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
-      overflow: 'hidden'
+      boxShadow: '0 8px 16px rgba(0, 0, 0, 0.2)',
+      overflow: 'hidden',
+      border: '2px solid #e5e7eb'
     }}>
       {pricingData.map((item, index) => (
         <div key={index} style={{
-          borderBottom: index < pricingData.length - 1 ? '2px solid #e5e7eb' : 'none'
+          borderBottom: index < pricingData.length - 1 ? '3px solid #e5e7eb' : 'none'
         }}>
           <button
             onClick={() => handleAccordionClick(index)}
             style={{
               width: '100%',
-              padding: '20px',
-              backgroundColor: activeIndex === index ? '#e5e7eb' : '#f9fafb',
+              padding: '25px 20px',
+              backgroundColor: activeIndex === index ? '#d1d5db !important' : '#f9fafb !important',
               border: 'none',
               textAlign: 'left',
-              fontSize: '1.125rem',
-              fontWeight: 600,
-              color: '#111827',
+              fontSize: '18px',
+              fontWeight: 'bold',
+              color: '#000000 !important',
               cursor: 'pointer',
               display: 'flex',
               justifyContent: 'space-between',
               alignItems: 'center',
               transition: 'background-color 0.2s ease',
-              lineHeight: '1.4'
+              lineHeight: '1.4',
+              fontFamily: 'Arial, sans-serif'
             }}
             onMouseEnter={(e) => {
               if (activeIndex !== index) {
-                e.currentTarget.style.backgroundColor = '#f3f4f6';
+                e.currentTarget.style.backgroundColor = '#e5e7eb !important';
               }
             }}
             onMouseLeave={(e) => {
               if (activeIndex !== index) {
-                e.currentTarget.style.backgroundColor = '#f9fafb';
+                e.currentTarget.style.backgroundColor = '#f9fafb !important';
               }
             }}
           >
-            <span style={{ paddingRight: '15px' }}>{item.title}</span>
+            <span style={{ 
+              paddingRight: '15px',
+              color: '#000000 !important',
+              fontWeight: 'bold',
+              fontSize: '18px'
+            }}>{item.title}</span>
             <ChevronRight
               style={{
                 transform: activeIndex === index ? 'rotate(90deg)' : 'rotate(0deg)',
                 transition: 'transform 0.2s ease',
                 flexShrink: 0,
-                color: '#6b7280'
+                color: '#000000 !important'
               }}
-              size={20}
+              size={24}
             />
           </button>
           <div
             style={{
-              maxHeight: activeIndex === index ? '2000px' : '0',
+              maxHeight: activeIndex === index ? '3000px' : '0',
               overflow: 'hidden',
               transition: 'max-height 0.3s ease, padding 0.3s ease',
-              padding: activeIndex === index ? '25px' : '0 25px',
-              backgroundColor: '#ffffff'
+              padding: activeIndex === index ? '30px 25px' : '0 25px',
+              backgroundColor: '#ffffff !important'
             }}
           >
             {item.content}
@@ -393,7 +431,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Pricing Section - FIXED VERSION */}
+      {/* Pricing Section - BULLETPROOF VERSION */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12 text-black">Pricing</h2>
