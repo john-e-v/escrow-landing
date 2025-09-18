@@ -128,16 +128,17 @@ export async function POST(request: NextRequest) {
       message: 'Request sent successfully'
     });
 
- } catch (error) {
+} catch (error) {
   console.error('Error sending email:', error);
+  console.error('Error type:', typeof error);
+  console.error('Error details:', JSON.stringify(error, Object.getOwnPropertyNames(error)));
+  
   return NextResponse.json(
     { 
       error: 'Failed to send request',
-      details: process.env.NODE_ENV === 'development' ? 
-        (error instanceof Error ? error.message : String(error)) : 
-        undefined 
+      details: error.message || String(error)
     },
     { status: 500 }
   );
 }
-}
+}  
