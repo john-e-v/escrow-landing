@@ -128,14 +128,15 @@ export async function POST(request: NextRequest) {
       message: 'Request sent successfully'
     });
 
-  } catch (error) {
-    console.error('Error sending email:', error);
-    return NextResponse.json(
-      { 
-        error: 'Failed to send request',
-        details: process.env.NODE_ENV === 'development' ? error.message : undefined 
-      },
-      { status: 500 }
-    );
-  }
+ } catch (error) {
+  console.error('Error sending email:', error);
+  return NextResponse.json(
+    { 
+      error: 'Failed to send request',
+      details: process.env.NODE_ENV === 'development' ? 
+        (error instanceof Error ? error.message : String(error)) : 
+        undefined 
+    },
+    { status: 500 }
+  );
 }
