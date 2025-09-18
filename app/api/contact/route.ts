@@ -23,8 +23,7 @@ export async function POST(request: NextRequest) {
         { status: 400 }
       );
     }
-//force deploy
-    // Create email transporter using Google Workspace
+    // Create email transporter using Google Workspace - updated
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -140,4 +139,3 @@ export async function POST(request: NextRequest) {
     );
   }
 }
-//force deploy 2
