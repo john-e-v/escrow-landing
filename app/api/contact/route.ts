@@ -131,12 +131,14 @@ export async function POST(request: NextRequest) {
 } catch (error) {
   console.error('Error sending email:', error);
   console.error('Error type:', typeof error);
-  console.error('Error details:', JSON.stringify(error, Object.getOwnPropertyNames(error)));
+  
+  const errorMessage = error instanceof Error ? error.message : String(error);
+  console.error('Error message:', errorMessage);
   
   return NextResponse.json(
     { 
       error: 'Failed to send request',
-      details: error.message || String(error)
+      details: errorMessage
     },
     { status: 500 }
   );
