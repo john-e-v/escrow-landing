@@ -302,7 +302,7 @@ const PricingAccordion: React.FC = () => {
         fontSize: '14px',
         fontWeight: 'bold'
       }}>
-        ✅ CORRECTED PRICING - Updated: {new Date().toLocaleTimeString()}
+        ✅ CORRECTED PRICING - Updated: December 2024
       </div>
       
       {pricingData.map((item, index) => (
