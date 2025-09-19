@@ -23,12 +23,13 @@ export async function POST(request: NextRequest) {
         { status: 400 }
       );
     }
-    // Create email transporter using Google Workspace - updated2
+
+    // Create email transporter using Google Workspace
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: process.env.EMAIL_USER, // noreply@clrblt.com (your alias)
-        pass: process.env.EMAIL_PASS, // Your Google App Password
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
     });
 
@@ -107,19 +108,19 @@ export async function POST(request: NextRequest) {
 
     // Send email to john@clrblt.com (admin notification)
     await transporter.sendMail({
-      from: `"Clrblt Contact Form" <${process.env.EMAIL_USER}>`, // From alias
-      to: 'john@clrblt.com', // To your main email
+      from: `"Clrblt Contact Form" <${process.env.EMAIL_USER}>`,
+      to: 'john@clrblt.com',
       subject: `New Master Service Agreement Request - ${company}`,
-      text: `New request from ${name} at ${company}. Check your email for full details.`, // Plain text fallback
+      text: `New request from ${name} at ${company}. Check your email for full details.`,
       html: adminEmailHTML,
     });
 
     // Send confirmation email to customer
     await transporter.sendMail({
-      from: `"Clrblt Team" <${process.env.EMAIL_USER}>`, // From alias  
-      to: email, // To the customer
+      from: `"Clrblt Team" <${process.env.EMAIL_USER}>`,
+      to: email,
       subject: 'Master Service Agreement Request Received',
-      text: `Dear ${name}, thank you for your request. You will receive your master service agreement within 24 hours.`, // Plain text fallback
+      text: `Dear ${name}, thank you for your request. You will receive your master service agreement within 24 hours.`,
       html: customerEmailHTML,
     });
 
@@ -128,19 +129,19 @@ export async function POST(request: NextRequest) {
       message: 'Request sent successfully'
     });
 
-} catch (error) {
-  console.error('Error sending email:', error);
-  console.error('Error type:', typeof error);
-  
-  const errorMessage = error instanceof Error ? error.message : String(error);
-  console.error('Error message:', errorMessage);
-  
-  return NextResponse.json(
-    { 
-      error: 'Failed to send request',
-      details: errorMessage
-    },
-    { status: 500 }
-  );
+  } catch (error) {
+    console.error('Error sending email:', error);
+    console.error('Error type:', typeof error);
+    
+    const errorMessage = error instanceof Error ? error.message : String(error);
+    console.error('Error message:', errorMessage);
+    
+    return NextResponse.json(
+      { 
+        error: 'Failed to send request',
+        details: errorMessage
+      },
+      { status: 500 }
+    );
+  }
 }
-}  
