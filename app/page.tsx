@@ -395,33 +395,44 @@ const ContactForm: React.FC = () => {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+ const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Here you would typically send the data to your backend
-    // For now, we'll just log it and show a success message
-    console.log('Form submission to john@clrblt.com:', formData);
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    alert('Thank you! Your information has been submitted. You will receive your master service agreement within 24 hours.');
-    
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      company: '',
-      phone: '',
-      address: '',
-      workType: '',
-      monthlyPlan: '',
-      integration: '',
-      additionalInfo: ''
-    });
-    
-    setIsSubmitting(false);
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        alert('Thank you! Your information has been submitted. You will receive your master service agreement within 24 hours.');
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          phone: '',
+          address: '',
+          workType: '',
+          monthlyPlan: '',
+          integration: '',
+          additionalInfo: ''
+        });
+      } else {
+        alert('Error: ' + result.error);
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('Network error. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const formGroupStyle = {
