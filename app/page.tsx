@@ -5,6 +5,9 @@ import { useState, useEffect } from 'react';
 export default function Home() {
   const [activeAudience, setActiveAudience] = useState<'homeowner' | 'contractor'>('homeowner');
   const [scrolled, setScrolled] = useState(false);
+  const [projectSubmitting, setProjectSubmitting] = useState(false);
+  const [contractorSubmitting, setContractorSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,14 +22,77 @@ export default function Home() {
     document.querySelector('.hero')?.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const handleProjectSubmit = (e: React.FormEvent) => {
+  const handleProjectSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    alert("Thank you! We'll be in touch shortly to connect you with qualified contractors.");
+    setProjectSubmitting(true);
+    setSubmitMessage(null);
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+      zip: formData.get('zip'),
+      projectType: formData.get('project-type'),
+      budget: formData.get('budget'),
+      description: formData.get('description'),
+    };
+
+    try {
+      const response = await fetch('/api/submit-project', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setSubmitMessage({ type: 'success', text: "Thank you! We'll be in touch shortly to connect you with qualified contractors." });
+        e.currentTarget.reset();
+      } else {
+        const error = await response.json();
+        setSubmitMessage({ type: 'error', text: error.error || 'Something went wrong. Please try again.' });
+      }
+    } catch {
+      setSubmitMessage({ type: 'error', text: 'Network error. Please try again.' });
+    } finally {
+      setProjectSubmitting(false);
+    }
   };
 
-  const handleContractorSubmit = (e: React.FormEvent) => {
+  const handleContractorSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    alert("Welcome aboard! We'll send you leads as projects come in for your area.");
+    setContractorSubmitting(true);
+    setSubmitMessage(null);
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get('name'),
+      company: formData.get('company'),
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+      zip: formData.get('zip'),
+      services: formData.get('services'),
+    };
+
+    try {
+      const response = await fetch('/api/submit-contractor', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setSubmitMessage({ type: 'success', text: "Welcome aboard! We'll send you leads as projects come in for your area." });
+        e.currentTarget.reset();
+      } else {
+        const error = await response.json();
+        setSubmitMessage({ type: 'error', text: error.error || 'Something went wrong. Please try again.' });
+      }
+    } catch {
+      setSubmitMessage({ type: 'error', text: 'Network error. Please try again.' });
+    } finally {
+      setContractorSubmitting(false);
+    }
   };
 
   return (
@@ -126,7 +192,14 @@ export default function Home() {
                   <label htmlFor="description">Project Description</label>
                   <textarea id="description" name="description" placeholder="Describe your project, timeline, and any specific requirements..."></textarea>
                 </div>
-                <button type="submit" className="submit-btn primary">Submit Project</button>
+                <button type="submit" className="submit-btn primary" disabled={projectSubmitting}>
+                  {projectSubmitting ? 'Submitting...' : 'Submit Project'}
+                </button>
+                {submitMessage && activeAudience === 'homeowner' && (
+                  <div className={`submit-message ${submitMessage.type}`}>
+                    {submitMessage.text}
+                  </div>
+                )}
                 <div className="form-footer">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
@@ -184,7 +257,14 @@ export default function Home() {
                     <option value="other">Other</option>
                   </select>
                 </div>
-                <button type="submit" className="submit-btn secondary">Sign Up Free</button>
+                <button type="submit" className="submit-btn secondary" disabled={contractorSubmitting}>
+                  {contractorSubmitting ? 'Signing Up...' : 'Sign Up Free'}
+                </button>
+                {submitMessage && activeAudience === 'contractor' && (
+                  <div className={`submit-message ${submitMessage.type}`}>
+                    {submitMessage.text}
+                  </div>
+                )}
                 <div className="form-footer">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
