@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /master
+
+# Sitemap (add your sitemap URL here if you have one)
+# Sitemap: https://clrblt.com/sitemap.xml
