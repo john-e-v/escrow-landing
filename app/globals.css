@@ -328,6 +328,31 @@ body {
   background: var(--safety-yellow-dim);
 }
 
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.submit-message {
+  margin-top: 16px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.submit-message.success {
+  background: #d1fae5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.submit-message.error {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
 .form-footer {
   margin-top: 20px;
   padding-top: 20px;
