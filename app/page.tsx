@@ -92,7 +92,7 @@ export default function Home() {
         <div className="container hero-content">
           <div className="hero-badge">Escrow-protected payments for construction</div>
           <h1>Submit your project.<br />Get matched with contractors who <span className="highlight">accept escrow payments.</span></h1>
-          <p className="hero-subtitle">Your payment stays protected until the work is done right. Contractors get paid when milestones are met. Everyone wins.</p>
+          <p className="hero-subtitle">Your payment stays protected until the work is done right. Contractors get paid quickly when milestones are met. Everyone wins.</p>
 
           {/* Audience Toggle */}
           <div className="audience-toggle">
@@ -191,7 +191,7 @@ export default function Home() {
           <div className={`form-section ${activeAudience === 'contractor' ? 'active' : ''}`}>
             <div className="form-card">
               <h2>Join for free. Get free leads.</h2>
-              <p className="form-desc">Accept escrow payments and we&apos;ll send you qualified project leads in your area. No monthly fees, ever.</p>
+              <p className="form-desc">Agree to accept escrow payments (pay suppliers and vendors from the escrow account) and we&apos;ll send you qualified project leads in your area. No monthly fees, ever.</p>
               <form onSubmit={handleContractorSubmit}>
                 <div className="form-row">
                   <div className="form-group">
@@ -243,7 +243,7 @@ export default function Home() {
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                   </svg>
-                  No monthly fees. Pay only when you complete work.
+                  Skip delays. Get paid quickly when you complete work.
                 </div>
               </form>
             </div>
