@@ -467,10 +467,10 @@ export default function Home() {
                 </div>
                 <div className="price-line">
                   <span>Transaction fee</span>
-                  <span className="price-value">2.9%</span>
+                  <span className="price-value">0.28-3%</span>
                 </div>
               </div>
-              <p className="pricing-note">Transaction fee only applies when funds are released from escrow. Volume discounts available for high-volume contractors.</p>
+              <p className="pricing-note">Transaction fee only applies when funds are released from escrow. Fees are reduced with high-volume contractors and high-ticket contracts.</p>
             </div>
           </div>
         </div>
