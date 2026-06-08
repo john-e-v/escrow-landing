@@ -54,8 +54,14 @@ export default function Home() {
     }
   };
 
-  const handleContractorSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleContractorSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    const token = (window as typeof window & { grecaptcha?: { getResponse: () => string } }).grecaptcha?.getResponse();
+    if (!token) {
+      setSubmitMessage({ type: 'error', text: 'Please complete the CAPTCHA.' });
+      return;
+    }
 
     const form = e.currentTarget;
     const formData = new FormData(form);
@@ -66,10 +72,12 @@ export default function Home() {
       phone: formData.get('phone'),
       zip: formData.get('zip'),
       services: formData.get('services'),
+      recaptchaToken: token,
     };
 
-    setSubmitMessage({ type: 'success', text: "Welcome aboard! Check your email - we'll send you leads as projects come in for your area." });
+    setSubmitMessage({ type: 'success', text: "Welcome aboard! Check your email — we'll send you leads as projects come in for your area." });
     form.reset();
+    (window as typeof window & { grecaptcha?: { reset: () => void } }).grecaptcha?.reset();
 
     fetch('/api/submit-contractor', {
       method: 'POST',
@@ -240,6 +248,11 @@ export default function Home() {
                     <option value="other">Other</option>
                   </select>
                 </div>
+                <div
+                  className="g-recaptcha"
+                  data-sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                  style={{ marginBottom: 16 }}
+                ></div>
                 <button type="submit" className="submit-btn secondary">Sign Up Free</button>
                 {submitMessage && activeAudience === 'contractor' && (
                   <div className={`submit-message ${submitMessage.type}`}>
@@ -500,12 +513,13 @@ export default function Home() {
         <div className="container footer-content">
           <div className="footer-logo">CLRBL<span>T</span></div>
           <div className="footer-links">
-            <a href="#">How It Works</a>
-            <a href="#">For Contractors</a>
-            <a href="#">Pricing</a>
-            <a href="#">Contact</a>
-            <a href="#">Terms</a>
-            <a href="#">Privacy</a>
+            <a href="/#how-it-works">How It Works</a>
+            <a href="/#contractors">For Contractors</a>
+            <a href="/about">About</a>
+            <a href="/articles">Articles</a>
+            <a href="/contact">Contact</a>
+            <a href="/terms">Terms</a>
+            <a href="/privacy">Privacy</a>
           </div>
         </div>
       </footer>

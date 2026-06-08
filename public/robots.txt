@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /master
+
+Sitemap: https://www.clrblt.com/sitemap.xml

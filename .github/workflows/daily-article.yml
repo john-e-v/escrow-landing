@@ -1,0 +1,39 @@
+name: Daily Article Generator
+
+on:
+  schedule:
+    # 8am MST (UTC-7) = 15:03 UTC. Off-minute to avoid API rush-hour.
+    - cron: '3 15 * * *'
+  workflow_dispatch: # allow manual trigger from GitHub UI
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Anthropic SDK
+        run: npm install @anthropic-ai/sdk
+        working-directory: scripts
+
+      - name: Generate article
+        run: node scripts/generate-article.mjs
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Commit and push new article
+        run: |
+          git config user.name "CLRBLT Article Bot"
+          git config user.email "bot@clrblt.com"
+          git add data/articles.json app/articles/
+          git diff --staged --quiet && echo "No changes" || \
+            git commit -m "article: $(date -u +%Y-%m-%d) auto-generated" && git push
