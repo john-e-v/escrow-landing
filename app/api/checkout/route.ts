@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Stripe from 'stripe';
 import nodemailer from 'nodemailer';
+import { withDb } from '@/lib/db-optional';
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
@@ -81,6 +82,14 @@ export async function POST(request: NextRequest) {
       success_url: `${request.nextUrl.origin}/payment-success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${request.nextUrl.origin}/create`,
     });
+
+    // Persist the submission so it's a queryable, editable record rather
+    // than living only in the email above. No-ops until Postgres is attached.
+    await withDb((db) =>
+      db.submission.create({
+        data: { name, email, phone, zip, projectType, budget, description, stripeSessionId: session.id },
+      })
+    );
 
     return NextResponse.json({ url: session.url });
   } catch (err: unknown) {

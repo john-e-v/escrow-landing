@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Stripe from 'stripe';
 import nodemailer from 'nodemailer';
+import { withDb } from '@/lib/db-optional';
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
@@ -20,6 +21,13 @@ export async function POST(request: NextRequest) {
   if (event.type === 'checkout.session.completed') {
     const session = event.data.object as Stripe.Checkout.Session;
     const { name, email, phone, zip, projectType, budget, description } = session.metadata ?? {};
+
+    await withDb((db) =>
+      db.submission.updateMany({
+        where: { stripeSessionId: session.id },
+        data: { status: 'paid', amountPaidCents: session.amount_total ?? undefined },
+      })
+    );
 
     try {
       const transporter = nodemailer.createTransport({

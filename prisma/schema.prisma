@@ -1,0 +1,122 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Connection URLs live in prisma.config.ts (CLI) and lib/prisma.ts (runtime
+// adapter) — Prisma 7 no longer reads them from the schema file.
+datasource db {
+  provider = "postgresql"
+}
+
+// A single US address. Public/indexed layer (permits, assessor data) is
+// populated from licensed data providers or manual entry; the private
+// layer (PropertySystem, PropertyOwner) is owner-controlled.
+model Property {
+  id            String    @id @default(cuid())
+  streetAddress String
+  city          String
+  state         String
+  zip           String
+  county        String?
+  slug          String    @unique // e.g. "co/thornton/2847-ridgecrest-drive-80229"
+  lat           Float?
+  lng           Float?
+  yearBuilt     Int?
+  lotSizeSqft   Int?
+  heatedSqft    Int?
+  bedrooms      Int?
+  bathrooms     Float?
+  propertyType  String?
+  parcelNumber  String?
+  assessedValue Int?
+  lastSaleYear  Int?
+  dataSource    String?   // "attom" | "regrid" | "corelogic" | "manual"
+  dataSyncedAt  DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  permits     Permit[]
+  systems     PropertySystem[]
+  owners      PropertyOwner[]
+  submissions Submission[]
+
+  @@index([state, city, zip])
+}
+
+model Permit {
+  id             String    @id @default(cuid())
+  propertyId     String
+  property       Property  @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+  permitNumber   String?
+  permitType     String    // electrical | roofing | mechanical | addition | ...
+  description    String?
+  issuedDate     DateTime?
+  finaledDate    DateTime?
+  status         String    // issued | finaled | expired
+  valueCents     Int?
+  contractorName String?
+  source         String?   // e.g. "Adams County Building Division"
+  createdAt      DateTime  @default(now())
+
+  @@index([propertyId])
+}
+
+// Owner-documented system/appliance record — the long-game insurance data play.
+model PropertySystem {
+  id                String    @id @default(cuid())
+  propertyId        String
+  property          Property  @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+  category          String    // roof | hvac | water_heater | electrical_panel | appliance | plumbing | foundation | other
+  name              String    // e.g. "Kitchen Refrigerator", "Furnace"
+  manufacturer      String?
+  modelNumber       String?
+  serialNumber      String?
+  installedDate     DateTime?
+  warrantyExpiresAt DateTime?
+  notes             String?
+  photoUrls         String[]  @default([])
+  addedByEmail      String?
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+
+  @@index([propertyId])
+}
+
+// Claim request for a property's private layer. Verification is a manual
+// admin step for now rather than a full auth/session system.
+model PropertyOwner {
+  id          String    @id @default(cuid())
+  propertyId  String
+  property    Property  @relation(fields: [propertyId], references: [id], onDelete: Cascade)
+  email       String
+  name        String?
+  status      String    @default("pending") // pending | verified | rejected
+  requestedAt DateTime  @default(now())
+  verifiedAt  DateTime?
+
+  @@unique([propertyId, email])
+  @@index([propertyId])
+}
+
+// Persistent record of every homeowner project submission from /create.
+// Replaces "email is the only copy of this data" with a queryable, editable row.
+model Submission {
+  id              String    @id @default(cuid())
+  name            String
+  email           String
+  phone           String
+  zip             String
+  projectType     String
+  budget          String
+  description     String
+  status          String    @default("pending_payment") // pending_payment | paid | matched | closed
+  stripeSessionId String?   @unique
+  amountPaidCents Int?
+  propertyId      String?
+  property        Property? @relation(fields: [propertyId], references: [id])
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  @@index([email])
+  @@index([status])
+}
