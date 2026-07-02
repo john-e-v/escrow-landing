@@ -15,6 +15,10 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 
+// 16 sequential DDL statements over Neon's connection exceeded the default
+// 15s function timeout on the first attempt.
+export const maxDuration = 60;
+
 const STATEMENTS = [
   `CREATE SCHEMA IF NOT EXISTS "public"`,
   `CREATE TABLE "Property" (
