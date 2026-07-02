@@ -23,3 +23,27 @@ export function parsePropertySlug(slug: string) {
   const { street, zip } = parseAddressSlug(address ?? '');
   return { state, city, address, street, zip, cityName: titleCase(city ?? ''), stateCode: (state ?? '').toUpperCase() };
 }
+
+function slugifyPart(value: string) {
+  return value
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+// { streetAddress: "2847 Ridgecrest Drive", city: "Thornton", state: "CO", zip: "80229" }
+// -> "co/thornton/2847-ridgecrest-drive-80229"
+export function buildPropertySlug({
+  streetAddress,
+  city,
+  state,
+  zip,
+}: {
+  streetAddress: string;
+  city: string;
+  state: string;
+  zip: string;
+}) {
+  return [slugifyPart(state), slugifyPart(city), `${slugifyPart(streetAddress)}-${zip}`].join('/');
+}

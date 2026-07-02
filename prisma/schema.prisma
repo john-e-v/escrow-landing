@@ -105,6 +105,9 @@ model Submission {
   name            String
   email           String
   phone           String
+  streetAddress   String    @default("")
+  city            String    @default("")
+  state           String    @default("")
   zip             String
   projectType     String
   budget          String

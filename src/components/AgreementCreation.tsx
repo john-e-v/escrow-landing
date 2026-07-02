@@ -7,6 +7,9 @@ interface FormData {
   name: string;
   email: string;
   phone: string;
+  streetAddress: string;
+  city: string;
+  state: string;
   zip: string;
   projectType: string;
   budget: string;
@@ -18,6 +21,9 @@ export const AgreementCreation: React.FC = () => {
     name: '',
     email: '',
     phone: '',
+    streetAddress: '',
+    city: '',
+    state: '',
     zip: '',
     projectType: '',
     budget: '',
@@ -32,7 +38,8 @@ export const AgreementCreation: React.FC = () => {
 
   const isValid =
     formData.name && formData.email && formData.phone &&
-    formData.zip && formData.projectType && formData.budget && formData.description;
+    formData.streetAddress && formData.city && formData.state && formData.zip &&
+    formData.projectType && formData.budget && formData.description;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -96,13 +103,43 @@ export const AgreementCreation: React.FC = () => {
             />
             <input
               type="text"
-              name="zip"
-              value={formData.zip}
+              name="streetAddress"
+              value={formData.streetAddress}
               onChange={handleChange}
-              placeholder="Project ZIP Code"
+              placeholder="Project Street Address"
               required
               className={inputClass}
             />
+            <div className="grid grid-cols-3 gap-3">
+              <input
+                type="text"
+                name="city"
+                value={formData.city}
+                onChange={handleChange}
+                placeholder="City"
+                required
+                className={inputClass}
+              />
+              <input
+                type="text"
+                name="state"
+                value={formData.state}
+                onChange={handleChange}
+                placeholder="State"
+                required
+                maxLength={2}
+                className={inputClass}
+              />
+              <input
+                type="text"
+                name="zip"
+                value={formData.zip}
+                onChange={handleChange}
+                placeholder="ZIP Code"
+                required
+                className={inputClass}
+              />
+            </div>
             <select
               name="projectType"
               value={formData.projectType}

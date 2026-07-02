@@ -95,6 +95,7 @@ export default function Home() {
           <div className="nav-links">
             <a href="#how-it-works">How It Works</a>
             <a href="#contractors">For Contractors</a>
+            <a href="/property">Property Records</a>
             <a href="#" className="nav-cta">Get Started</a>
           </div>
         </div>

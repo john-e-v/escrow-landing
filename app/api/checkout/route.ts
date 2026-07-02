@@ -2,14 +2,15 @@ import { NextRequest, NextResponse } from 'next/server';
 import Stripe from 'stripe';
 import nodemailer from 'nodemailer';
 import { withDb } from '@/lib/db-optional';
+import { buildPropertySlug } from '@/lib/property';
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
 export async function POST(request: NextRequest) {
   try {
-    const { name, email, phone, projectType, budget, zip, description } = await request.json();
+    const { name, email, phone, streetAddress, city, state, projectType, budget, zip, description } = await request.json();
 
-    if (!name || !email || !phone || !zip || !projectType || !budget || !description) {
+    if (!name || !email || !phone || !streetAddress || !city || !state || !zip || !projectType || !budget || !description) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
@@ -29,7 +30,7 @@ export async function POST(request: NextRequest) {
             <tr><td style="padding:8px 12px;background:#f8fafc;font-weight:600">Name</td><td style="padding:8px 12px">${name}</td></tr>
             <tr><td style="padding:8px 12px;background:#f8fafc;font-weight:600">Email</td><td style="padding:8px 12px">${email}</td></tr>
             <tr><td style="padding:8px 12px;background:#f8fafc;font-weight:600">Phone</td><td style="padding:8px 12px">${phone}</td></tr>
-            <tr><td style="padding:8px 12px;background:#f8fafc;font-weight:600">ZIP</td><td style="padding:8px 12px">${zip}</td></tr>
+            <tr><td style="padding:8px 12px;background:#f8fafc;font-weight:600">Address</td><td style="padding:8px 12px">${streetAddress}, ${city}, ${state} ${zip}</td></tr>
             <tr><td style="padding:8px 12px;background:#f8fafc;font-weight:600">Project Type</td><td style="padding:8px 12px">${projectType}</td></tr>
             <tr><td style="padding:8px 12px;background:#f8fafc;font-weight:600">Budget</td><td style="padding:8px 12px">${budget}</td></tr>
             <tr><td style="padding:8px 12px;background:#f8fafc;font-weight:600">Description</td><td style="padding:8px 12px">${description}</td></tr>
@@ -74,6 +75,9 @@ export async function POST(request: NextRequest) {
         name,
         email,
         phone,
+        streetAddress,
+        city,
+        state,
         zip,
         projectType,
         budget,
@@ -84,12 +88,33 @@ export async function POST(request: NextRequest) {
     });
 
     // Persist the submission so it's a queryable, editable record rather
-    // than living only in the email above. No-ops until Postgres is attached.
-    await withDb((db) =>
-      db.submission.create({
-        data: { name, email, phone, zip, projectType, budget, description, stripeSessionId: session.id },
-      })
-    );
+    // than living only in the email above. Also upserts a Property for the
+    // submitted address and marks the submitter as a pending owner, so
+    // every project submission gets an address-specific page. No-ops until
+    // Postgres is attached.
+    await withDb(async (db) => {
+      const slug = buildPropertySlug({ streetAddress, city, state, zip });
+
+      const property = await db.property.upsert({
+        where: { slug },
+        update: {},
+        create: { slug, streetAddress, city, state, zip, dataSource: 'manual' },
+      });
+
+      await db.propertyOwner.upsert({
+        where: { propertyId_email: { propertyId: property.id, email } },
+        update: { name },
+        create: { propertyId: property.id, email, name },
+      });
+
+      return db.submission.create({
+        data: {
+          name, email, phone, streetAddress, city, state, zip, projectType, budget, description,
+          stripeSessionId: session.id,
+          propertyId: property.id,
+        },
+      });
+    });
 
     return NextResponse.json({ url: session.url });
   } catch (err: unknown) {
