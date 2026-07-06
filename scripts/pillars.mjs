@@ -172,20 +172,44 @@ CTA: clrblt.com/create for a homeowner-angled bridge, clrblt.com/master for a co
   },
 };
 
-// Indexed by day-1, i.e. Monday(1)..Saturday(6). Sunday(0) is handled
-// separately below, alternating between Pillar G and a Bridge post (roughly
-// biweekly) rather than running the Bridge every single week — the
-// strategy's "2-3x/week" cadence for the bridge is a fast-follow once the
-// core rotation is proven, not part of this first build.
-const ROTATION = ['B', 'E', 'C', 'F', 'D', 'A'];
+// Fixed weekly order, Monday-first: Mon=B, Tue=E, Wed=C, Thu=F, Fri=D, Sat=A,
+// Sun=G (alternating with the Bridge format on a biweekly cadence — see
+// below). 3 posts/day x 7 days = 21 posts/week = exactly 3 full passes
+// through these 7 pillars, so every pillar still gets even weekly coverage.
+const ORDER = ['B', 'E', 'C', 'F', 'D', 'A', 'G'];
+
+function bridgeOrG(date) {
+  // ISO week parity: even week -> Bridge, odd week -> Pillar G.
+  const oneJan = new Date(date.getFullYear(), 0, 1);
+  const week = Math.ceil(((date - oneJan) / 86400000 + oneJan.getDay() + 1) / 7);
+  return week % 2 === 0 ? 'BRIDGE' : 'G';
+}
 
 export function pillarForDate(date = new Date()) {
   const day = date.getDay(); // 0 = Sunday .. 6 = Saturday
-  if (day === 0) {
-    // ISO week parity: even week -> Bridge, odd week -> Pillar G.
-    const oneJan = new Date(date.getFullYear(), 0, 1);
-    const week = Math.ceil(((date - oneJan) / 86400000 + oneJan.getDay() + 1) / 7);
-    return week % 2 === 0 ? PILLARS.BRIDGE : PILLARS.G;
+  if (day === 0) return PILLARS[bridgeOrG(date)];
+  return PILLARS[ORDER[day - 1]];
+}
+
+// Today's scheduled pillar plus the next two in the fixed weekly order
+// (wrapping into next week past Saturday). Sunday's own slot still
+// alternates Bridge/G by week parity; the two lookahead slots it wraps into
+// (next week's Monday, Tuesday) are always B, E regardless.
+export function pillarsForDate(date = new Date(), count = 3) {
+  const day = date.getDay(); // 0 = Sunday .. 6 = Saturday
+  const mondayFirst = day === 0 ? 6 : day - 1; // 0 = Monday .. 6 = Sunday
+  const letters = [];
+  for (let i = 0; i < count; i++) {
+    const slot = (mondayFirst + i) % 7;
+    if (slot === 6) {
+      // This slot's actual calendar date may be a different week than
+      // `date` (e.g. Friday looking ahead 2 days to Sunday) — use that
+      // slot's own date for the week-parity check, not today's.
+      const slotDate = new Date(date.getTime() + i * 86400000);
+      letters.push(bridgeOrG(slotDate));
+    } else {
+      letters.push(ORDER[slot]);
+    }
   }
-  return PILLARS[ROTATION[day - 1]];
+  return letters.map((letter) => PILLARS[letter]);
 }
