@@ -2,7 +2,63 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { prisma } from '@/lib/prisma';
 import { titleCase, parseAddressSlug } from '@/lib/property';
+import { fetchAdamsCountyProperty, ADAMS_COUNTY_SOURCE } from '@/lib/data-sources/adams-county-co';
 import '../../../styles.css';
+
+const SYNC_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
+
+// Live-syncs from a county data source when coverage exists (today: Adams
+// County, CO) and the cached copy is missing or older than a week. Runs at
+// most once per property per week — every other view is a plain DB read.
+async function syncFromCountyIfNeeded(
+  slug: string,
+  existing: Awaited<ReturnType<typeof loadProperty>>,
+  streetAddress: string,
+  state: string
+) {
+  if (!prisma || state.toUpperCase() !== 'CO') return existing;
+  const stale = !existing?.dataSyncedAt || Date.now() - existing.dataSyncedAt.getTime() > SYNC_MAX_AGE_MS;
+  if (!stale) return existing;
+
+  const result = await fetchAdamsCountyProperty(streetAddress);
+  if (!result) return existing;
+
+  const [stateSlug, citySlug] = slug.split('/');
+  const [, , addressSlug] = slug.split('/');
+  const parsed = parseAddressSlug(addressSlug);
+
+  const property = await prisma.property.upsert({
+    where: { slug },
+    create: {
+      slug,
+      streetAddress,
+      city: titleCase(citySlug),
+      state: stateSlug.toUpperCase(),
+      zip: parsed.zip ?? '',
+      parcelNumber: result.parcelNumber,
+      lotSizeSqft: result.lotSizeSqft,
+      assessedValue: result.assessedValue,
+      dataSource: ADAMS_COUNTY_SOURCE,
+      dataSyncedAt: new Date(),
+    },
+    update: {
+      parcelNumber: result.parcelNumber,
+      lotSizeSqft: result.lotSizeSqft,
+      assessedValue: result.assessedValue,
+      dataSource: ADAMS_COUNTY_SOURCE,
+      dataSyncedAt: new Date(),
+    },
+  });
+
+  if (result.permits.length > 0) {
+    await prisma.permit.deleteMany({ where: { propertyId: property.id, source: ADAMS_COUNTY_SOURCE } });
+    await prisma.permit.createMany({
+      data: result.permits.map((p) => ({ ...p, propertyId: property.id })),
+    });
+  }
+
+  return loadProperty(slug);
+}
 
 interface PageParams {
   state: string;
@@ -23,7 +79,7 @@ const PERMIT_ICONS: Record<string, string> = {
   plumbing: '🚰',
 };
 
-async function getProperty(slug: string) {
+async function loadProperty(slug: string) {
   if (!prisma) return null;
   try {
     return await prisma.property.findUnique({
@@ -35,6 +91,16 @@ async function getProperty(slug: string) {
   } catch (err) {
     console.error('Failed to load property:', err);
     return null;
+  }
+}
+
+async function getProperty(slug: string, streetAddressGuess: string, state: string) {
+  const existing = await loadProperty(slug);
+  try {
+    return await syncFromCountyIfNeeded(slug, existing, existing?.streetAddress ?? streetAddressGuess, state);
+  } catch (err) {
+    console.error('County sync failed, falling back to cached record:', err);
+    return existing;
   }
 }
 
@@ -65,10 +131,10 @@ function displayAddressFor(
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { state, city, address } = await params;
   const slug = `${state}/${city}/${address}`;
-  const property = await getProperty(slug);
   const parsed = parseAddressSlug(address);
   const cityName = titleCase(city);
   const stateCode = state.toUpperCase();
+  const property = await getProperty(slug, parsed.street, stateCode);
   const displayAddress = displayAddressFor(property, parsed, cityName, stateCode);
   const permitCount = property?.permits.length ?? 0;
 
@@ -87,10 +153,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function PropertyPage({ params }: PageProps) {
   const { state, city, address } = await params;
   const slug = `${state}/${city}/${address}`;
-  const property = await getProperty(slug);
   const parsed = parseAddressSlug(address);
   const cityName = titleCase(city);
   const stateCode = state.toUpperCase();
+  const property = await getProperty(slug, parsed.street, stateCode);
   const displayAddress = displayAddressFor(property, parsed, cityName, stateCode);
   const zip = property?.zip ?? parsed.zip;
   const permits = property?.permits ?? [];
