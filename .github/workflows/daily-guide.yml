@@ -1,9 +1,10 @@
-name: Daily Article Generator
+name: Daily Guide Generator
 
 on:
   schedule:
-    # 8am MST (UTC-7) = 15:03 UTC. Off-minute to avoid API rush-hour.
-    - cron: '3 15 * * *'
+    # 8:13am MST (UTC-7) = 15:13 UTC. Offset from daily-article.yml (15:03)
+    # to avoid both hitting the Anthropic API in the same minute.
+    - cron: '13 15 * * *'
   workflow_dispatch: # allow manual trigger from GitHub UI
 
 env:
@@ -28,8 +29,8 @@ jobs:
         run: npm install @anthropic-ai/sdk
         working-directory: scripts
 
-      - name: Generate article
-        run: node scripts/generate-article.mjs
+      - name: Generate guide
+        run: node scripts/generate-guide.mjs
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
@@ -41,10 +42,10 @@ jobs:
           FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
           FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
 
-      - name: Commit and push new article
+      - name: Commit and push new guide
         run: |
-          git config user.name "CLRBLT Article Bot"
+          git config user.name "CLRBLT Guide Bot"
           git config user.email "bot@clrblt.com"
-          git add data/articles.json app/articles/
+          git add data/guides.json app/guides/
           git diff --staged --quiet && echo "No changes" || \
-            git commit -m "article: $(date -u +%Y-%m-%d) auto-generated" && git push
+            git commit -m "guide: $(date -u +%Y-%m-%d) auto-generated" && git push
