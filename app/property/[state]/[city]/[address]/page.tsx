@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { cache } from 'react';
 import Link from 'next/link';
 import { prisma } from '@/lib/prisma';
 import { titleCase, parseAddressSlug } from '@/lib/property';
@@ -94,7 +95,11 @@ async function loadProperty(slug: string) {
   }
 }
 
-async function getProperty(slug: string, streetAddressGuess: string, state: string) {
+// cache() dedupes this across generateMetadata and the page component within
+// a single request — without it, both call this independently and race each
+// other's county sync (observed: one call's permits get wiped by the other's
+// concurrent delete-then-recreate).
+const getProperty = cache(async function getProperty(slug: string, streetAddressGuess: string, state: string) {
   const existing = await loadProperty(slug);
   try {
     return await syncFromCountyIfNeeded(slug, existing, existing?.streetAddress ?? streetAddressGuess, state);
@@ -102,7 +107,7 @@ async function getProperty(slug: string, streetAddressGuess: string, state: stri
     console.error('County sync failed, falling back to cached record:', err);
     return existing;
   }
-}
+});
 
 async function getNearby(zip: string | undefined, excludeSlug: string) {
   if (!prisma || !zip) return [];
