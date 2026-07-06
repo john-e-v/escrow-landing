@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { prisma } from '@/lib/prisma';
 import { titleCase, parseAddressSlug } from '@/lib/property';
-import './styles.css';
+import '../../../styles.css';
 
 interface PageParams {
   state: string;
