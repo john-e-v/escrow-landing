@@ -209,6 +209,7 @@ export default function AboutPage() {
           <div className="footer-links">
             <a href="/about">About</a>
             <a href="/articles">Articles</a>
+            <a href="/guides">Guides</a>
             <a href="/contact">Contact</a>
             <a href="/terms">Terms</a>
             <a href="/privacy">Privacy</a>

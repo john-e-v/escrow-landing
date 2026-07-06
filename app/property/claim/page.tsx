@@ -54,6 +54,7 @@ export default async function ClaimPropertyPage({ searchParams }: PageProps) {
           <div className="footer-logo">CLRB<span>LT</span></div>
           <div className="footer-links">
             <Link href="/create">How It Works</Link>
+            <Link href="/guides">Guides</Link>
             <Link href="/terms">Terms</Link>
             <Link href="/privacy">Privacy</Link>
           </div>

@@ -454,6 +454,7 @@ export default async function PropertyPage({ params }: PageProps) {
           <div className="footer-links">
             <Link href="/create">How It Works</Link>
             <Link href="/master">For Contractors</Link>
+            <Link href="/guides">Guides</Link>
             <Link href="/terms">Terms</Link>
             <Link href="/privacy">Privacy</Link>
           </div>
