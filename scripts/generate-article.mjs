@@ -31,7 +31,7 @@ console.log('Generating article plan...');
 
 const planResponse = await client.messages.create({
   model: 'claude-opus-4-8',
-  max_tokens: 1024,
+  max_tokens: 1536,
   messages: [{
     role: 'user',
     content: `You write articles for CLRBLT (clrblt.com), a platform that connects homeowners with contractors who use escrow-protected payments.
