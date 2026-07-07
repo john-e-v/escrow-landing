@@ -34,5 +34,32 @@
     "tag": "Vetting & Protection",
     "pillar": "C",
     "audience": "homeowner"
+  },
+  {
+    "slug": "change-order-payment-protection",
+    "title": "How to Get Paid for Change Orders Without Chasing the Client",
+    "date": "July 2026",
+    "excerpt": "Change orders are where profit quietly leaks out of a job. Learn how to structure mid-project scope changes so the money is committed before the work starts — not argued over after it's done.",
+    "tag": "Contractor Ops",
+    "pillar": "E",
+    "audience": "contractor"
+  },
+  {
+    "slug": "questions-to-ask-contractor-before-hiring",
+    "title": "12 Questions to Ask a Contractor Before You Sign Anything",
+    "date": "July 2026",
+    "excerpt": "Copy-paste these 12 questions and send them to any contractor before you sign an estimate or hand over a deposit. Their answers—and how fast they give them—tell you everything about whether this job goes smoothly or sideways.",
+    "tag": "Before You Hire",
+    "pillar": "C",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "managing-multiple-subs-one-job",
+    "title": "How to Manage Multiple Subs on One Job Without Losing the Thread",
+    "date": "July 2026",
+    "excerpt": "Running four subs on one job means four schedules, four invoices, and four ways for accountability to slip. Here's how to structure the coordination so nothing falls through the cracks—and where a purpose-built approach beats stitching together five apps.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
   }
 ]
