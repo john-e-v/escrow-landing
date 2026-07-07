@@ -61,5 +61,32 @@
     "tag": "Contractor Ops",
     "pillar": "F",
     "audience": "contractor"
+  },
+  {
+    "slug": "50-percent-down-payment-myth",
+    "title": "Why 50% Down Doesn't Protect You the Way You Think",
+    "date": "July 2026",
+    "excerpt": "A big deposit feels like protection, but it front-loads your cash and leaves the back half of the job exposed. The real fix is tying money to completed milestones, not to the calendar or a single upfront lump.",
+    "tag": "Payment Structure",
+    "pillar": "E",
+    "audience": "contractor"
+  },
+  {
+    "slug": "do-i-need-permit-project",
+    "title": "Do You Need a Permit? A Room-by-Room Checklist Before You Hire",
+    "date": "July 2026",
+    "excerpt": "Most homeowners find out they needed a permit only after an inspector shuts the job down or a buyer's agent flags it at closing. This checklist tells you exactly which projects require a permit, who's supposed to pull it, and how to confirm before any work starts.",
+    "tag": "Permits & Vetting",
+    "pillar": "C",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "all-in-one-vs-best-of-breed-stack",
+    "title": "All-in-One vs. Best-of-Breed: What Contractors Actually Lose With Bundled Software",
+    "date": "July 2026",
+    "excerpt": "All-in-one platforms promise one login for CRM, scheduling, invoicing, and payments — but the convenience hides real switching costs and weak spots. Here's an honest breakdown of when to bundle, when to unbundle, and the one piece worth keeping outside your walls.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
   }
 ]
