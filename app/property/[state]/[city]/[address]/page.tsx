@@ -4,27 +4,53 @@ import Link from 'next/link';
 import { prisma } from '@/lib/prisma';
 import { titleCase, parseAddressSlug } from '@/lib/property';
 import { fetchAdamsCountyProperty, ADAMS_COUNTY_SOURCE } from '@/lib/data-sources/adams-county-co';
+import { fetchBoulderCountyProperty, BOULDER_COUNTY_SOURCE } from '@/lib/data-sources/boulder-county-co';
+import { fetchDenverProperty, DENVER_SOURCE } from '@/lib/data-sources/denver-co';
 import '../../../styles.css';
 
 const SYNC_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 
-// Live-syncs from a county data source when coverage exists (today: Adams
-// County, CO) and the cached copy is missing or older than a week. Runs at
-// most once per property per week — every other view is a plain DB read.
+// Coverage dispatch by city slug, not just state — "CO" alone doesn't mean
+// covered, since each adapter is scoped to one specific county/jurisdiction.
+// Add a new adapter's cities here as coverage expands.
+const CITY_TO_ADAPTER: Record<string, { fetch: (streetAddress: string) => ReturnType<typeof fetchAdamsCountyProperty>; source: string }> = {
+  // Adams County, CO
+  thornton: { fetch: fetchAdamsCountyProperty, source: ADAMS_COUNTY_SOURCE },
+  brighton: { fetch: fetchAdamsCountyProperty, source: ADAMS_COUNTY_SOURCE },
+  'commerce-city': { fetch: fetchAdamsCountyProperty, source: ADAMS_COUNTY_SOURCE },
+  northglenn: { fetch: fetchAdamsCountyProperty, source: ADAMS_COUNTY_SOURCE },
+  'federal-heights': { fetch: fetchAdamsCountyProperty, source: ADAMS_COUNTY_SOURCE },
+
+  // Boulder County, CO
+  boulder: { fetch: fetchBoulderCountyProperty, source: BOULDER_COUNTY_SOURCE },
+  lafayette: { fetch: fetchBoulderCountyProperty, source: BOULDER_COUNTY_SOURCE },
+  louisville: { fetch: fetchBoulderCountyProperty, source: BOULDER_COUNTY_SOURCE },
+  superior: { fetch: fetchBoulderCountyProperty, source: BOULDER_COUNTY_SOURCE },
+  nederland: { fetch: fetchBoulderCountyProperty, source: BOULDER_COUNTY_SOURCE },
+  longmont: { fetch: fetchBoulderCountyProperty, source: BOULDER_COUNTY_SOURCE }, // Longmont spans Boulder/Weld county lines; Weld-side addresses won't match
+
+  // City and County of Denver, CO (consolidated city-county government)
+  denver: { fetch: fetchDenverProperty, source: DENVER_SOURCE },
+};
+
+// Live-syncs from a county data source when coverage exists for that city
+// and the cached copy is missing or older than a week. Runs at most once
+// per property per week — every other view is a plain DB read.
 async function syncFromCountyIfNeeded(
   slug: string,
   existing: Awaited<ReturnType<typeof loadProperty>>,
   streetAddress: string,
   state: string
 ) {
-  if (!prisma || state.toUpperCase() !== 'CO') return existing;
+  const [stateSlug, citySlug] = slug.split('/');
+  const adapter = state.toUpperCase() === 'CO' ? CITY_TO_ADAPTER[citySlug] : undefined;
+  if (!prisma || !adapter) return existing;
   const stale = !existing?.dataSyncedAt || Date.now() - existing.dataSyncedAt.getTime() > SYNC_MAX_AGE_MS;
   if (!stale) return existing;
 
-  const result = await fetchAdamsCountyProperty(streetAddress);
+  const result = await adapter.fetch(streetAddress);
   if (!result) return existing;
 
-  const [stateSlug, citySlug] = slug.split('/');
   const [, , addressSlug] = slug.split('/');
   const parsed = parseAddressSlug(addressSlug);
 
@@ -39,20 +65,20 @@ async function syncFromCountyIfNeeded(
       parcelNumber: result.parcelNumber,
       lotSizeSqft: result.lotSizeSqft,
       assessedValue: result.assessedValue,
-      dataSource: ADAMS_COUNTY_SOURCE,
+      dataSource: adapter.source,
       dataSyncedAt: new Date(),
     },
     update: {
       parcelNumber: result.parcelNumber,
       lotSizeSqft: result.lotSizeSqft,
       assessedValue: result.assessedValue,
-      dataSource: ADAMS_COUNTY_SOURCE,
+      dataSource: adapter.source,
       dataSyncedAt: new Date(),
     },
   });
 
   if (result.permits.length > 0) {
-    await prisma.permit.deleteMany({ where: { propertyId: property.id, source: ADAMS_COUNTY_SOURCE } });
+    await prisma.permit.deleteMany({ where: { propertyId: property.id, source: adapter.source } });
     await prisma.permit.createMany({
       data: result.permits.map((p) => ({ ...p, propertyId: property.id })),
     });
