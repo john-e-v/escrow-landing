@@ -88,5 +88,32 @@
     "tag": "Contractor Ops",
     "pillar": "F",
     "audience": "contractor"
+  },
+  {
+    "slug": "verify-contractor-references-checklist",
+    "title": "How to Check a Contractor's References (The 6 Questions That Actually Matter)",
+    "date": "July 2026",
+    "excerpt": "Most homeowners call references and ask 'were you happy?'—which tells you nothing. This checklist gives you the exact six questions that surface hidden problems, plus what to do when a contractor 'can't find' any recent references.",
+    "tag": "Before You Hire",
+    "pillar": "C",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "spreadsheet-vs-purpose-built-change-orders",
+    "title": "Change Order Tracking: Spreadsheet vs. Purpose-Built Software",
+    "date": "July 2026",
+    "excerpt": "A spreadsheet handles change orders fine until a job hits its third revision and someone loses the thread. Here's an honest look at when a spreadsheet is enough, when purpose-built software earns its cost, and where both leave you exposed on payment.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
+  },
+  {
+    "slug": "kitchen-remodel-timeline-blown-out",
+    "title": "Why Your Kitchen Remodel Took 4 Months Instead of 6 Weeks",
+    "date": "July 2026",
+    "excerpt": "The 6-week kitchen quote is real on paper and fictional in practice. Cabinet lead times, appliance backorders, and the domino effect of a single delayed inspection turn a six-week job into a four-month kitchen-free household.",
+    "tag": "Timeline & Delays",
+    "pillar": "D",
+    "audience": "homeowner"
   }
 ]
