@@ -79,9 +79,13 @@ export async function fetchDenverProperty(streetAddress: string): Promise<County
     if (parcels.length === 0) return null;
     const schednum = parcels[0].SCHEDNUM;
 
+    // Joined by address, not SCHEDNUM: schedule numbers get reassigned when
+    // a parcel is re-platted/subdivided (common right after new
+    // construction), so a permit filed under an earlier schedule number
+    // would silently disappear if matched on SCHEDNUM alone.
     const permitRows = await arcgisQuery(
       `${BASE}/ODC_DEV_RESIDENTIALCONSTPERMIT_P/FeatureServer/316`,
-      `SCHEDNUM='${schednum}'`,
+      `ADDRESS_NUMBER='${houseNumber}' AND UPPER(ADDRESS_STREETNAME) LIKE '%${streetNameGuess}%'`,
       'PERMIT_NUM,CLASS,DATE_ISSUED,FINAL_DATE,CANCEL'
     ).catch(() => []);
 
