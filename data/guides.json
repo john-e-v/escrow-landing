@@ -117,12 +117,12 @@
     "audience": "homeowner"
   },
   {
-    "slug": "own-your-ai-outsource-your-escrow",
+    "slug": "own-your-ai-not-your-escrow",
     "title": "Every Company Will Own Its AI. No Company Can Own Its Escrow.",
     "date": "July 2026",
-    "excerpt": "Enterprise AI is moving in-house, and that's probably right. Escrow cannot follow: the moment a party holds its own funds, it stops being escrow. The future stack owns its intelligence and outsources its trust.",
-    "tag": "Technology & the Future",
-    "pillar": null,
-    "audience": "both"
+    "excerpt": "Enterprise AI is moving in-house, and trust should be the cornerstone everything else gets built around. Escrow is the one exception: the live proof of that trust can't be built by either side of the deal.",
+    "tag": "Contractor Ops",
+    "pillar": "E",
+    "audience": "contractor"
   }
 ]
