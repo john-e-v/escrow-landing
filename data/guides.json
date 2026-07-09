@@ -124,5 +124,32 @@
     "tag": "Contractor Ops",
     "pillar": "E",
     "audience": "contractor"
+  },
+  {
+    "slug": "contractor-crm-job-scoping-gaps",
+    "title": "What Most Contractor CRMs Get Wrong About Job Scoping",
+    "date": "July 2026",
+    "excerpt": "Most contractor CRMs treat a job as a static record you fill in once, but real scopes shift the moment demo starts. Here's where generic CRMs break down on scoping, and how to structure a stack that keeps scope, subs, and payment tied together.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
+  },
+  {
+    "slug": "deposit-material-cost-spike-quote",
+    "title": "Why Your Contractor's Quote Expired Before the Job Even Started",
+    "date": "July 2026",
+    "excerpt": "You signed a quote in March, but the job didn't start until June, and suddenly lumber costs $4,200 more. The quote was never locked; it was a snapshot with a shelf life nobody explained to you. Here's how material price volatility quietly rewrites your budget.",
+    "tag": "Cost & ROI",
+    "pillar": "D",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "deck-worth-it-resale-value",
+    "title": "Is a Deck Worth It? Cost, Resale Value, and When It Backfires",
+    "date": "July 2026",
+    "excerpt": "A wood deck returns most of its cost at resale — but only if you keep it simple and sized to the house. Composite and elaborate builds tell a different story once you run the actual numbers.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
   }
 ]
