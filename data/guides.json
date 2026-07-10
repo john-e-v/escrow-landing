@@ -151,5 +151,32 @@
     "tag": "Cost & ROI",
     "pillar": "A",
     "audience": "homeowner"
+  },
+  {
+    "slug": "why-tile-job-failed-early",
+    "title": "Why Your New Tile Floor Cracked in Six Months (And Who Actually Pays)",
+    "date": "July 2026",
+    "excerpt": "A homeowner paid $8,400 for a new tile floor that cracked along a full room within six months. The failure wasn't the tile — it was a skipped subfloor step nobody was paid to verify, and by then the contractor was long gone.",
+    "tag": "Project Failures",
+    "pillar": "D",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "solar-panels-worth-it-2026",
+    "title": "Are Solar Panels Worth It in 2026? Cost, Payback, and When They Don't Pay Off",
+    "date": "July 2026",
+    "excerpt": "Solar panels are worth it in most cases—but only if you own your home for at least 8 more years and your utility rates are above the national average. This breakdown covers the real payback math and the two conditions that flip the verdict.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "photo-documentation-checklist-every-job",
+    "title": "The Daily Photo Log That Wins Disputes: What to Shoot on Every Job",
+    "date": "July 2026",
+    "excerpt": "A time-stamped photo log is the cheapest liability insurance you'll ever carry. This is the exact shot list and captioning script to run on every job, starting your next site visit.",
+    "tag": "Documentation",
+    "pillar": "G",
+    "audience": "contractor"
   }
 ]
