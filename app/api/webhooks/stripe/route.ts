@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import Stripe from 'stripe';
 import nodemailer from 'nodemailer';
 import { withDb } from '@/lib/db-optional';
+import { createPostHogClient } from '@/lib/posthog-server';
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
@@ -21,6 +22,26 @@ export async function POST(request: NextRequest) {
   if (event.type === 'checkout.session.completed') {
     const session = event.data.object as Stripe.Checkout.Session;
     const { name, email, phone, zip, projectType, budget, description } = session.metadata ?? {};
+
+    try {
+      const posthog = createPostHogClient();
+      if (posthog) {
+        posthog.capture({
+          distinctId: email ?? session.customer_details?.email ?? session.id,
+          event: 'project_submission_paid',
+          properties: {
+            amount_cents: session.amount_total,
+            project_type: projectType,
+            budget,
+            zip,
+            stripe_session_id: session.id,
+          },
+        });
+        await posthog.shutdown();
+      }
+    } catch (posthogErr) {
+      console.error('PostHog capture failed:', posthogErr);
+    }
 
     await withDb((db) =>
       db.submission.updateMany({

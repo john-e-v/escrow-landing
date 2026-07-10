@@ -1,12 +1,20 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import posthog from 'posthog-js';
 
 export default function Home() {
   const [activeAudience, setActiveAudience] = useState<'homeowner' | 'contractor'>('homeowner');
   const [scrolled, setScrolled] = useState(false);
   const [submitMessage, setSubmitMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const submissionStarted = useRef(false);
+
+  const handleFormInteraction = () => {
+    if (submissionStarted.current) return;
+    submissionStarted.current = true;
+    posthog.capture('submission_started');
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,6 +45,12 @@ export default function Home() {
       budget: formData.get('budget'),
       description: formData.get('description'),
     };
+
+    posthog.capture('checkout_initiated', {
+      project_type: data.projectType,
+      budget: data.budget,
+      zip: data.zip,
+    });
 
     try {
       const res = await fetch('/api/checkout', {
@@ -129,7 +143,7 @@ export default function Home() {
             <div className="form-card">
               <h2>Tell us about your project</h2>
               <p className="form-desc">We&apos;ll connect you with contractors in your area who accept escrow payments.</p>
-              <form onSubmit={handleProjectSubmit}>
+              <form onSubmit={handleProjectSubmit} onFocusCapture={handleFormInteraction}>
                 <div className="form-row">
                   <div className="form-group">
                     <label htmlFor="name">Your Name</label>
