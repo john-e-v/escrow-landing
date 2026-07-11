@@ -178,5 +178,32 @@
     "tag": "Documentation",
     "pillar": "G",
     "audience": "contractor"
+  },
+  {
+    "slug": "finished-basement-worth-it-resale",
+    "title": "Is Finishing Your Basement Worth It? Cost, ROI, and When It Doesn't Pay",
+    "date": "July 2026",
+    "excerpt": "Finishing a basement returns about 70% of its cost at resale — decent, but not the near-100% you'll hear from contractors. The verdict flips fast if you have moisture issues or your ceilings sit below 7 feet, where you're funding a project buyers will discount.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "sign-off-form-completed-work",
+    "title": "The Sign-Off Form That Ends 'I Never Approved That' Disputes",
+    "date": "July 2026",
+    "excerpt": "The single hardest dispute to win is the one where a client claims they never approved a phase of work. This is the copy-paste sign-off form you hand over at the end of every milestone so approval is documented before you move on.",
+    "tag": "Documentation",
+    "pillar": "G",
+    "audience": "contractor"
+  },
+  {
+    "slug": "window-replacement-cost-2026",
+    "title": "How Much Does Window Replacement Cost in 2026?",
+    "date": "July 2026",
+    "excerpt": "Replacing windows runs $450 to $1,600 per window installed in 2026, meaning a full-home job of 15 windows lands between $8,000 and $24,000. The spread comes down to frame material, glass package, and whether your openings need reframing.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
   }
 ]
