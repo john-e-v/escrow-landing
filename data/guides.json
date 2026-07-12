@@ -205,5 +205,32 @@
     "tag": "Cost & Timeline",
     "pillar": "B",
     "audience": "homeowner"
+  },
+  {
+    "slug": "contract-clauses-avoid-disputes",
+    "title": "7 Contract Clauses That Stop Disputes Before They Start",
+    "date": "July 2026",
+    "excerpt": "Most contractor disputes trace back to a clause that was never in the contract. Here are seven copy-paste clauses—payment triggers, delay handling, and material substitutions—you can add to your next agreement today.",
+    "tag": "Contract Templates",
+    "pillar": "G",
+    "audience": "contractor"
+  },
+  {
+    "slug": "hardwood-floor-refinishing-cost-2026",
+    "title": "How Much Does It Cost to Refinish Hardwood Floors in 2026?",
+    "date": "July 2026",
+    "excerpt": "Refinishing hardwood floors runs $3 to $8 per square foot in 2026, or $1,100 to $2,900 for a typical room. This guide breaks down what pushes you toward the high end and how long you'll be locked out of the room.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "client-disputes-invoice-after-completion",
+    "title": "What to Do When a Client Disputes the Invoice After the Job's Done",
+    "date": "July 2026",
+    "excerpt": "The dispute you get after final walkthrough is the hardest to win because the leverage is gone. Here's how to structure payment so the money is already committed before the argument starts.",
+    "tag": "Contractor Ops",
+    "pillar": "E",
+    "audience": "contractor"
   }
 ]
