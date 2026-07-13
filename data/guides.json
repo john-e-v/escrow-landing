@@ -232,5 +232,32 @@
     "tag": "Contractor Ops",
     "pillar": "E",
     "audience": "contractor"
+  },
+  {
+    "slug": "hvac-replacement-cost-2026",
+    "title": "How Much Does a New HVAC System Cost in 2026?",
+    "date": "July 2026",
+    "excerpt": "A full HVAC replacement runs $7,000 to $16,000 in 2026, with heat pump and high-efficiency systems pushing past $20,000. The spread comes down to system type, ductwork condition, home size, and how your region prices refrigerant compliance.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "escrow-vs-deposit-contractor-protection",
+    "title": "Escrow vs. Deposit: Which One Actually Protects You From Non-Payment?",
+    "date": "July 2026",
+    "excerpt": "A deposit is money you hold and hope covers you if the client walks. Escrow is money already committed to the job before you lift a hammer. This breaks down the operational difference and why one structurally prevents non-payment while the other just delays it.",
+    "tag": "Payments & Escrow",
+    "pillar": "E",
+    "audience": "contractor"
+  },
+  {
+    "slug": "verify-contractor-bond-status",
+    "title": "How to Verify a Contractor's Bond (And Why It Matters More Than License)",
+    "date": "July 2026",
+    "excerpt": "A license proves a contractor passed a test; a bond means someone will actually pay if they walk off your job. Here's exactly how to check bond status, request the bond number, and confirm the coverage amount before you sign anything.",
+    "tag": "Before You Hire",
+    "pillar": "C",
+    "audience": "homeowner"
   }
 ]
