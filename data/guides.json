@@ -259,5 +259,32 @@
     "tag": "Before You Hire",
     "pillar": "C",
     "audience": "homeowner"
+  },
+  {
+    "slug": "client-ghosting-before-final-payment",
+    "title": "What to Do the Moment a Client Goes Quiet Before Final Payment",
+    "date": "July 2026",
+    "excerpt": "A client who stops responding before the last payment is following a predictable pattern, and your response window is smaller than you think. Here's the exact sequence to run before the silence hardens into a dispute — and the structure that removes the leverage they're counting on.",
+    "tag": "Contractor Ops",
+    "pillar": "E",
+    "audience": "contractor"
+  },
+  {
+    "slug": "read-contractor-estimate-line-items",
+    "title": "How to Read a Contractor's Estimate: The Line Items That Reveal a Bad Bid",
+    "date": "July 2026",
+    "excerpt": "A vague estimate isn't a convenience — it's a warning sign. This checklist walks you through the exact line items a real estimate should include, and how to spot the padding, dodges, and missing scope before you sign.",
+    "tag": "Before You Hire",
+    "pillar": "C",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "true-cost-payments-across-multiple-apps",
+    "title": "The Real Cost of Managing Payments Across 4 Different Apps",
+    "date": "July 2026",
+    "excerpt": "Most contractors run invoicing, deposits, milestone billing, and final payment through separate tools that don't talk to each other. This teardown counts the hidden hours, reconciliation errors, and dispute exposure that stack up when your money moves through four apps instead of one.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
   }
 ]
