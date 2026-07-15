@@ -286,5 +286,32 @@
     "tag": "Contractor Ops",
     "pillar": "F",
     "audience": "contractor"
+  },
+  {
+    "slug": "verify-contractor-insurance-before-hiring",
+    "title": "How to Verify a Contractor's Insurance Before You Let Them Start",
+    "date": "July 2026",
+    "excerpt": "Most homeowners see a certificate of insurance and assume they're covered. This checklist shows you how to confirm the policy is real, active, and actually protects you before anyone swings a hammer on your property.",
+    "tag": "Before You Hire",
+    "pillar": "C",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "should-you-build-custom-software",
+    "title": "Build vs. Buy: When Custom Contractor Software Actually Pays Off",
+    "date": "July 2026",
+    "excerpt": "Building your own job-management tools sounds smart until you're maintaining code instead of running jobs. Here's an honest look at when custom software beats off-the-shelf, and the one piece you should never build yourself.",
+    "tag": "Tool Stack",
+    "pillar": "F",
+    "audience": "contractor"
+  },
+  {
+    "slug": "contractor-abandoned-job-deposit-gone",
+    "title": "Your Contractor Cashed the Deposit and Disappeared: What Actually Happens Next",
+    "date": "July 2026",
+    "excerpt": "A $14,000 deposit, three weeks of silence, and a half-demolished kitchen. This is the exact sequence of how abandonment plays out — and the one payment structure that would have kept the money from vanishing.",
+    "tag": "Payment Risk",
+    "pillar": "D",
+    "audience": "homeowner"
   }
 ]
