@@ -313,5 +313,32 @@
     "tag": "Payment Risk",
     "pillar": "D",
     "audience": "homeowner"
+  },
+  {
+    "slug": "quoting-software-vs-manual-estimates",
+    "title": "Quoting Software vs. Manual Estimates: What Each Actually Costs You",
+    "date": "July 2026",
+    "excerpt": "Quoting software promises speed, but templated bids can cost you margin on complex jobs. Here's an honest breakdown of when purpose-built estimating tools pay off, when a manual spreadsheet still wins, and where the real risk hides.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
+  },
+  {
+    "slug": "contractor-underbid-to-win-job",
+    "title": "The Lowball Bid That Cost You $14K: Why the Cheapest Quote Wins the Job and Loses the Budget",
+    "date": "July 2026",
+    "excerpt": "The lowest bid isn't a discount—it's a down payment on future change orders. Here's how a $38K kitchen quote became $52K, and the one structural fix that would have exposed the gap before you signed.",
+    "tag": "Hidden Cost",
+    "pillar": "D",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "kitchen-remodel-worth-it-resale",
+    "title": "Is a Kitchen Remodel Worth It? Cost, Resale Value, and When to Skip It",
+    "date": "July 2026",
+    "excerpt": "A minor kitchen remodel returns about 96% of its cost at resale, but a full luxury gut renovation recovers closer to 38%. This guide breaks down the real dollar ranges, payback math, and the one condition that flips the verdict against you.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
   }
 ]
