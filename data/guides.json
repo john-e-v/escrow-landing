@@ -340,5 +340,32 @@
     "tag": "Cost & ROI",
     "pillar": "A",
     "audience": "homeowner"
+  },
+  {
+    "slug": "contractor-lien-after-you-paid",
+    "title": "You Paid in Full. Then a Subcontractor Put a Lien on Your House.",
+    "date": "July 2026",
+    "excerpt": "You paid your general contractor every dollar, on time. Six weeks later a tile supplier files a mechanic's lien against your home because the GC never paid them. Here's how paid homeowners still end up on the hook — and the payment structure that blocks it.",
+    "tag": "Payment Risk",
+    "pillar": "D",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "primary-suite-addition-worth-it",
+    "title": "Is a Primary Suite Addition Worth It? Cost, ROI, and When It Backfires",
+    "date": "July 2026",
+    "excerpt": "A primary suite addition costs $100K–$300K and returns only 50–60% at resale, so it's worth it for the years you'll live there, not the sale. This guide breaks down the math, the payback reality, and the one condition that flips the verdict.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "escrow-stopped-mid-job-abandonment",
+    "title": "The Framer Walked Off at 60%. Escrow Meant the Homeowner Didn't Lose a Dime.",
+    "date": "July 2026",
+    "excerpt": "A garage-to-ADU conversion stalled when the framing crew vanished at 60% complete—but the homeowner had only released payment for verified milestones. Here's how escrow-first structuring turned a nightmare into a manageable delay instead of a five-figure loss.",
+    "tag": "Escrow Effect",
+    "pillar": "BRIDGE",
+    "audience": "both"
   }
 ]
