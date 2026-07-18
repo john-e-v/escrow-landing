@@ -367,5 +367,32 @@
     "tag": "Escrow Effect",
     "pillar": "BRIDGE",
     "audience": "both"
+  },
+  {
+    "slug": "garage-conversion-worth-it-resale",
+    "title": "Is a Garage Conversion Worth It? Cost, ROI, and When It Tanks Value",
+    "date": "July 2026",
+    "excerpt": "A garage conversion pays off only if your neighborhood doesn't need the parking. Converting a two-car garage to living space runs $15,000–$50,000 and adds usable square footage, but in car-dependent markets it can cut your home's value instead of raising it.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "escrow-caught-shoddy-work-before-payment",
+    "title": "The Inspector Failed the Job. Escrow Meant the Homeowner Hadn't Paid Yet.",
+    "date": "July 2026",
+    "excerpt": "A $38K basement finish looked done until the framing inspection failed on egress and fire-blocking. Because the final milestone sat in escrow, the homeowner held every dollar of leverage until the contractor corrected the work and passed re-inspection.",
+    "tag": "Escrow Effect",
+    "pillar": "BRIDGE",
+    "audience": "both"
+  },
+  {
+    "slug": "driveway-replacement-cost-2026",
+    "title": "How Much Does It Cost to Replace a Driveway in 2026?",
+    "date": "July 2026",
+    "excerpt": "A new driveway runs $4,000 to $18,000 in 2026, and the material you pick moves the number more than anything else. Here's why the same square footage can double or triple in price depending on concrete, asphalt, pavers, and site prep.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
   }
 ]
