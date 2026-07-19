@@ -394,5 +394,32 @@
     "tag": "Cost & Timeline",
     "pillar": "B",
     "audience": "homeowner"
+  },
+  {
+    "slug": "escrow-protected-material-deposit-supplier",
+    "title": "The Supplier Never Delivered. The Homeowner's Material Deposit Was Still Safe.",
+    "date": "July 2026",
+    "excerpt": "A homeowner wired $9,200 for custom cabinets that never arrived after the supplier folded. Because the funds sat in escrow tied to delivery milestones, the money never left the account, and the homeowner recovered every cent to re-order elsewhere.",
+    "tag": "Escrow Effect",
+    "pillar": "BRIDGE",
+    "audience": "both"
+  },
+  {
+    "slug": "interior-painting-cost-2026",
+    "title": "How Much Does It Cost to Paint a House Interior in 2026?",
+    "date": "July 2026",
+    "excerpt": "Interior painting runs $2 to $6 per square foot in 2026, or roughly $2,000 to $6,000 for an average home. The spread comes down to ceiling height, prep work, trim detail, and how many colors you're chasing across how many rooms.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "how-to-fire-a-client-mid-job",
+    "title": "How to Fire a Non-Paying Client Mid-Job Without Eating the Loss",
+    "date": "July 2026",
+    "excerpt": "When a client stops paying mid-project, the fix is to stop work at a funded milestone boundary, not walk off in anger. This breaks down how to exit a bad job cleanly while protecting the money you've already earned.",
+    "tag": "Contractor Ops",
+    "pillar": "E",
+    "audience": "contractor"
   }
 ]
