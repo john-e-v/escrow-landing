@@ -421,5 +421,32 @@
     "tag": "Contractor Ops",
     "pillar": "E",
     "audience": "contractor"
+  },
+  {
+    "slug": "water-heater-replacement-cost-2026",
+    "title": "How Much Does a Water Heater Replacement Cost in 2026?",
+    "date": "July 2026",
+    "excerpt": "A standard tank water heater replacement runs $1,200 to $3,500 installed in 2026, but tankless jobs can push $4,500 to $8,000. The spread comes down to fuel type, venting, code upgrades, and whether your existing setup meets current requirements.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "progress-billing-vs-lump-sum",
+    "title": "Progress Billing vs. Lump Sum: Which Payment Structure Gets You Paid Faster?",
+    "date": "July 2026",
+    "excerpt": "Lump-sum billing loads your risk onto the back end of the job, where you have the least leverage. Progress billing tied to verifiable milestones keeps cash flowing and shrinks your exposure at every stage.",
+    "tag": "Payment Ops",
+    "pillar": "E",
+    "audience": "contractor"
+  },
+  {
+    "slug": "verify-contractor-workers-comp",
+    "title": "How to Verify a Contractor's Workers' Comp (And Why You're Liable Without It)",
+    "date": "July 2026",
+    "excerpt": "If a contractor's crew gets hurt on your property and they don't carry workers' comp, the medical bills can land on you. Here's the exact checklist to confirm coverage before anyone sets foot on the job.",
+    "tag": "Vetting & Protection",
+    "pillar": "C",
+    "audience": "homeowner"
   }
 ]
