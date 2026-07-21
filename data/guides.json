@@ -448,5 +448,32 @@
     "tag": "Vetting & Protection",
     "pillar": "C",
     "audience": "homeowner"
+  },
+  {
+    "slug": "net-30-payment-terms-kill-cash-flow",
+    "title": "Net-30 Is Quietly Killing Your Cash Flow: How to Get Paid on Completion Instead",
+    "date": "July 2026",
+    "excerpt": "Net-30 terms turn every finished job into an unsecured loan you made to the client. Here's how to restructure payment timing so funds are committed before you demobilize, not thirty days after.",
+    "tag": "Contractor Ops",
+    "pillar": "E",
+    "audience": "contractor"
+  },
+  {
+    "slug": "contractor-red-flags-first-meeting",
+    "title": "9 Contractor Red Flags to Spot in the First Meeting",
+    "date": "July 2026",
+    "excerpt": "Most bad hires reveal themselves before you sign anything—if you know what to watch for. This is the exact checklist to run during your first meeting with any contractor, from how they handle your questions to the one deposit request that should end the conversation.",
+    "tag": "Vetting Checklist",
+    "pillar": "C",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "scheduling-software-vs-shared-calendar",
+    "title": "Scheduling Software vs. Shared Calendar: What Breaks When You Run 3 Jobs at Once",
+    "date": "July 2026",
+    "excerpt": "A shared calendar works fine until you're juggling three active jobs and six subs who all think Tuesday is theirs. This teardown compares the shared-calendar approach against purpose-built scheduling, and where the seams actually rip.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
   }
 ]
