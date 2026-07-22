@@ -475,5 +475,32 @@
     "tag": "Contractor Ops",
     "pillar": "F",
     "audience": "contractor"
+  },
+  {
+    "slug": "get-contractor-estimate-in-writing",
+    "title": "What Every Contractor Estimate Must Include Before You Sign",
+    "date": "July 2026",
+    "excerpt": "A verbal quote is not a contract, and a one-line estimate hides everything that can go wrong. Use this checklist to confirm your written estimate has the nine elements that protect you before any money changes hands.",
+    "tag": "Before You Hire",
+    "pillar": "C",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "project-management-app-vs-text-thread",
+    "title": "Project Management App vs. Text Thread: What Actually Keeps a Job on Track",
+    "date": "July 2026",
+    "excerpt": "Most contractors run their jobs out of a group text and hope nothing falls through the cracks. Here's an honest look at where the text thread wins, where a project management app earns its cost, and why the payment layer shouldn't live inside either one.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
+  },
+  {
+    "slug": "contractor-quote-excluded-key-costs",
+    "title": "Why Your Quote Said $28K and the Final Bill Was $41K",
+    "date": "July 2026",
+    "excerpt": "The gap between quote and final invoice usually isn't dishonesty—it's exclusions buried in the fine print. A homeowner learned this when a $28K addition landed at $41K, and every overage was technically 'not included' from day one.",
+    "tag": "Hidden Cost",
+    "pillar": "D",
+    "audience": "homeowner"
   }
 ]
