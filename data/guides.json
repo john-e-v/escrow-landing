@@ -502,5 +502,32 @@
     "tag": "Hidden Cost",
     "pillar": "D",
     "audience": "homeowner"
+  },
+  {
+    "slug": "invoicing-software-vs-quickbooks-passthrough",
+    "title": "Invoicing Software vs. Accounting Add-On: Where Contractor Billing Actually Breaks",
+    "date": "July 2026",
+    "excerpt": "Most contractors bill through whatever their accounting tool bolts on, then wonder why deposits, progress draws, and change orders never reconcile. This teardown compares standalone invoicing against accounting-suite billing and shows where each one quietly leaks money and time.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
+  },
+  {
+    "slug": "allowance-line-items-cost-overruns",
+    "title": "Why the Allowances in Your Contract Blew Your Budget by $9K",
+    "date": "July 2026",
+    "excerpt": "Allowances look like clean line items on your estimate, but they're placeholders for decisions you haven't made yet. Here's how a $3,000 tile allowance quietly turned into a $12,000 line and why the fix is milestone-based approval before the work proceeds.",
+    "tag": "Hidden Costs",
+    "pillar": "D",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "new-windows-worth-it-resale",
+    "title": "Are New Windows Worth It? Cost, Resale Value, and When to Skip It",
+    "date": "July 2026",
+    "excerpt": "New windows recoup roughly 65-70% at resale, but the payback math changes entirely depending on your climate and how long you're staying. Here's when replacement pays and when repair beats a full swap.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
   }
 ]
