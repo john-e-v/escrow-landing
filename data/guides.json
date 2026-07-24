@@ -529,5 +529,32 @@
     "tag": "Cost & ROI",
     "pillar": "A",
     "audience": "homeowner"
+  },
+  {
+    "slug": "dumpster-fee-surprise-demolition-quote",
+    "title": "The Dumpster Fee Nobody Quoted: Why Demo Jobs Blow Past Budget",
+    "date": "July 2026",
+    "excerpt": "A $6,200 demo quote turned into $9,800 because disposal, dump fees, and haul-off were never line items. Here's how debris removal quietly becomes the biggest surprise on renovation invoices, and the payment structure that stops it.",
+    "tag": "Hidden Cost",
+    "pillar": "D",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "screened-porch-worth-it-resale",
+    "title": "Is a Screened Porch Worth It? Cost, ROI, and When It Backfires",
+    "date": "July 2026",
+    "excerpt": "A screened porch usually pays back 60-75% at resale and buys you months of usable outdoor space, making it worth it in most warm and humid climates. But the verdict flips fast if you build it where nobody wants to sit outside — or if you cut into a room buyers actually use.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "verbal-agreement-put-in-writing-email",
+    "title": "The Confirmation Email That Turns a Verbal 'Yes' Into a Binding Record",
+    "date": "July 2026",
+    "excerpt": "Every job has a moment where the client agrees to something out loud and never signs anything. This is the exact email template that locks in that verbal approval before it becomes a 'that's not what I said' dispute six weeks later.",
+    "tag": "Documentation",
+    "pillar": "G",
+    "audience": "contractor"
   }
 ]
