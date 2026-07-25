@@ -556,5 +556,32 @@
     "tag": "Documentation",
     "pillar": "G",
     "audience": "contractor"
+  },
+  {
+    "slug": "fence-worth-it-resale",
+    "title": "Is a New Fence Worth It? Cost, Resale Value, and When It Doesn't Pay",
+    "date": "July 2026",
+    "excerpt": "A new fence recovers about 50-65% of its cost at resale, but its real payoff is faster sales and buyer appeal for the right household. This guide breaks down the dollar ranges, the payback math, and the one condition that flips the verdict against you.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "email-scope-exclusions-before-work",
+    "title": "The Exclusions List That Stops Free Work: What to Put in Writing Before Day 1",
+    "date": "July 2026",
+    "excerpt": "Most contractors list what a job includes and never write down what it doesn't. This guide gives you the copy-paste exclusions block that stops clients from expecting drywall repair, haul-away, and painting they never paid for.",
+    "tag": "Dispute-Proofing",
+    "pillar": "G",
+    "audience": "contractor"
+  },
+  {
+    "slug": "electrical-panel-upgrade-cost-2026",
+    "title": "How Much Does an Electrical Panel Upgrade Cost in 2026?",
+    "date": "July 2026",
+    "excerpt": "A 200-amp panel upgrade runs $2,000 to $6,500 in 2026, but the number swings hard based on service location, utility coordination, and whether your wiring meets current code. Here's what actually moves the price.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
   }
 ]
