@@ -583,5 +583,32 @@
     "tag": "Cost & Timeline",
     "pillar": "B",
     "audience": "homeowner"
+  },
+  {
+    "slug": "delay-clause-weather-client-caused",
+    "title": "The Delay Clause That Protects You When the Client (or Weather) Stalls the Job",
+    "date": "July 2026",
+    "excerpt": "Client-caused and weather delays cost you money and expose you to penalty claims you never earned. This is the exact delay clause and delay-notice text to put in your contract and send the day a stall starts.",
+    "tag": "Dispute-Proofing",
+    "pillar": "G",
+    "audience": "contractor"
+  },
+  {
+    "slug": "concrete-patio-cost-2026",
+    "title": "How Much Does a Concrete Patio Cost in 2026?",
+    "date": "July 2026",
+    "excerpt": "A concrete patio runs $8 to $20 per square foot in 2026, meaning a 300-square-foot slab lands between $2,400 and $6,000 installed. The spread comes down to finish, thickness, site prep, and how far your truck has to pour.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "final-payment-lien-waiver-exchange",
+    "title": "Trade the Lien Waiver for the Final Check, Not Before",
+    "date": "July 2026",
+    "excerpt": "Never sign a lien waiver until the final payment has actually cleared. This guide shows you how to sequence the waiver-for-payment exchange so you don't give up your leverage and your legal recourse in the same breath.",
+    "tag": "Payment Ops",
+    "pillar": "E",
+    "audience": "contractor"
   }
 ]
