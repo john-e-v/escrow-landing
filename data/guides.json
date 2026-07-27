@@ -610,5 +610,32 @@
     "tag": "Payment Ops",
     "pillar": "E",
     "audience": "contractor"
+  },
+  {
+    "slug": "gut-renovation-cost-2026",
+    "title": "How Much Does a Full Gut Renovation Cost in 2026?",
+    "date": "July 2026",
+    "excerpt": "A full gut renovation runs $100 to $250 per square foot in 2026, meaning $150K to $375K on a 1,500 sq ft home. The spread comes down to how much structure you touch, your finish level, and what's hiding behind the walls.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "second-payment-late-every-milestone",
+    "title": "Why Your Second Payment Is Always Late (And How to Structure It Out)",
+    "date": "July 2026",
+    "excerpt": "The first payment clears fine, but the second one drags every time — that's a structural gap, not a client problem. Tie each release to a verifiable milestone in an escrow account and the money is already committed before the work starts.",
+    "tag": "Contractor Ops",
+    "pillar": "E",
+    "audience": "contractor"
+  },
+  {
+    "slug": "contractor-deposit-amount-normal",
+    "title": "How Much Should a Contractor Deposit Be? What's Normal vs. a Warning Sign",
+    "date": "July 2026",
+    "excerpt": "Before you write a deposit check, know what a reasonable down payment actually looks like and what number should make you walk. This checklist gives you the exact thresholds, the questions to ask, and where the money should legally sit.",
+    "tag": "Before You Hire",
+    "pillar": "C",
+    "audience": "homeowner"
   }
 ]
