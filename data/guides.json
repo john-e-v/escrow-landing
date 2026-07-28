@@ -637,5 +637,32 @@
     "tag": "Before You Hire",
     "pillar": "C",
     "audience": "homeowner"
+  },
+  {
+    "slug": "retainage-holdback-when-to-fight-it",
+    "title": "Retainage Explained: When a 10% Holdback Is Fair and When It's a Trap",
+    "date": "July 2026",
+    "excerpt": "Retainage lets a client hold back 5-10% of every payment until final completion, and on some jobs it's standard practice. But when the holdback has no release trigger and no timeline, you're financing the client's caution with your own cash.",
+    "tag": "Contractor Ops",
+    "pillar": "E",
+    "audience": "contractor"
+  },
+  {
+    "slug": "check-contractor-lawsuits-complaints-record",
+    "title": "How to Check a Contractor's Lawsuit and Complaint History Before You Hire",
+    "date": "July 2026",
+    "excerpt": "A license check tells you a contractor is registered — not whether they've been sued, fined, or reported for abandoning jobs. This checklist walks you through the public records that reveal a contractor's real track record in about ten minutes.",
+    "tag": "Contractor Vetting",
+    "pillar": "C",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "document-storage-shared-drive-vs-job-file",
+    "title": "Where Your Job Files Actually Live: Shared Drive vs. Per-Job System",
+    "date": "July 2026",
+    "excerpt": "Most contractors dump contracts, photos, and change orders into a shared drive and call it document management. When a dispute hits, they spend hours reconstructing what happened. Here's the honest tradeoff between a folder system and a job-centered file structure.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
   }
 ]
