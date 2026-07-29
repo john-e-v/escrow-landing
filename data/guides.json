@@ -664,5 +664,32 @@
     "tag": "Contractor Ops",
     "pillar": "F",
     "audience": "contractor"
+  },
+  {
+    "slug": "questions-before-signing-contract-deposit",
+    "title": "Before You Hand Over a Deposit: 8 Things to Verify First",
+    "date": "July 2026",
+    "excerpt": "A copy-paste checklist you run before any money changes hands. Eight verifications you can complete today—license, insurance, payment terms, and the paper trail that protects you if the job goes sideways.",
+    "tag": "Before You Hire",
+    "pillar": "C",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "crm-vs-accounting-source-of-truth",
+    "title": "CRM vs. Accounting Software: Which One Should Own Your Job Data?",
+    "date": "July 2026",
+    "excerpt": "Most contractors end up with job data split between a CRM and their accounting software, and neither one tells the full story. Here's how to decide which system owns the source of truth so you stop reconciling two versions of the same job.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
+  },
+  {
+    "slug": "contractor-added-scope-you-didnt-approve",
+    "title": "The Contractor 'Upgraded' Your Job Without Asking. Now You Owe $6K.",
+    "date": "July 2026",
+    "excerpt": "A homeowner came home to a tankless water heater she never asked for and a bill $6,200 higher than the quote. The contractor called it an upgrade. She called it unauthorized work. Here's why she paid anyway, and the structure that would have caught it first.",
+    "tag": "Scope & Payment",
+    "pillar": "D",
+    "audience": "homeowner"
   }
 ]
