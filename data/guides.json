@@ -691,5 +691,32 @@
     "tag": "Scope & Payment",
     "pillar": "D",
     "audience": "homeowner"
+  },
+  {
+    "slug": "time-tracking-app-vs-paper-timesheets",
+    "title": "Time Tracking App vs. Paper Timesheets: What Job Costing Actually Needs",
+    "date": "July 2026",
+    "excerpt": "Paper timesheets are free and fast, but they hide where your labor dollars actually go until the job's already over budget. Here's the honest tradeoff between paper, an app, and building tracking into the tools you already run.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
+  },
+  {
+    "slug": "septic-system-cost-blew-budget",
+    "title": "The Septic Surprise: Why Your $12K Job Became a $34K Dig",
+    "date": "July 2026",
+    "excerpt": "A failed perc test turned a routine septic replacement into a five-figure engineering project. The homeowner had already paid the full deposit on a number that no longer existed. Here's how the budget unraveled and what would have stopped the bleed.",
+    "tag": "Hidden Cost",
+    "pillar": "D",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "heated-driveway-worth-it-cost",
+    "title": "Is a Heated Driveway Worth It? Cost, Payback, and When It's a Money Pit",
+    "date": "July 2026",
+    "excerpt": "A heated driveway rarely pays back at resale, but it can be worth it if you live where snow shovels win and you'll stay put for a decade. This breaks down install costs, operating costs, and the exact conditions that flip the verdict.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
   }
 ]
