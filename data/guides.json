@@ -718,5 +718,23 @@
     "tag": "Cost & ROI",
     "pillar": "A",
     "audience": "homeowner"
+  },
+  {
+    "slug": "grading-drainage-surprise-foundation-cost",
+    "title": "The Grading Mistake That Turned a $8K Patio Into a $27K Foundation Fix",
+    "date": "July 2026",
+    "excerpt": "A backyard patio poured on the wrong slope sent water toward the house for two winters before the basement flooded. The repair cost more than triple the original job. Here's why nobody caught it, and the payment structure that would have.",
+    "tag": "Hidden Cost",
+    "pillar": "D",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "escrow-caught-permit-never-pulled",
+    "title": "The Contractor Skipped the Permit. Escrow Meant the Homeowner Held the Leverage.",
+    "date": "July 2026",
+    "excerpt": "A homeowner's addition passed the framing stage before anyone realized no permit had ever been pulled. Because payment sat in escrow tied to inspection milestones, the contractor fixed it on his own dime instead of the homeowner eating a stop-work order.",
+    "tag": "Escrow Effect",
+    "pillar": "BRIDGE",
+    "audience": "both"
   }
 ]
