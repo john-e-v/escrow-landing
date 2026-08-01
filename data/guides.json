@@ -736,5 +736,32 @@
     "tag": "Escrow Effect",
     "pillar": "BRIDGE",
     "audience": "both"
+  },
+  {
+    "slug": "attic-insulation-worth-it-payback",
+    "title": "Is Attic Insulation Worth It? Cost, Payback, and When It Doesn't Pay",
+    "date": "August 2026",
+    "excerpt": "Attic insulation is one of the few upgrades that pays for itself, usually in 2 to 4 years. But the verdict flips fast if your attic is already insulated to code or the air leaks upstream never get sealed first.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "escrow-stopped-double-payment-scam",
+    "title": "The Contractor Asked for a Wire 'Straight to the Supplier.' Escrow Meant the Homeowner Didn't Bite.",
+    "date": "August 2026",
+    "excerpt": "A homeowner mid-remodel got a call: wire $18K directly to the tile supplier to 'lock in pricing before it goes up.' Because every dollar was already staged in escrow, there was nothing to wire—and no way to lose it to a redirect scam.",
+    "tag": "Escrow Effect",
+    "pillar": "BRIDGE",
+    "audience": "both"
+  },
+  {
+    "slug": "siding-replacement-cost-2026",
+    "title": "How Much Does Siding Replacement Cost in 2026?",
+    "date": "August 2026",
+    "excerpt": "Siding replacement runs $8,000 to $35,000 for an average home in 2026, and the spread comes down to material, house size, and what the crew finds once the old siding comes off. Here's what actually moves the number.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
   }
 ]
