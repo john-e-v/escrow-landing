@@ -763,5 +763,32 @@
     "tag": "Cost & Timeline",
     "pillar": "B",
     "audience": "homeowner"
+  },
+  {
+    "slug": "escrow-caught-wrong-materials-installed",
+    "title": "The Contractor Installed the Cheaper Fixtures. Escrow Meant the Homeowner Caught It Before Paying.",
+    "date": "August 2026",
+    "excerpt": "A homeowner speced quartz counters and mid-grade cabinet hardware, then noticed the installed materials didn't match the contract. Because the final milestone was still in escrow, she had leverage to force the swap instead of eating a $7K substitution.",
+    "tag": "Escrow Effect",
+    "pillar": "BRIDGE",
+    "audience": "both"
+  },
+  {
+    "slug": "well-drilling-cost-2026",
+    "title": "How Much Does It Cost to Drill a Well in 2026?",
+    "date": "August 2026",
+    "excerpt": "A residential water well runs $5,500 to $18,000 in 2026, and the spread comes down to how deep the drill has to go before it hits usable water. Depth, geology, casing, and the pump system are what turn a routine job into a five-figure surprise.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "partial-payment-final-milestone-trap",
+    "title": "The Client Paid 90% and Called It 'Done.' Here's How to Stop Eating the Last 10%",
+    "date": "August 2026",
+    "excerpt": "When a client sends a partial payment and treats the balance as negotiable, you've lost your leverage the moment you accept it. Structure the final milestone so the last dollar releases automatically on completion, not on the client's mood.",
+    "tag": "Contractor Ops",
+    "pillar": "E",
+    "audience": "contractor"
   }
 ]
