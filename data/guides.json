@@ -790,5 +790,32 @@
     "tag": "Contractor Ops",
     "pillar": "E",
     "audience": "contractor"
+  },
+  {
+    "slug": "sump-pump-installation-cost-2026",
+    "title": "How Much Does a Sump Pump Installation Cost in 2026?",
+    "date": "August 2026",
+    "excerpt": "A sump pump installation runs $1,200 to $5,500 in 2026, but a full basement waterproofing system with an interior drain can push past $12,000. The gap comes down to whether you're dropping a pump in an existing pit or digging a new drainage system into the slab.",
+    "tag": "Cost & ROI",
+    "pillar": "B",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "check-cleared-then-bounced-chargeback",
+    "title": "The Check Cleared, Then Bounced Two Weeks Later: How to Not Get Burned",
+    "date": "August 2026",
+    "excerpt": "A deposited check showing 'available' funds is not the same as a check that cleared, and homeowners can reverse a payment weeks after you've bought materials. Here's how to structure payments so a reversed check never leaves you holding the loss.",
+    "tag": "Payments & Escrow",
+    "pillar": "E",
+    "audience": "contractor"
+  },
+  {
+    "slug": "verify-contractor-past-permit-history",
+    "title": "How to Pull a Contractor's Permit History Before You Hire (Free, Public, 10 Minutes)",
+    "date": "August 2026",
+    "excerpt": "A contractor's license tells you they're allowed to work. Their permit history tells you whether they actually pull permits or skip them to save time. Here's exactly where to look and what a clean record should show.",
+    "tag": "Vetting Checklist",
+    "pillar": "C",
+    "audience": "homeowner"
   }
 ]
