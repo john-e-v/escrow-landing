@@ -817,5 +817,32 @@
     "tag": "Vetting Checklist",
     "pillar": "C",
     "audience": "homeowner"
+  },
+  {
+    "slug": "customer-charged-back-after-final-payment",
+    "title": "The Client Paid, Then Filed a Chargeback: How to Stop Losing the Job to a Card Dispute",
+    "date": "August 2026",
+    "excerpt": "A client can pay you in full by card, then dispute the charge weeks later and pull the money right back out of your account. Milestone escrow removes the card network from the equation entirely, so a completed and approved payment can't be clawed back.",
+    "tag": "Payment Protection",
+    "pillar": "E",
+    "audience": "contractor"
+  },
+  {
+    "slug": "contractor-wont-put-in-writing",
+    "title": "5 Things a Contractor Should Never Refuse to Put in Writing",
+    "date": "August 2026",
+    "excerpt": "Some requests are so basic that a refusal tells you everything. This checklist gives you five specific things to ask for in writing today, and shows you exactly how a good contractor responds versus how a bad one dodges.",
+    "tag": "Before You Hire",
+    "pillar": "C",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "lead-gen-platform-vs-own-pipeline",
+    "title": "Lead-Gen Platform vs. Your Own Pipeline: What Each Lead Actually Costs",
+    "date": "August 2026",
+    "excerpt": "Buying leads from a platform feels fast, but shared leads, lead fees, and race-to-the-bottom bids quietly gut your margin. Here's an honest teardown of paid lead-gen versus building a referral-and-repeat pipeline you actually own.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
   }
 ]
