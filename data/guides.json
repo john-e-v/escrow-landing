@@ -844,5 +844,32 @@
     "tag": "Contractor Ops",
     "pillar": "F",
     "audience": "contractor"
+  },
+  {
+    "slug": "check-contractor-online-reviews-fake",
+    "title": "How to Spot Fake Contractor Reviews Before You Trust the 5 Stars",
+    "date": "August 2026",
+    "excerpt": "A five-star average means nothing if the reviews are planted. This checklist shows you exactly how to pull apart a contractor's online reputation in ten minutes and spot the fakes before they cost you.",
+    "tag": "Vetting",
+    "pillar": "C",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "customer-data-portability-lock-in",
+    "title": "Can You Take Your Data When You Leave? The Lock-In Test for Contractor Software",
+    "date": "August 2026",
+    "excerpt": "Most contractor software makes it easy to get your data in and quietly hard to get it out. Before you commit a stack, run the export test—because the day you switch tools is the day you find out who actually owns your job history.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
+  },
+  {
+    "slug": "punch-list-dragged-on-final-payment",
+    "title": "The Punch List That Never Ends: Why 'Almost Done' Costs You Weeks",
+    "date": "August 2026",
+    "excerpt": "The job was 98% done in March. By June, the punch list had ballooned to 31 items and the homeowner still hadn't paid the final $8,400. Here's how open-ended punch lists become a stalling tactic on both sides — and the structure that ends them.",
+    "tag": "Payment Protection",
+    "pillar": "D",
+    "audience": "homeowner"
   }
 ]
