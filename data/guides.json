@@ -871,5 +871,32 @@
     "tag": "Payment Protection",
     "pillar": "D",
     "audience": "homeowner"
+  },
+  {
+    "slug": "contractor-demo-found-mold-cost",
+    "title": "The Wall Came Down and So Did Your Budget: The Mold Nobody Quoted",
+    "date": "August 2026",
+    "excerpt": "A bathroom remodel opened one wall and revealed hidden mold and rotted framing, turning a $19K job into a $31K job overnight. Here's why nobody caught it, and the payment structure that keeps a discovery like this from wrecking your finances.",
+    "tag": "Hidden Cost",
+    "pillar": "D",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "pool-worth-it-resale-value",
+    "title": "Is an In-Ground Pool Worth It? Cost, Resale Value, and When It Sinks Your Home Value",
+    "date": "August 2026",
+    "excerpt": "An in-ground pool is rarely worth it for resale — you'll recover only 5–35% of the build cost, and in cold climates it can actively lower your home's value. This breaks down the real numbers and the one scenario where a pool pays.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "material-substitution-clause-contract",
+    "title": "The Substitution Clause That Lets You Swap Materials Without a Dispute",
+    "date": "August 2026",
+    "excerpt": "When a spec'd product goes out of stock or triples in price, the wrong contract turns a smart swap into a lawsuit. This clause gives you the written right to substitute equal-or-better materials — and pre-approves how the client signs off.",
+    "tag": "Contract Clauses",
+    "pillar": "G",
+    "audience": "contractor"
   }
 ]
