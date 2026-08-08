@@ -898,5 +898,32 @@
     "tag": "Contract Clauses",
     "pillar": "G",
     "audience": "contractor"
+  },
+  {
+    "slug": "roof-solar-shingles-worth-it",
+    "title": "Are Solar Shingles Worth It? Cost, Payback, and When Panels Win Instead",
+    "date": "August 2026",
+    "excerpt": "Solar shingles cost nearly double traditional panels and take longer to pay back — so they only make sense in one specific scenario. Here's the math on price, payback, and the roof condition that flips the verdict.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "warranty-clause-defines-callbacks-covered",
+    "title": "The Warranty Clause That Says Exactly What You'll Fix (And What You Won't)",
+    "date": "August 2026",
+    "excerpt": "Most contractor warranties are one vague sentence that turns every callback into a free repair. This is the exact warranty paragraph to paste into your next contract, defining what's covered, for how long, and what voids it.",
+    "tag": "Contract Clauses",
+    "pillar": "G",
+    "audience": "contractor"
+  },
+  {
+    "slug": "tankless-water-heater-cost-2026",
+    "title": "How Much Does a Tankless Water Heater Cost to Install in 2026?",
+    "date": "August 2026",
+    "excerpt": "A tankless water heater runs $1,800 to $4,500 installed in 2026, but gas retrofits and electrical upgrades can push it past $6,000. Here's what actually drives the number and why the spread is so wide.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
   }
 ]
