@@ -925,5 +925,32 @@
     "tag": "Cost & Timeline",
     "pillar": "B",
     "audience": "homeowner"
+  },
+  {
+    "slug": "site-conditions-clause-contract",
+    "title": "The Site Conditions Clause That Stops 'You Should've Known' Disputes",
+    "date": "August 2026",
+    "excerpt": "When you hit rock, rot, or bad soil the client swears you should've priced in, the fight is over who eats it. A site conditions clause puts the answer in writing before you break ground.",
+    "tag": "Contract Clauses",
+    "pillar": "G",
+    "audience": "contractor"
+  },
+  {
+    "slug": "spray-foam-insulation-cost-2026",
+    "title": "How Much Does Spray Foam Insulation Cost in 2026?",
+    "date": "August 2026",
+    "excerpt": "Spray foam insulation runs $1.50 to $4.50 per board foot in 2026, with a whole-home job landing anywhere from $4,000 to $15,000. The spread comes down to open-cell vs. closed-cell foam, how much prep the crew has to do, and whether they can spray from an existing cavity or a full gut.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "deposit-invoice-timing-milestone-release",
+    "title": "You Invoiced Before You Started the Work. Here's Why the Money Still Isn't Yours",
+    "date": "August 2026",
+    "excerpt": "Invoicing early feels like progress, but a paid invoice on unstarted work is a liability, not a win. Tie every release to a milestone the client can verify so the money you collect is money you actually keep.",
+    "tag": "Payments & Escrow",
+    "pillar": "E",
+    "audience": "contractor"
   }
 ]
