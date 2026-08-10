@@ -952,5 +952,32 @@
     "tag": "Payments & Escrow",
     "pillar": "E",
     "audience": "contractor"
+  },
+  {
+    "slug": "garage-door-replacement-cost-2026",
+    "title": "How Much Does a Garage Door Replacement Cost in 2026?",
+    "date": "August 2026",
+    "excerpt": "A garage door replacement runs $750 to $5,500 in 2026, with most homeowners landing around $1,200 to $2,800. The spread comes down to door material, insulation, opener upgrades, and whether you're replacing the springs and track hardware too.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "client-wants-to-pay-cash-discount",
+    "title": "The Client Offered Cash for a Discount: Why It Costs You More Than It Saves",
+    "date": "August 2026",
+    "excerpt": "A cash-for-discount offer feels like easy money until a dispute hits and you have no record of the payment or the terms. Here's why the discount you gave up is smaller than the leverage you lost, and how to structure payment so you keep both.",
+    "tag": "Contractor Ops",
+    "pillar": "E",
+    "audience": "contractor"
+  },
+  {
+    "slug": "get-multiple-bids-compare-contractors",
+    "title": "How Many Bids Should You Get Before Hiring a Contractor? (And How to Compare Them)",
+    "date": "August 2026",
+    "excerpt": "Getting three bids sounds simple until you realize each one scopes the job differently, making them impossible to compare. This checklist shows you exactly how to request bids on the same terms and read them side by side without getting fooled by the lowest number.",
+    "tag": "Before You Hire",
+    "pillar": "C",
+    "audience": "homeowner"
   }
 ]
