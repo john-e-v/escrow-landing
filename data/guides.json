@@ -979,5 +979,32 @@
     "tag": "Before You Hire",
     "pillar": "C",
     "audience": "homeowner"
+  },
+  {
+    "slug": "client-wants-to-split-final-payment",
+    "title": "The Client Wants to 'Split' the Final Payment Into Two: Why That's a Red Flag",
+    "date": "August 2026",
+    "excerpt": "When a client asks to break the last invoice into two smaller payments after the work is done, they're not managing cash flow — they're buying time to disappear. Here's how to structure the close so the final number is one payment, already funded, not a negotiation.",
+    "tag": "Payment Ops",
+    "pillar": "E",
+    "audience": "contractor"
+  },
+  {
+    "slug": "verify-contractor-address-not-po-box",
+    "title": "How to Verify a Contractor Has a Real Business Address (Not Just a PO Box)",
+    "date": "August 2026",
+    "excerpt": "A contractor with no verifiable physical address is a contractor who can vanish without a trace. This checklist walks you through confirming a real business location in ten minutes so you know exactly where to find them if the job goes sideways.",
+    "tag": "Vetting & Protection",
+    "pillar": "C",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "job-costing-software-vs-spreadsheet",
+    "title": "Job Costing Software vs. Spreadsheet: Where Your Margin Actually Leaks",
+    "date": "August 2026",
+    "excerpt": "A spreadsheet costs nothing and shows you the numbers you already know to look for. Purpose-built job costing catches the leaks you'd never think to check—but only if your labor, material, and payment data actually feed into it.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
   }
 ]
