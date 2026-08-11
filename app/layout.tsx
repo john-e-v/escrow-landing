@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: 'CLRBLT — Escrow-Protected Payments for Home Projects',
   description: 'Submit your home project and get matched with contractors who accept escrow payments. Funds are held securely until the work is done right. Powered by Paykeeper.',
   metadataBase: new URL('https://www.clrblt.com'),
+  alternates: { canonical: '/' },
   openGraph: {
     siteName: 'CLRBLT',
     type: 'website',

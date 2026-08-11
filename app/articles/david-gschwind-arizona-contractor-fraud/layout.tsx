@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'The Arizona Contractor Who Took Over $1M From Valley Homeowners | CLRBLT',
   description: 'How an Arizona contractor took over $1M in deposits from Phoenix-area homeowners for work never finished, and the state\'s fraud case against him.',
+  alternates: { canonical: 'https://www.clrblt.com/articles/david-gschwind-arizona-contractor-fraud' },
   openGraph: {
     title: 'The Arizona Contractor Who Took Over $1M From Valley Homeowners',
     description: 'How an Arizona contractor took over $1M in deposits from Phoenix-area homeowners for work never finished, and the state\'s fraud case against him.',

@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'The Maryland Contractor Who Took Over $3 Million From Homeowners | CLRBLT',
   description: 'How a Maryland contractor allegedly stole over $3 million from homeowners through unfinished and abandoned home improvement projects.',
+  alternates: { canonical: 'https://www.clrblt.com/articles/ramon-llanes-maryland-contractor-fraud' },
   openGraph: {
     title: 'The Maryland Contractor Who Took Over $3 Million From Homeowners',
     description: 'How a Maryland contractor allegedly stole over $3 million from homeowners through unfinished and abandoned home improvement projects.',

@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'The Virginia Contractor Who Stole $880,000 From Homeowners | CLRBLT',
   description: 'How Virginia contractor Benjamin Cole defrauded homeowners of $880,000 in deposits for renovations he never finished.',
+  alternates: { canonical: 'https://www.clrblt.com/articles/benjamin-cole-virginia-contractor-fraud' },
   openGraph: {
     title: 'The Virginia Contractor Who Stole $880,000 From Homeowners',
     description: 'How Virginia contractor Benjamin Cole defrauded homeowners of $880,000 in deposits for renovations he never finished.',

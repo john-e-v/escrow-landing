@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Articles — Real Stories of Contractor Fraud & Non-Payment | CLRBLT',
   description: 'Documented cases of contractor fraud, homeowner non-payment, and what structural escrow protection could have prevented. Real events, real sources.',
+  alternates: { canonical: 'https://www.clrblt.com/articles' },
   openGraph: {
     title: 'Articles — Real Stories of Contractor Fraud & Non-Payment | CLRBLT',
     description: 'Documented cases of contractor fraud and homeowner non-payment — and how escrow would have changed the outcome.',

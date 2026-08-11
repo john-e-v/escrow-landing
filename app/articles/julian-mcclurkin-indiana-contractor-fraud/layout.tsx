@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'The Indiana Contractor Who Took Over $100,000 From Homeowners | CLRBLT',
   description: 'How an Indiana contractor took over $100,000 in deposits for unfinished home projects and faced felony fraud charges.',
+  alternates: { canonical: 'https://www.clrblt.com/articles/julian-mcclurkin-indiana-contractor-fraud' },
   openGraph: {
     title: 'The Indiana Contractor Who Took Over $100,000 From Homeowners',
     description: 'How an Indiana contractor took over $100,000 in deposits for unfinished home projects and faced felony fraud charges.',

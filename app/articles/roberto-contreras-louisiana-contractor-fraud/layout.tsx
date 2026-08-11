@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'The Louisiana Contractor Who Took Over $250,000 From Hurricane Ida Victims | CLRBLT',
   description: 'How a Louisiana contractor took deposits from Hurricane Ida victims and left projects unfinished, leading to fraud charges. Lessons for homeowners.',
+  alternates: { canonical: 'https://www.clrblt.com/articles/roberto-contreras-louisiana-contractor-fraud' },
   openGraph: {
     title: 'The Louisiana Contractor Who Took Over $250,000 From Hurricane Ida Victims',
     description: 'How a Louisiana contractor took deposits from Hurricane Ida victims and left projects unfinished, leading to fraud charges. Lessons for homeowners.',

@@ -1,7 +1,14 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { parsePropertySlug } from '@/lib/property';
 import { ClaimForm } from './ClaimForm';
 import '../styles.css';
+
+export const metadata: Metadata = {
+  title: 'Claim Your Property — Clearbuilt',
+  description: 'Claim your property page on Clearbuilt to document systems, appliances, and renovation history tied to your address.',
+  alternates: { canonical: 'https://www.clrblt.com/property/claim' },
+};
 
 interface PageProps {
   searchParams: Promise<{ slug?: string }>;

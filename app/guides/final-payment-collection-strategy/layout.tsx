@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'How to Collect Final Payment Before You Demobilize the Job | CLRBLT',
   description: 'The final 10% is where contractors lose money. Here\'s how to structure final payment so the funds are committed before you demobilize the crew.',
+  alternates: { canonical: 'https://www.clrblt.com/guides/final-payment-collection-strategy' },
   openGraph: {
     title: 'How to Collect Final Payment Before You Demobilize the Job',
     description: 'The final 10% is where contractors lose money. Here\'s how to structure final payment so the funds are committed before you demobilize the crew.',

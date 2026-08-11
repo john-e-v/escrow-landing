@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'The Florida Contractor Who Stole $2.6M From Hurricane Victims and Fled | CLRBLT',
   description: 'How a Florida contractor allegedly stole millions in homeowner deposits, faced grand theft charges, and left dozens of projects unfinished.',
+  alternates: { canonical: 'https://www.clrblt.com/articles/nicholas-costello-florida-contractor-fraud' },
   openGraph: {
     title: 'The Florida Contractor Who Stole $2.6M From Hurricane Victims and Fled',
     description: 'How a Florida contractor allegedly stole millions in homeowner deposits, faced grand theft charges, and left dozens of projects unfinished.',

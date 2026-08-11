@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'The Pennsylvania Contractor Who Stole Over $400,000 From Homeowners | CLRBLT',
   description: 'How a Pennsylvania contractor took $400,000+ in deposits for work never done, and the criminal charges that followed.',
+  alternates: { canonical: 'https://www.clrblt.com/articles/benjamin-dewees-pennsylvania-contractor-fraud' },
   openGraph: {
     title: 'The Pennsylvania Contractor Who Stole Over $400,000 From Homeowners',
     description: 'How a Pennsylvania contractor took $400,000+ in deposits for work never done, and the criminal charges that followed.',

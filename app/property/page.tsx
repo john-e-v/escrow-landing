@@ -6,6 +6,7 @@ import './styles.css';
 export const metadata: Metadata = {
   title: 'Look Up a Property — Permit History & Records | Clearbuilt',
   description: 'Find the Clearbuilt page for any US address — permit history, assessor records, and owner-documented systems and appliances.',
+  alternates: { canonical: 'https://www.clrblt.com/property' },
 };
 
 export default function PropertyLookupPage() {
