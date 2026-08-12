@@ -1006,5 +1006,32 @@
     "tag": "Contractor Ops",
     "pillar": "F",
     "audience": "contractor"
+  },
+  {
+    "slug": "questions-to-ask-contractor-references",
+    "title": "How to Vet a Contractor's Estimate in 10 Minutes: The Line-by-Line Gut Check",
+    "date": "August 2026",
+    "excerpt": "A screenshot-and-save checklist for pressure-testing any contractor estimate before you sign. Walk through the exact line items, questions, and documents that separate a real bid from a trap.",
+    "tag": "Before You Hire",
+    "pillar": "C",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "estimating-software-vs-takeoff-tool",
+    "title": "Estimating Software vs. Takeoff Tool: Where Your Bid Actually Comes Together",
+    "date": "August 2026",
+    "excerpt": "Takeoff tools measure quantities off plans; estimating software turns those quantities into priced bids. Most contractors blur the two and end up paying for overlap while still hand-keying numbers between them. Here's where each earns its keep and where the seam breaks.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
+  },
+  {
+    "slug": "contractor-front-loaded-payment-schedule",
+    "title": "The Payment Schedule Was Front-Loaded: Why You Paid 70% for 40% of the Work",
+    "date": "August 2026",
+    "excerpt": "A tile contractor structured his draws so the homeowner paid 70% of the contract before the job was half done. When work slowed to a crawl, there was no money left to hold as leverage. Here's how a front-loaded schedule quietly strips your only protection.",
+    "tag": "Payment Structure",
+    "pillar": "D",
+    "audience": "homeowner"
   }
 ]
