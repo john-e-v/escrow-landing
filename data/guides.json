@@ -1033,5 +1033,32 @@
     "tag": "Payment Structure",
     "pillar": "D",
     "audience": "homeowner"
+  },
+  {
+    "slug": "field-app-vs-office-software-sync",
+    "title": "Field App vs. Office Software: Where Job Data Actually Breaks in Transit",
+    "date": "August 2026",
+    "excerpt": "The crew logs progress on their phones, the office runs the numbers on a desktop, and somewhere between the two your job data goes stale. This teardown compares field-first apps against office-first systems and shows where the sync gap quietly costs you.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
+  },
+  {
+    "slug": "epoxy-garage-floor-peeled-blame",
+    "title": "Your Epoxy Garage Floor Peeled in a Year. Here's Who Actually Pays",
+    "date": "August 2026",
+    "excerpt": "A $4,200 epoxy floor peeled off in sheets eleven months after install because the contractor skipped the moisture test and grinding prep. The homeowner had paid in full on completion day, and the fix cost more than the original job. Here's the prep step nobody quoted and the payment structure that would have kept leverage alive.",
+    "tag": "The Hidden Cost",
+    "pillar": "D",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "sunroom-addition-worth-it-resale",
+    "title": "Is a Sunroom Addition Worth It? Cost, ROI, and When It Backfires",
+    "date": "August 2026",
+    "excerpt": "A sunroom addition rarely pays for itself at resale, returning roughly 45-55% of its cost. The verdict flips only when it's built on a proper foundation with heating and cooling that makes it count as year-round living space.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
   }
 ]
