@@ -1060,5 +1060,32 @@
     "tag": "Cost & ROI",
     "pillar": "A",
     "audience": "homeowner"
+  },
+  {
+    "slug": "contractor-pulled-off-job-better-paying",
+    "title": "Your Contractor Vanished for Three Weeks — He Took a Bigger Job",
+    "date": "August 2026",
+    "excerpt": "Your contractor didn't quit. He just found a more profitable job and parked yours to keep it warm. Here's why the crew keeps disappearing for days at a time, and the payment structure that makes ghosting expensive for the person doing it.",
+    "tag": "Project Delays",
+    "pillar": "D",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "landscaping-worth-it-resale",
+    "title": "Is Professional Landscaping Worth It? Cost, Resale Value, and When It Doesn't Pay",
+    "date": "August 2026",
+    "excerpt": "Professional landscaping pays back better than most interior upgrades, returning 100% or more at resale on mature, low-maintenance designs. But over-planting or high-upkeep features can scare buyers and flip the math against you.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "escrow-caught-unlicensed-sub-swap",
+    "title": "The Contractor Swapped in an Unlicensed Sub. Escrow Meant the Homeowner Paid Nothing.",
+    "date": "August 2026",
+    "excerpt": "A homeowner hired a licensed contractor for an electrical panel job, but the crew that showed up was an unlicensed sub the contractor quietly subbed out. Because payment sat in escrow tied to a passed inspection, the failed permit never cost the homeowner a dime.",
+    "tag": "Escrow Effect",
+    "pillar": "BRIDGE",
+    "audience": "both"
   }
 ]
