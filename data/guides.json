@@ -1087,5 +1087,32 @@
     "tag": "Escrow Effect",
     "pillar": "BRIDGE",
     "audience": "both"
+  },
+  {
+    "slug": "finished-attic-worth-it-resale",
+    "title": "Is Finishing Your Attic Worth It? Cost, ROI, and When It Doesn't Pay",
+    "date": "August 2026",
+    "excerpt": "It depends on ceiling height. A finished attic returns 55-60% at resale and adds real square footage—but only if the space clears code-legal head height and the stairs already exist. Miss either, and you're pouring money into a bonus room the appraiser won't count.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "escrow-caught-abandoned-tile-halfway",
+    "title": "The Tile Setter Quit at 50% and Demanded Full Pay. Escrow Meant the Homeowner Said No.",
+    "date": "August 2026",
+    "excerpt": "A bathroom tile job stalled at the halfway mark when the setter demanded the full balance to 'finish next week' — a week that never came. Because the money sat in escrow tied to completion, the homeowner released nothing and hired a finisher without eating a double payment.",
+    "tag": "Escrow Effect",
+    "pillar": "BRIDGE",
+    "audience": "both"
+  },
+  {
+    "slug": "chimney-repair-cost-2026",
+    "title": "How Much Does Chimney Repair Cost in 2026?",
+    "date": "August 2026",
+    "excerpt": "Chimney repair runs $200 to $6,000 in 2026, with full rebuilds pushing past $12,000. The gap depends on whether you're patching mortar, replacing a crown, or rebuilding a leaning stack from the roofline up.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
   }
 ]
