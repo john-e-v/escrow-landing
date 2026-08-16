@@ -1114,5 +1114,32 @@
     "tag": "Cost & Timeline",
     "pillar": "B",
     "audience": "homeowner"
+  },
+  {
+    "slug": "escrow-caught-inflated-final-invoice",
+    "title": "The Final Invoice Came in $8K Over the Contract. Escrow Meant It Didn't Get Paid.",
+    "date": "August 2026",
+    "excerpt": "A homeowner's contractor tacked $8,000 of unapproved 'extras' onto the final invoice and expected a wire on the spot. Because the money sat in escrow tied to the signed scope, the padded bill never cleared—and the dispute got settled before a dime moved.",
+    "tag": "Escrow Effect",
+    "pillar": "BRIDGE",
+    "audience": "both"
+  },
+  {
+    "slug": "kitchen-cabinet-refacing-cost-2026",
+    "title": "How Much Does Kitchen Cabinet Refacing Cost in 2026?",
+    "date": "August 2026",
+    "excerpt": "Kitchen cabinet refacing runs $4,500 to $12,000 for an average kitchen in 2026, with high-end veneer and door jobs pushing past $15,000. This guide breaks down what drives the spread — material choice, cabinet count, and whether your boxes are even worth saving.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "client-paid-with-post-dated-check",
+    "title": "The Client Handed You a Post-Dated Check: Why That's a Non-Payment in Disguise",
+    "date": "August 2026",
+    "excerpt": "A post-dated check isn't a payment—it's a promise you can't cash yet, and it hands the client a two-week window to change their mind. Here's why accepting one puts you back at square one, and the payment structure that removes the gap entirely.",
+    "tag": "Payments & Escrow",
+    "pillar": "E",
+    "audience": "contractor"
   }
 ]
