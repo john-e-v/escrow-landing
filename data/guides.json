@@ -1141,5 +1141,23 @@
     "tag": "Payments & Escrow",
     "pillar": "E",
     "audience": "contractor"
+  },
+  {
+    "slug": "asphalt-shingle-vs-metal-roof-cost",
+    "title": "How Much Does a Metal Roof Cost vs. Asphalt in 2026?",
+    "date": "August 2026",
+    "excerpt": "A metal roof runs $12,000 to $40,000 installed in 2026, while asphalt shingles land at $6,000 to $18,000 for the same house. The gap comes down to material grade, roof complexity, and how long you plan to stay. Here's what actually moves the number.",
+    "tag": "Cost & ROI",
+    "pillar": "B",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "client-wants-to-pay-in-installments",
+    "title": "The Client Wants to Pay in Monthly Installments After the Job: Why That's a Loan, Not a Payment",
+    "date": "August 2026",
+    "excerpt": "When a client asks to pay off the balance in monthly installments after completion, you've stopped being a contractor and started being a lender. Milestone escrow funds the money before the work happens, so you never carry a balance you can't collect.",
+    "tag": "Get Paid Faster",
+    "pillar": "E",
+    "audience": "contractor"
   }
 ]
