@@ -1159,5 +1159,32 @@
     "tag": "Get Paid Faster",
     "pillar": "E",
     "audience": "contractor"
+  },
+  {
+    "slug": "verify-contractor-google-business-profile",
+    "title": "How to Vet a Contractor's Google Business Profile Before You Call",
+    "date": "August 2026",
+    "excerpt": "A contractor's Google Business Profile leaks more than reviews — it shows how long they've operated, whether the address is real, and if the account was recently created to bury a bad history. Here's the 4-minute audit to run before you ever pick up the phone.",
+    "tag": "Before You Hire",
+    "pillar": "C",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "client-portal-vs-email-updates",
+    "title": "Client Portal vs. Email Updates: What Homeowners Actually Read",
+    "date": "August 2026",
+    "excerpt": "A branded client portal sounds professional, but half of homeowners never log in twice. We compare portals against plain email updates on the one metric that matters: whether the client actually reads them before disputing the bill.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
+  },
+  {
+    "slug": "contractor-hit-utility-line-cost",
+    "title": "The Contractor Hit a Gas Line Digging Your Trench. Who Pays the $18K?",
+    "date": "August 2026",
+    "excerpt": "A skipped 811 call turned a $6K sewer line replacement into an $18K emergency involving a severed gas main, evacuated neighbors, and a utility company invoice. Here's who actually eats the cost—and the payment structure that keeps you from paying for someone else's shortcut.",
+    "tag": "Hidden Cost",
+    "pillar": "D",
+    "audience": "homeowner"
   }
 ]
