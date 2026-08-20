@@ -1186,5 +1186,32 @@
     "tag": "Hidden Cost",
     "pillar": "D",
     "audience": "homeowner"
+  },
+  {
+    "slug": "digital-signature-tool-vs-paper-contract",
+    "title": "Digital Signature Tool vs. Paper Contract: What Actually Holds Up",
+    "date": "August 2026",
+    "excerpt": "Paper contracts feel solid until you need to prove when something got signed. Digital signature tools add a timestamped audit trail, but they also add another vendor to your stack—here's where each one earns its place and where it just adds friction.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
+  },
+  {
+    "slug": "contractor-poured-slab-wrong-spot",
+    "title": "The Contractor Poured the Slab in the Wrong Spot. Then Billed You to Move It.",
+    "date": "August 2026",
+    "excerpt": "A garage slab poured three feet off the property line became a $19K problem the homeowner got billed twice for. Here's why the mistake happened, who legally owned it, and the payment structure that would have kept the money on the table until it was fixed.",
+    "tag": "Job Gone Wrong",
+    "pillar": "D",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "central-air-vs-mini-splits-worth-it",
+    "title": "Are Ductless Mini-Splits Worth It vs. Central Air? Cost, ROI, and When Ducts Win",
+    "date": "August 2026",
+    "excerpt": "It depends on whether your home already has ductwork. Mini-splits win for homes without ducts or with add-ons, but central air pays back better on resale for full-home coverage. Here's the math and the tipping point.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
   }
 ]
