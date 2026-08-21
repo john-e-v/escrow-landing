@@ -1213,5 +1213,32 @@
     "tag": "Cost & ROI",
     "pillar": "A",
     "audience": "homeowner"
+  },
+  {
+    "slug": "contractor-changed-order-verbal-only",
+    "title": "The Change Order That Was Never Written Down: Why You're Paying for a Handshake",
+    "date": "August 2026",
+    "excerpt": "A verbal 'yeah, we can add that' on the jobsite turned into a $7,200 line item nobody remembers agreeing to. Here's how undocumented change orders quietly rewrite your budget — and the structure that stops it.",
+    "tag": "The Hidden Cost",
+    "pillar": "D",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "radon-mitigation-worth-it-cost",
+    "title": "Is Radon Mitigation Worth It? Cost, Health Payback, and When to Skip It",
+    "date": "August 2026",
+    "excerpt": "Radon mitigation is worth it if your test reads 4.0 pCi/L or higher — the fix runs $800 to $2,500 and cuts a real lung-cancer risk. Below that threshold, the math and the urgency both change fast.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "acceptance-clause-defines-job-done",
+    "title": "The Acceptance Clause That Defines 'Done' Before the Dispute Starts",
+    "date": "August 2026",
+    "excerpt": "Most disputes over final payment come down to one word nobody defined: 'done.' This acceptance clause spells out exactly what triggers completion, who signs off, and when the clock starts—so a client can't move the goalposts after the last coat dries.",
+    "tag": "Contract Clauses",
+    "pillar": "G",
+    "audience": "contractor"
   }
 ]
