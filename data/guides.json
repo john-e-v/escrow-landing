@@ -1240,5 +1240,32 @@
     "tag": "Contract Clauses",
     "pillar": "G",
     "audience": "contractor"
+  },
+  {
+    "slug": "smart-home-upgrades-worth-it-resale",
+    "title": "Are Smart Home Upgrades Worth It? Cost, Resale Value, and When They Don't Pay",
+    "date": "August 2026",
+    "excerpt": "Smart home upgrades rarely pay back at resale, but a select few earn their keep through savings and buyer appeal. This guide breaks down which devices recover their cost, which are pure convenience, and the one condition that flips the math entirely.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "notice-clause-written-complaints-required",
+    "title": "The Notice Clause That Forces Complaints in Writing Before They Become Disputes",
+    "date": "August 2026",
+    "excerpt": "Verbal complaints turn into lawsuits because nobody documented them. This notice clause requires clients to put problems in writing within a set window, giving you a paper trail and a chance to fix issues before they escalate.",
+    "tag": "Contract Clauses",
+    "pillar": "G",
+    "audience": "contractor"
+  },
+  {
+    "slug": "stucco-repair-cost-2026",
+    "title": "How Much Does Stucco Repair Cost in 2026?",
+    "date": "August 2026",
+    "excerpt": "Stucco repair runs $8 to $50 per square foot in 2026, with small patch jobs starting around $500 and full re-stucco projects hitting $15,000 or more. The gap comes down to whether you're patching cracks or fixing water damage hiding behind the wall.",
+    "tag": "Cost & ROI",
+    "pillar": "B",
+    "audience": "homeowner"
   }
 ]
