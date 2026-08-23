@@ -1267,5 +1267,32 @@
     "tag": "Cost & ROI",
     "pillar": "B",
     "audience": "homeowner"
+  },
+  {
+    "slug": "unforeseen-conditions-clause-hidden-costs",
+    "title": "The Unforeseen Conditions Clause: Who Pays When You Open the Wall and It's Worse",
+    "date": "August 2026",
+    "excerpt": "When demo reveals rot, code violations, or hidden damage nobody quoted, the unforeseen conditions clause decides who pays. Here's the exact clause text to add before your next job so a surprise inside the wall doesn't come out of your margin.",
+    "tag": "Contract Clauses",
+    "pillar": "G",
+    "audience": "contractor"
+  },
+  {
+    "slug": "deck-staining-sealing-cost-2026",
+    "title": "How Much Does It Cost to Stain and Seal a Deck in 2026?",
+    "date": "August 2026",
+    "excerpt": "Staining and sealing a deck runs $2 to $5 per square foot in 2026, or roughly $600 to $2,000 for a typical deck. The spread comes down to deck condition, stain type, and how much prep the wood actually needs before a drop of stain goes on.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "client-wants-lien-release-before-payment",
+    "title": "The Client Wants the Lien Release Signed Before They Pay: Why That's Backwards",
+    "date": "August 2026",
+    "excerpt": "A client asking you to sign a lien waiver before the check clears is asking you to give up your only leverage for free. Sign it after payment funds, or structure the exchange so both happen at once.",
+    "tag": "Contractor Ops",
+    "pillar": "E",
+    "audience": "contractor"
   }
 ]
