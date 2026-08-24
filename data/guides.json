@@ -1294,5 +1294,32 @@
     "tag": "Contractor Ops",
     "pillar": "E",
     "audience": "contractor"
+  },
+  {
+    "slug": "gutter-replacement-cost-2026",
+    "title": "How Much Does Gutter Replacement Cost in 2026?",
+    "date": "August 2026",
+    "excerpt": "New gutters run $4 to $30 per linear foot installed, putting most homes between $1,000 and $6,000. The spread comes down to material, home height, downspout count, and whether your fascia is rotted underneath.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "client-wants-to-pay-on-completion-only",
+    "title": "The Client Wants to Pay Everything on Completion: Why That's Their Risk, Not Yours",
+    "date": "August 2026",
+    "excerpt": "A client who refuses to pay until the job is fully done is asking you to finance their entire project with your own cash. Milestone-based escrow flips the risk back where it belongs — funds committed upfront, released as you hit verified checkpoints.",
+    "tag": "Payment Structure",
+    "pillar": "E",
+    "audience": "contractor"
+  },
+  {
+    "slug": "contractor-wants-full-payment-before-work",
+    "title": "The Contractor Wants Full Payment Before Starting: Why That Ends the Conversation",
+    "date": "August 2026",
+    "excerpt": "A legitimate contractor never needs 100% of the job cost before they've swung a hammer. This checklist gives you the exact payment terms to demand, the documents to request, and the one line that should end any meeting on the spot.",
+    "tag": "Before You Hire",
+    "pillar": "C",
+    "audience": "homeowner"
   }
 ]
