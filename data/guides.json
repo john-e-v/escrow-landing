@@ -1321,5 +1321,32 @@
     "tag": "Before You Hire",
     "pillar": "C",
     "audience": "homeowner"
+  },
+  {
+    "slug": "client-wants-to-pay-half-now-half-later-no-milestones",
+    "title": "The Client Wants to Pay Half Now, Half 'When It's Done' — With Nothing In Between",
+    "date": "August 2026",
+    "excerpt": "A two-payment split with no milestone between deposit and completion leaves your entire labor investment exposed for the length of the job. Restructure the back half into milestone releases so you're never carrying more than one stage of unpaid work.",
+    "tag": "Payment Structure",
+    "pillar": "E",
+    "audience": "contractor"
+  },
+  {
+    "slug": "verify-contractor-manufacturer-certifications",
+    "title": "How to Verify a Contractor's Manufacturer Certifications (And Why Fakes Are Common)",
+    "date": "August 2026",
+    "excerpt": "That 'GAF Master Elite' or 'Pella Certified' badge on the truck could be expired, fabricated, or belong to a company that fired the contractor years ago. Here's how to confirm a manufacturer certification in minutes and why it protects your warranty.",
+    "tag": "Vetting & Protection",
+    "pillar": "C",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "estimate-app-vs-crm-where-quotes-live",
+    "title": "Where Your Quotes Should Live: Standalone Estimating App vs. CRM Module",
+    "date": "August 2026",
+    "excerpt": "A standalone estimating app builds cleaner bids, but a CRM module keeps the quote attached to the client, the job, and the follow-up. Here's the real tradeoff and how to decide which one owns your quoting without fragmenting your data.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
   }
 ]
