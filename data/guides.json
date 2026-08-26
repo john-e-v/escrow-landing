@@ -1348,5 +1348,32 @@
     "tag": "Contractor Ops",
     "pillar": "F",
     "audience": "contractor"
+  },
+  {
+    "slug": "verify-contractor-ein-legitimacy",
+    "title": "How to Verify a Contractor's EIN and Business Registration Before You Hire",
+    "date": "August 2026",
+    "excerpt": "A license tells you they can work, but business registration tells you if the company is real. Here's the exact checklist to confirm a contractor's EIN, entity status, and registration in under 10 minutes before you sign anything.",
+    "tag": "Vetting Checklist",
+    "pillar": "C",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "expense-tracking-app-vs-shoebox-receipts",
+    "title": "Expense Tracking App vs. Shoebox Receipts: Where Job Costs Actually Get Lost",
+    "date": "August 2026",
+    "excerpt": "The shoebox method feels free until tax season, when a missing $340 receipt costs you a $340 deduction. This teardown compares loose receipts against a real expense workflow, and where each one actually breaks on a live job.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
+  },
+  {
+    "slug": "contractor-abandoned-permit-open-inspection",
+    "title": "The Contractor Left the Permit Open. Now You Can't Sell Your House.",
+    "date": "August 2026",
+    "excerpt": "A finished kitchen remodel looked done—until the title company flagged an open permit two years later, hours before closing. The original contractor was gone, and the buyer walked. Here's how an unclosed permit becomes a five-figure problem long after the job ends.",
+    "tag": "Hidden Cost",
+    "pillar": "D",
+    "audience": "homeowner"
   }
 ]
