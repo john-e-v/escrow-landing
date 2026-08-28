@@ -1375,5 +1375,32 @@
     "tag": "Hidden Cost",
     "pillar": "D",
     "audience": "homeowner"
+  },
+  {
+    "slug": "contractor-hauled-off-materials-you-paid-for",
+    "title": "You Paid for the Materials. The Contractor Loaded Them Onto the Next Job.",
+    "date": "August 2026",
+    "excerpt": "A homeowner wired $11K for cabinets and lumber that showed up, then vanished onto another client's site. Here's how paying for materials up front hands your inventory to whoever the contractor decides needs it more.",
+    "tag": "Payment Protection",
+    "pillar": "D",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "new-garage-door-worth-it-resale",
+    "title": "Is a New Garage Door Worth It? Cost, Resale Value, and When to Skip It",
+    "date": "August 2026",
+    "excerpt": "A new garage door is one of the highest-ROI upgrades in home improvement, recouping most of its cost at resale. But that return only holds if your existing door is genuinely dated or damaged — replacing a functional door for style is where the math falls apart.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "escrow-caught-drywall-over-failed-rough-in",
+    "title": "The Drywall Went Up Over a Failed Rough-In. Escrow Meant the Homeowner Wasn't Stuck.",
+    "date": "August 2026",
+    "excerpt": "A contractor closed up walls before the rough-in inspection passed, hiding electrical that would have failed. Because the milestone payment sat in escrow, the homeowner had the leverage to force the tear-out at the contractor's cost — not their own.",
+    "tag": "Escrow Effect",
+    "pillar": "BRIDGE",
+    "audience": "both"
   }
 ]
