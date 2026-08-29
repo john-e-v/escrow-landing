@@ -1429,5 +1429,32 @@
     "tag": "Cost & Timeline",
     "pillar": "B",
     "audience": "homeowner"
+  },
+  {
+    "slug": "egress-window-worth-it-basement",
+    "title": "Is an Egress Window Worth It? Cost, ROI, and When It's Non-Negotiable",
+    "date": "August 2026",
+    "excerpt": "An egress window costs $2,500 to $6,500 installed, but the real answer depends on whether you're finishing a basement bedroom. It pays back through legality and safety more than resale dollars, and skipping it can cost you a sale outright.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "escrow-caught-hvac-wrong-tonnage",
+    "title": "The Contractor Installed the Wrong-Size HVAC. Escrow Meant the Homeowner Hadn't Paid.",
+    "date": "August 2026",
+    "excerpt": "A homeowner nearly paid in full for a 2-ton system when the load calc called for 3. Because the final release was held in escrow, the undersized unit got caught—and corrected—before a single dollar moved. Here's how the timing saved them $6,400.",
+    "tag": "The Escrow Effect",
+    "pillar": "BRIDGE",
+    "audience": "both"
+  },
+  {
+    "slug": "mini-split-installation-cost-2026",
+    "title": "How Much Does a Ductless Mini-Split Cost to Install in 2026?",
+    "date": "August 2026",
+    "excerpt": "A single-zone ductless mini-split runs $3,500 to $6,500 installed in 2026, while a multi-zone system for a whole house lands between $8,000 and $20,000. The spread comes down to zone count, line-set runs, and how hard your electrical panel makes the job.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
   }
 ]
