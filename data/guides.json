@@ -1402,5 +1402,32 @@
     "tag": "Escrow Effect",
     "pillar": "BRIDGE",
     "audience": "both"
+  },
+  {
+    "slug": "roof-replacement-worth-it-before-selling",
+    "title": "Is Replacing Your Roof Worth It Before Selling? Cost, ROI, and When to Skip It",
+    "date": "August 2026",
+    "excerpt": "A full roof replacement before selling rarely pays back its full cost, but a failing roof can kill the sale entirely. This guide breaks down the real numbers, resale recovery percentages, and the one condition that flips a skip into a must-do.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "escrow-caught-plumbing-rough-in-leak",
+    "title": "The Plumbing Rough-In Leaked Behind the Wall. Escrow Meant the Homeowner Held Firm.",
+    "date": "August 2026",
+    "excerpt": "A homeowner nearly signed off on a bathroom rough-in before a pressure test revealed a slow leak behind the new drywall line. Because payment sat in escrow tied to inspection, the contractor fixed it on his dime instead of the homeowner's.",
+    "tag": "Escrow Effect",
+    "pillar": "BRIDGE",
+    "audience": "both"
+  },
+  {
+    "slug": "septic-system-install-cost-2026",
+    "title": "How Much Does a New Septic System Cost in 2026?",
+    "date": "August 2026",
+    "excerpt": "A new septic system runs $5,000 to $30,000 in 2026, with most conventional installs landing between $8,000 and $15,000. Soil type, tank size, and whether you need an engineered system for poor perc can swing the number by tens of thousands.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
   }
 ]
