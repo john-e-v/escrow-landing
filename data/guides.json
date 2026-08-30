@@ -1456,5 +1456,32 @@
     "tag": "Cost & Timeline",
     "pillar": "B",
     "audience": "homeowner"
+  },
+  {
+    "slug": "escrow-caught-electrical-code-violation",
+    "title": "The Electrician Buried Undersized Wire in the Wall. Escrow Meant the Homeowner Didn't Pay for a Fire Hazard.",
+    "date": "August 2026",
+    "excerpt": "A homeowner's panel upgrade passed the eye test until the inspector flagged 14-gauge wire feeding a 20-amp circuit. Because payment sat in escrow tied to inspection sign-off, the homeowner had leverage to force the fix instead of eating a rewire.",
+    "tag": "Escrow Effect",
+    "pillar": "BRIDGE",
+    "audience": "both"
+  },
+  {
+    "slug": "whole-house-generator-cost-2026",
+    "title": "How Much Does a Whole-House Generator Cost in 2026?",
+    "date": "August 2026",
+    "excerpt": "A whole-house standby generator runs $8,000 to $22,000 installed in 2026, and the spread comes down to whether you buy a 14kW unit or a 26kW one. Fuel type, transfer switch, gas line runs, and electrical panel work move the number more than the generator itself.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "client-wants-to-pay-by-credit-card-fees",
+    "title": "The Client Wants to Pay the Final Bill by Credit Card: Who Eats the 3%?",
+    "date": "August 2026",
+    "excerpt": "A client offering to put the final $18K on a credit card sounds like fast money, but the 3% processing fee and 120-day chargeback window make it one of the riskiest ways to close a job. Here's how to structure payment so the convenience doesn't quietly cost you your margin.",
+    "tag": "Payments & Escrow",
+    "pillar": "E",
+    "audience": "contractor"
   }
 ]
