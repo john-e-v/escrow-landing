@@ -1483,5 +1483,32 @@
     "tag": "Payments & Escrow",
     "pillar": "E",
     "audience": "contractor"
+  },
+  {
+    "slug": "basement-waterproofing-cost-2026",
+    "title": "How Much Does Basement Waterproofing Cost in 2026?",
+    "date": "August 2026",
+    "excerpt": "Basement waterproofing runs $3,000 to $15,000 for most homes, but severe cases push past $30,000. The gap comes down to whether you're sealing from the inside or excavating the entire foundation from the outside.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "client-wants-payment-tied-to-loan-approval",
+    "title": "The Client Says They'll Pay 'When the HELOC Comes Through': Why That's Not Your Problem",
+    "date": "August 2026",
+    "excerpt": "When a client ties your payment to their financing timeline, you've quietly become their lender without agreeing to it. Structure the job so funds are committed before you mobilize, not promised against a loan that hasn't closed.",
+    "tag": "Payment Ops",
+    "pillar": "E",
+    "audience": "contractor"
+  },
+  {
+    "slug": "verify-contractor-license-covers-your-project",
+    "title": "Your Contractor Is Licensed — But Is It the Right License for Your Job?",
+    "date": "August 2026",
+    "excerpt": "A general contractor's license doesn't automatically cover electrical, plumbing, or roofing work. Here's how to confirm the license class actually matches the job you're hiring for — before you sign.",
+    "tag": "Vetting Checklist",
+    "pillar": "C",
+    "audience": "homeowner"
   }
 ]
