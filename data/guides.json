@@ -1510,5 +1510,32 @@
     "tag": "Vetting Checklist",
     "pillar": "C",
     "audience": "homeowner"
+  },
+  {
+    "slug": "client-wants-to-pay-when-they-sell-house",
+    "title": "The Client Says They'll Pay 'When the House Sells': Why That's Not a Payment Plan",
+    "date": "September 2026",
+    "excerpt": "A client tying your final payment to their home sale isn't offering terms — they're handing you their market risk for free. Here's why you refuse it and how milestone escrow removes the conversation entirely.",
+    "tag": "Payment Terms",
+    "pillar": "E",
+    "audience": "contractor"
+  },
+  {
+    "slug": "verify-contractor-license-active-not-expired",
+    "title": "How to Confirm a Contractor's License Is Active (Not Just Real)",
+    "date": "September 2026",
+    "excerpt": "A license number that checks out isn't the same as a license that's active. This checklist walks you through confirming the status, expiration date, and any suspensions before you sign anything.",
+    "tag": "Vetting & Protection",
+    "pillar": "C",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "photo-storage-cloud-vs-app-silo",
+    "title": "Job Photos in the Cloud vs. Locked in an App: Where Your Evidence Actually Lives",
+    "date": "September 2026",
+    "excerpt": "Your daily photo log only wins disputes if you can actually retrieve it. This teardown compares dumping photos in generic cloud storage against burying them in a purpose-built field app — and where each one leaves you exposed when a client pushes back.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
   }
 ]
