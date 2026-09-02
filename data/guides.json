@@ -1537,5 +1537,32 @@
     "tag": "Contractor Ops",
     "pillar": "F",
     "audience": "contractor"
+  },
+  {
+    "slug": "questions-to-ask-before-deposit-walkthrough",
+    "title": "The Pre-Deposit Walkthrough: 8 Questions to Ask Before You Hand Over a Dime",
+    "date": "September 2026",
+    "excerpt": "Before a deposit changes hands, one walkthrough conversation reveals whether a contractor is legitimate or a liability. This is the exact script to run on-site, question by question, with the answers that should make you walk.",
+    "tag": "Vetting & Protection",
+    "pillar": "C",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "inventory-app-vs-spreadsheet-materials",
+    "title": "Inventory App vs. Spreadsheet: Where Your Material Costs Actually Leak",
+    "date": "September 2026",
+    "excerpt": "Most contractors track materials in a spreadsheet until a job goes sideways and nobody can say what got used where. Here's an honest look at when a spreadsheet is enough and when an inventory app earns its keep.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
+  },
+  {
+    "slug": "contractor-vanished-with-appliance-package",
+    "title": "You Prepaid the Appliance Package. The Contractor Never Ordered It.",
+    "date": "September 2026",
+    "excerpt": "A homeowner wired $9,400 for a full appliance package during a kitchen remodel. The contractor spent the money on payroll for another job and never placed the order. Here's how the money vanished and the milestone structure that would have stopped it.",
+    "tag": "Payment Protection",
+    "pillar": "D",
+    "audience": "homeowner"
   }
 ]
