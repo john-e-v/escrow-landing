@@ -1564,5 +1564,32 @@
     "tag": "Payment Protection",
     "pillar": "D",
     "audience": "homeowner"
+  },
+  {
+    "slug": "accounting-software-vs-payroll-add-on",
+    "title": "Accounting Software vs. Payroll Add-On: Where Crew Costs Actually Get Buried",
+    "date": "September 2026",
+    "excerpt": "Running payroll through your accounting software feels tidy until crew labor stops mapping cleanly to jobs. This teardown compares a standalone payroll approach against an accounting bolt-on, and where each one loses the labor-cost visibility your margins depend on.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
+  },
+  {
+    "slug": "contractor-fill-dirt-settled-patio-sank",
+    "title": "The Fill Dirt Settled and Your New Patio Sank 4 Inches. Who Pays?",
+    "date": "September 2026",
+    "excerpt": "A contractor built a patio on uncompacted fill to save two days. Eight months later it sank four inches and cracked. Here's why the homeowner paid twice, and the payment structure that would have held the money until the base was proven.",
+    "tag": "Hidden Cost",
+    "pillar": "D",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "new-hvac-worth-it-before-selling",
+    "title": "Is Replacing Your HVAC Worth It Before Selling? Cost, ROI, and When to Skip It",
+    "date": "September 2026",
+    "excerpt": "Replacing your HVAC before selling usually isn't worth it as an upgrade play, but it is worth it if the system is dead or failing inspection. The math depends entirely on whether your unit is a repair line item or a deal-killer.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
   }
 ]
