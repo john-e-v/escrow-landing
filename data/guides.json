@@ -1591,5 +1591,32 @@
     "tag": "Cost & ROI",
     "pillar": "A",
     "audience": "homeowner"
+  },
+  {
+    "slug": "concrete-cure-time-cracked-slab-cost",
+    "title": "Your Contractor Poured on a Cold Day and Rushed the Cure. Now the Slab Is Cracking.",
+    "date": "September 2026",
+    "excerpt": "A garage slab poured at 38°F with no blankets and stripped forms in two days spider-cracked by spring. The homeowner had already paid in full. Here's why cure time is the line item nobody quotes, and how milestone payments would have kept the leverage where it belonged.",
+    "tag": "Hidden Cost",
+    "pillar": "D",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "new-front-door-worth-it-resale",
+    "title": "Is a New Front Door Worth It? Cost, Resale Value, and When It Pays Off",
+    "date": "September 2026",
+    "excerpt": "A steel entry door replacement is one of the few renovations that returns close to what you spend, making it a rare yes for sellers. But the math flips fast when you upgrade to a $4,000 custom wood door that buyers won't pay a premium for.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "termination-clause-protects-mid-job-exit",
+    "title": "The Termination Clause That Lets You Walk Off a Bad Job (And Still Get Paid)",
+    "date": "September 2026",
+    "excerpt": "Most contracts only let the client fire you — leaving you stuck on a job with a non-paying or impossible client and no clean way out. A mutual termination clause spells out exactly how you exit, what you get paid for work completed, and how you demobilize without eating the loss.",
+    "tag": "Contract Clauses",
+    "pillar": "G",
+    "audience": "contractor"
   }
 ]
