@@ -1618,5 +1618,32 @@
     "tag": "Contract Clauses",
     "pillar": "G",
     "audience": "contractor"
+  },
+  {
+    "slug": "new-siding-worth-it-before-selling",
+    "title": "Is New Siding Worth It Before Selling? Cost, ROI, and When to Skip It",
+    "date": "September 2026",
+    "excerpt": "New siding recoups a strong share of its cost at resale, but full replacement rarely pays for itself when you're selling within a year. Here's the math on recovery rates, the payback timeline, and the condition that flips the verdict entirely.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "indemnification-clause-protects-third-party-claims",
+    "title": "The Indemnification Clause That Stops a Client's Neighbor From Suing You",
+    "date": "September 2026",
+    "excerpt": "When a client's neighbor, guest, or the client themselves files a third-party claim over your work, the indemnification clause decides who pays the lawyer. This is the exact language to drop into your contract before your next job starts.",
+    "tag": "Contract Clauses",
+    "pillar": "G",
+    "audience": "contractor"
+  },
+  {
+    "slug": "fireplace-installation-cost-2026",
+    "title": "How Much Does a Fireplace Installation Cost in 2026?",
+    "date": "September 2026",
+    "excerpt": "A new fireplace runs $2,500 to $12,000 installed in 2026, but the type you pick swings that range hard. Gas, wood-burning, and electric each carry wildly different labor, venting, and permitting costs.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
   }
 ]
