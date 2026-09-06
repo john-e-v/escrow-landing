@@ -1645,5 +1645,32 @@
     "tag": "Cost & Timeline",
     "pillar": "B",
     "audience": "homeowner"
+  },
+  {
+    "slug": "liquidated-damages-clause-late-completion",
+    "title": "The Liquidated Damages Clause: Cap Your Late-Finish Exposure Before You Sign",
+    "date": "September 2026",
+    "excerpt": "Open-ended late penalties can bleed your margin dry when a job runs long. A liquidated damages clause sets a fixed, agreed daily amount up front so a delay never turns into an unlimited claim for lost rent, hotel bills, or 'consequential' damages.",
+    "tag": "Contract Clauses",
+    "pillar": "G",
+    "audience": "contractor"
+  },
+  {
+    "slug": "pergola-installation-cost-2026",
+    "title": "How Much Does a Pergola Cost to Install in 2026?",
+    "date": "September 2026",
+    "excerpt": "A pergola runs $3,500 to $12,000 installed in 2026, with custom builds pushing well past $20,000. Material choice, size, footing type, and whether you add a shade canopy or louvers move the number more than anything else.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "client-wants-to-pay-per-visit-cash",
+    "title": "The Client Wants to Pay Your Crew Directly in Cash Each Day: Why That Wrecks Your Records",
+    "date": "September 2026",
+    "excerpt": "A client offering to hand your crew cash at the end of each day sounds like fast payment, but it destroys your paper trail and leaves you liable for money you never controlled. Route every dollar through the business and a milestone structure instead.",
+    "tag": "Contractor Ops",
+    "pillar": "E",
+    "audience": "contractor"
   }
 ]
