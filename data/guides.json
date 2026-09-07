@@ -1672,5 +1672,32 @@
     "tag": "Contractor Ops",
     "pillar": "E",
     "audience": "contractor"
+  },
+  {
+    "slug": "sod-installation-cost-2026",
+    "title": "How Much Does Sod Installation Cost in 2026?",
+    "date": "September 2026",
+    "excerpt": "Sod installation runs $0.90 to $2.50 per square foot installed in 2026, or roughly $2,000 to $8,000 for a typical yard. Grass type, site prep, and delivery distance are what stretch that range wide.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "client-wants-to-pay-with-material-instead-of-cash",
+    "title": "The Client Offered to Pay You in Leftover Materials: Why That's a Loss, Not a Payment",
+    "date": "September 2026",
+    "excerpt": "When a client offers to settle the final balance with leftover lumber, tile, or an appliance they never used, they're handing you a liability dressed as a payment. Here's why bartering wrecks your books and how to structure payment so cash stays cash.",
+    "tag": "Payment Ops",
+    "pillar": "E",
+    "audience": "contractor"
+  },
+  {
+    "slug": "verify-contractor-license-complaint-board",
+    "title": "How to Check a Contractor With Your State License Board (Before You Sign)",
+    "date": "September 2026",
+    "excerpt": "Your state contractor license board holds public records on discipline, complaints, and license status that most homeowners never check. This is the exact search-and-confirm sequence to run before you hand over a deposit or sign anything.",
+    "tag": "Before You Hire",
+    "pillar": "C",
+    "audience": "homeowner"
   }
 ]
