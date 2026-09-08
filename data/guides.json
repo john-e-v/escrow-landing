@@ -1699,5 +1699,32 @@
     "tag": "Before You Hire",
     "pillar": "C",
     "audience": "homeowner"
+  },
+  {
+    "slug": "client-wants-to-wire-deposit-overpay-refund",
+    "title": "The Client 'Accidentally' Overpaid and Wants the Difference Back: It's a Scam",
+    "date": "September 2026",
+    "excerpt": "A client wires more than the deposit and asks you to refund the difference before the payment clears. Recognize the overpayment scam for what it is, and shut it down with a payment structure where money can't be clawed back after you've refunded it.",
+    "tag": "Payment Fraud",
+    "pillar": "E",
+    "audience": "contractor"
+  },
+  {
+    "slug": "verify-contractor-photos-are-real-work",
+    "title": "How to Verify a Contractor's Portfolio Photos Are Actually Their Work",
+    "date": "September 2026",
+    "excerpt": "Contractors routinely fill their portfolios with stock images and jobs they never touched. This checklist gives you the exact reverse-image searches, questions, and address requests to confirm the photos in front of you came from a job they actually built.",
+    "tag": "Before You Hire",
+    "pillar": "C",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "dispatch-software-vs-group-text-crew",
+    "title": "Dispatch Software vs. Group Text: What Breaks When You Send Crews to 5 Sites",
+    "date": "September 2026",
+    "excerpt": "Running a group text to send crews to job sites works until it doesn't—then you're eating a truck roll to the wrong address. Here's an honest look at where a shared thread breaks and where dispatch software actually earns its cost.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
   }
 ]
