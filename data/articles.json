@@ -14,53 +14,11 @@
     "tag": "Contractor Fraud"
   },
   {
-    "slug": "contractor-unpaid-completed-work",
-    "title": "Work Done, Payment Denied: The Contractor's Side of the Payment Crisis",
-    "date": "October 2023",
-    "excerpt": "For every homeowner defrauded by a contractor, there are legitimate contractors who completed work and were never paid. A documented look at how the payment crisis cuts both ways.",
-    "tag": "Contractor Rights"
-  },
-  {
     "slug": "california-wildfire-contractor-licensing-fraud",
     "title": "Unlicensed Contractors Swarmed California Wildfire Victims for Millions",
     "date": "June 2026",
     "excerpt": "After California's devastating wildfires, the Contractors State License Board conducted sting operations that caught dozens of unlicensed operators targeting displaced homeowners. Many demanded illegal upfront deposits before vanishing or performing dangerous, substandard work.",
     "tag": "Disaster Recovery"
-  },
-  {
-    "slug": "aaron-construction-michigan-contractor-fraud",
-    "title": "The $1.2 Million Deposit Scheme That Took Down a Michigan Builder",
-    "date": "June 2026",
-    "excerpt": "A Michigan contractor collected large deposits from dozens of homeowners for projects he never completed, leaving families out hundreds of thousands of dollars. State prosecutors eventually charged him with multiple felony counts of fraud and racketeering.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "benjamin-dewees-pennsylvania-contractor-fraud",
-    "title": "The Pennsylvania Contractor Who Stole Over $400,000 From Homeowners",
-    "date": "June 2026",
-    "excerpt": "Benjamin Dewees collected hundreds of thousands of dollars in deposits from Pennsylvania homeowners for home improvement projects he never completed. His pattern of taking money and abandoning jobs led to a state criminal conviction and restitution orders.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "skyline-roofing-colorado-contractor-fraud",
-    "title": "Colorado's $2.5M Roofing Fraud: How Skyline Took Hail-Damage Deposits",
-    "date": "June 2026",
-    "excerpt": "A Colorado roofing operation collected millions from homeowners after severe hail storms, then failed to complete work or never started at all. The case highlights how storm-chasing contractors exploit insurance claims and upfront deposits.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "horizon-restoration-texas-contractor-fraud",
-    "title": "The Texas Contractor Who Bilked Storm Victims Out of Millions",
-    "date": "June 2026",
-    "excerpt": "A Texas restoration contractor collected insurance proceeds and homeowner payments for storm repairs that were never completed or never started. Authorities pursued charges after dozens of victims reported losses, exposing how disaster-driven demand fuels contractor fraud.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "national-prospect-roofing-fraud-louisiana",
-    "title": "Hurricane Laura's Aftermath: The Storm-Chasing Roofers Who Vanished",
-    "date": "June 2026",
-    "excerpt": "After Hurricane Laura devastated southwest Louisiana in 2020, out-of-state storm chasers and fly-by-night contractors collected deposits and insurance checks then disappeared. The Louisiana State Licensing Board and Attorney General fielded a surge of complaints from homeowners left with damaged homes and empty bank accounts.",
-    "tag": "Contractor Fraud"
   },
   {
     "slug": "iowa-derecho-contractor-fraud-2020",
@@ -70,326 +28,32 @@
     "tag": "Disaster Recovery"
   },
   {
-    "slug": "mark-leffler-ohio-contractor-fraud",
-    "title": "The Ohio Contractor Who Stole $1M From Elderly Homeowners",
+    "slug": "atlanta-pool-contractor-fraud",
+    "title": "The Atlanta Pool Builder Who Left Homeowners With Empty Yards and Drained Deposits",
     "date": "June 2026",
-    "excerpt": "An Ohio contractor took hundreds of thousands in deposits from homeowners, many elderly, for home improvement work he never completed. State investigators and the Attorney General pursued charges after a flood of consumer complaints exposed the scheme.",
+    "excerpt": "Rick McDermott's Aqua Blue Pools collected large deposits from homeowners across metro Atlanta but left projects unfinished or never started. Prosecutors charged him after families across multiple counties lost their money to abandoned pool construction contracts.",
     "tag": "Contractor Fraud"
   },
   {
-    "slug": "nicholas-costello-florida-contractor-fraud",
-    "title": "The Florida Contractor Who Stole $2.6M From Hurricane Victims and Fled",
-    "date": "June 2026",
-    "excerpt": "A Florida contractor collected millions in deposits from homeowners for repairs and new construction, then failed to complete the work. Authorities charged him with grand theft after dozens of victims came forward demanding accountability.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "benjamin-cole-virginia-contractor-fraud",
-    "title": "The Virginia Contractor Who Stole $880,000 From Homeowners",
-    "date": "June 2026",
-    "excerpt": "Benjamin Cole, operating a Northern Virginia construction business, collected hundreds of thousands in deposits for home renovations he never completed. Multiple homeowners were left with unfinished projects and empty bank accounts before prosecutors brought him to justice.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "roman-james-builders-texas-fraud",
-    "title": "The Austin Custom Home Builder Who Defrauded Clients of Millions",
-    "date": "June 2026",
-    "excerpt": "Roman James Hidalgo, owner of Roman James Builders in Austin, collected millions from homeowners for custom builds and renovations that were never completed. Prosecutors charged him with theft after dozens of clients reported abandoned projects and missing funds.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "tropical-storm-isaias-new-jersey-contractor-fraud",
-    "title": "The New Jersey Contractor Who Took $1M From Homeowners and Vanished",
-    "date": "June 2026",
-    "excerpt": "A New Jersey home improvement contractor collected large deposits from dozens of homeowners for renovations and repairs, then failed to complete the work. Authorities charged him with theft after victims lost more than $1 million combined.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "benjamin-shaw-georgia-contractor-fraud",
-    "title": "The Georgia Contractor Who Took Over $1M in Pool Construction Deposits",
-    "date": "June 2026",
-    "excerpt": "An Atlanta-area pool builder collected large deposits from homeowners but left projects unfinished or never started. Prosecutors charged him after dozens of families lost their money to abandoned pool construction contracts.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "tarl-robinson-minnesota-contractor-fraud",
-    "title": "The Minnesota Contractor Who Took Over $500,000 in Home Deposits",
-    "date": "June 2026",
-    "excerpt": "A Twin Cities-area contractor collected hundreds of thousands of dollars from homeowners for remodeling and construction projects, then failed to complete the work. Prosecutors charged him with multiple counts of theft by swindle after victims came forward.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "tony-hieber-wisconsin-contractor-fraud",
-    "title": "The Wisconsin Contractor Who Stole Over $250,000 From Homeowners",
-    "date": "June 2026",
-    "excerpt": "Wisconsin contractor Tony Hieber took deposits from multiple homeowners for remodeling and construction projects, then failed to complete the work or refund the money. He was charged with multiple felony theft counts after victims came forward.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "michael-marr-illinois-contractor-fraud",
-    "title": "The Illinois Roofing Contractor Who Defrauded Homeowners and Insurers",
-    "date": "June 2026",
-    "excerpt": "An Illinois roofing contractor was convicted after running a scheme that defrauded homeowners and insurance companies through inflated and fraudulent storm-damage claims. The case highlights how insurance fraud schemes harm both homeowners and insurers, leaving property owners with incomplete work and legal exposure.",
-    "tag": "Insurance Fraud"
-  },
-  {
-    "slug": "marcus-padgett-north-carolina-contractor-fraud",
-    "title": "The North Carolina Contractor Who Took Over $1.5M From Homeowners",
-    "date": "June 2026",
-    "excerpt": "A North Carolina home builder collected large deposits from multiple families for homes that were never completed or never started. He was indicted on numerous fraud and obtaining property by false pretense charges after victims lost their life savings.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "aaron-andrew-construction-deposit-fraud",
-    "title": "The 'Storm Chaser' Who Stole Over $1 Million From Texas Homeowners",
-    "date": "June 2026",
-    "excerpt": "A Texas contractor collected large deposits for roofing and remodeling jobs across multiple counties, then disappeared without doing the work. Prosecutors charged him after dozens of homeowners reported losses, exposing how repeat offenders exploit the deposit system.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "richard-malone-massachusetts-contractor-fraud",
-    "title": "The Massachusetts Contractor Who Stole Over $600,000 From Homeowners",
-    "date": "June 2026",
-    "excerpt": "A Massachusetts contractor collected hundreds of thousands in deposits from homeowners for renovation projects he never completed. Prosecutors charged him with larceny after victims reported abandoned jobs and vanished funds.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "tennessee-contractor-fraud-james-honeycutt",
-    "title": "The Tennessee Contractor Who Took Over $700,000 From Homeowners",
-    "date": "June 2026",
-    "excerpt": "A Tennessee contractor collected hundreds of thousands in deposits for home projects he never completed, leaving multiple families with unfinished work and empty bank accounts. His case highlights the dangers of paying large upfront sums without protection.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "ramon-llanes-maryland-contractor-fraud",
-    "title": "The Maryland Contractor Who Took Over $3 Million From Homeowners",
-    "date": "June 2026",
-    "excerpt": "A Maryland home improvement contractor collected millions in deposits from dozens of homeowners but left projects abandoned or never started. Authorities charged him with theft and operating without a license after victims came forward across the state.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "joseph-nicotra-new-york-contractor-fraud",
-    "title": "The New York Contractor Who Stole Over $500,000 From Long Island Homeowners",
-    "date": "June 2026",
-    "excerpt": "A Long Island contractor collected hundreds of thousands in deposits from homeowners for renovations he never completed. Prosecutors charged him with grand larceny and a scheme to defraud after dozens of victims came forward.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "anthony-todt-florida-contractor-fraud",
-    "title": "The Connecticut-to-Florida Contractor Whose Fraud Preceded a Family Tragedy",
-    "date": "June 2026",
-    "excerpt": "Before the headlines, Anthony Todt operated a physical therapy and contracting-style billing scheme that defrauded clients and insurers across multiple states. His financial collapse left victims unpaid and exposed how unchecked fraud can spiral.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "david-gschwind-arizona-contractor-fraud",
-    "title": "The Arizona Contractor Who Took Over $1M From Valley Homeowners",
+    "slug": "bonney-lake-washington-contractor-fraud",
+    "title": "The Bonney Lake Contractor Who Took Approaching $1M From Homeowners",
     "date": "July 2026",
-    "excerpt": "An Arizona contractor collected large deposits for home remodeling and pool projects across the Phoenix metro area, then failed to complete the work. State regulators and prosecutors pursued him after dozens of homeowners filed complaints totaling more than $1 million in losses.",
+    "excerpt": "Construction Kings, based in Bonney Lake, Washington, collected large deposits for home renovation and construction projects, then failed to complete the work. State regulators, local police, and a multistate federal probe pursued the case after 26 or more homeowners reported losses.",
     "tag": "Contractor Fraud"
   },
   {
-    "slug": "julian-mcclurkin-indiana-contractor-fraud",
-    "title": "The Indiana Contractor Who Took Over $100,000 From Homeowners",
+    "slug": "wichita-kansas-contractor-fraud",
+    "title": "The Wichita Contractor Ordered to Pay Over $500,000 After Taking Homeowner Deposits",
     "date": "July 2026",
-    "excerpt": "An Indianapolis-area contractor collected deposits for home projects he never completed, leaving multiple homeowners out tens of thousands of dollars. He faced felony fraud and home improvement contract charges after victims came forward.",
+    "excerpt": "Chad E. Smith, a Wichita-area contractor, collected large deposits from homeowners for remodeling and construction projects, then failed to complete the work or refund the money. He was convicted on 25 counts and ordered to pay over $500,000 in restitution.",
     "tag": "Contractor Fraud"
   },
   {
-    "slug": "michael-doyle-oregon-contractor-fraud",
-    "title": "The Oregon Contractor Who Took Over $250,000 From Homeowners and Fled",
+    "slug": "centerville-utah-contractor-fraud",
+    "title": "The Centerville Contractor Who Took Over $400,000 From Homeowners",
     "date": "July 2026",
-    "excerpt": "An Oregon contractor collected large deposits for home projects, then abandoned the work and left customers with unfinished homes and empty bank accounts. State regulators and prosecutors pursued him after dozens of complaints piled up.",
+    "excerpt": "Edson Lins, an unlicensed Centerville, Utah contractor, collected large deposits for home construction and remodeling projects, then failed to complete the work, leaving families out hundreds of thousands of dollars. State prosecutors charged him with multiple felony counts after homeowner complaints mounted.",
     "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "david-preston-nevada-contractor-fraud",
-    "title": "The Nevada Contractor Who Took Over $200,000 From Las Vegas Homeowners",
-    "date": "July 2026",
-    "excerpt": "A Las Vegas-area contractor collected large deposits for home renovation and pool projects, then failed to complete the work while operating without proper licensing. Nevada authorities charged him after multiple homeowners reported losses totaling hundreds of thousands of dollars.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "matthew-mancuso-washington-contractor-fraud",
-    "title": "The Washington Contractor Who Took Over $1M From Homeowners",
-    "date": "July 2026",
-    "excerpt": "A Washington state contractor collected large deposits for home renovation and construction projects, then failed to complete the work while diverting funds. State regulators and prosecutors pursued charges after dozens of homeowners reported losses.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "gary-mcdaniel-kentucky-contractor-fraud",
-    "title": "The Kentucky Contractor Who Took Thousands From Homeowners in Deposit Scheme",
-    "date": "July 2026",
-    "excerpt": "A Louisville-area contractor collected deposits from multiple homeowners for remodeling and repair work that was never completed or never started. Investigations and homeowner complaints led to theft and fraud charges after victims lost thousands.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "todd-ryan-hann-south-carolina-fraud",
-    "title": "The South Carolina Contractor Who Took Over $700,000 From Homeowners",
-    "date": "July 2026",
-    "excerpt": "A Charleston-area contractor collected large deposits for home construction and renovation projects, then failed to complete the work while diverting client funds. Prosecutors documented losses exceeding $700,000 across multiple victims before securing a conviction.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "chad-kopped-alabama-contractor-fraud",
-    "title": "The Alabama Contractor Who Took Over $500,000 From Homeowners",
-    "date": "July 2026",
-    "excerpt": "An Alabama contractor collected large deposits from homeowners for construction and remodeling projects, then failed to complete the work or vanished entirely. Prosecutors pursued theft and fraud charges as victims struggled to recover hundreds of thousands of dollars.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "richard-turner-missouri-contractor-fraud",
-    "title": "The Missouri Contractor Who Took Over $2M From Homeowners",
-    "date": "July 2026",
-    "excerpt": "A Missouri contractor collected millions in deposits for home projects he never completed, leaving dozens of families with unfinished work and empty bank accounts. His case highlights how deposit fraud can escalate across an entire region before authorities intervene.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "roberto-contreras-louisiana-contractor-fraud",
-    "title": "The Louisiana Contractor Who Took Over $250,000 From Hurricane Ida Victims",
-    "date": "July 2026",
-    "excerpt": "After Hurricane Ida devastated southeast Louisiana in 2021, homeowners eager to rebuild handed deposits to a contractor who never finished the work. State authorities charged him with residential contractor fraud after multiple victims came forward with unfinished projects and unreturned money.",
-    "tag": "Disaster Recovery"
-  },
-  {
-    "slug": "aaron-hemsley-mississippi-contractor-fraud",
-    "title": "The Mississippi Contractor Who Took Over $150,000 From Homeowners",
-    "date": "July 2026",
-    "excerpt": "A Gulf Coast contractor collected deposits from Mississippi homeowners for construction and remodeling projects, then failed to complete the work or return the money. State prosecutors charged him after multiple victims came forward.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "george-quintanilla-california-contractor-fraud",
-    "title": "The California Contractor Who Took Over $2.6M From Homeowners in Grand Theft Case",
-    "date": "July 2026",
-    "excerpt": "A San Diego-area contractor collected millions in deposits for remodels and additions that were never completed, leaving dozens of families with unfinished homes. Prosecutors charged him with grand theft and diversion of construction funds after victims came forward.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "richard-belanger-vermont-contractor-fraud",
-    "title": "The Vermont Contractor Who Took Over $250,000 From Homeowners",
-    "date": "July 2026",
-    "excerpt": "A Vermont contractor collected large deposits for home projects he never completed, leaving multiple families out hundreds of thousands of dollars. His case highlights how deposit fraud thrives even in small, tight-knit communities where trust runs deep.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "krista-slater-oklahoma-contractor-fraud",
-    "title": "The Oklahoma Contractor Who Took Homeowner Deposits and Left Jobs Unfinished",
-    "date": "July 2026",
-    "excerpt": "An Oklahoma contractor collected large deposits from homeowners for remodeling and construction projects, then failed to complete the work or return the money. State prosecutors pursued charges after multiple victims came forward describing the same pattern.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "kansas-contractor-fraud-jerry-wilson",
-    "title": "The Kansas Contractor Who Took Over $300,000 From Homeowners",
-    "date": "July 2026",
-    "excerpt": "A Kansas contractor collected large deposits from homeowners for remodeling and construction projects, then failed to complete the work or refund the money. Prosecutors charged him with multiple felony theft counts after victims came forward.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "matthew-riffey-idaho-contractor-fraud",
-    "title": "The Idaho Contractor Who Took Homeowner Deposits and Left Homes Unfinished",
-    "date": "July 2026",
-    "excerpt": "An Idaho contractor collected deposits from homeowners for construction and remodeling projects, then failed to complete the work or vanished with the money. Authorities charged him after multiple victims came forward with losses.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "brian-douglas-west-virginia-contractor-fraud",
-    "title": "The West Virginia Contractor Who Took Over $200,000 From Homeowners",
-    "date": "July 2026",
-    "excerpt": "A West Virginia contractor collected large deposits for home projects, then failed to complete the work and left customers thousands of dollars in the hole. State authorities pursued charges after multiple homeowners came forward with similar accounts.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "matthew-jubis-new-hampshire-contractor-fraud",
-    "title": "The New Hampshire Contractor Who Took Over $200,000 From Homeowners",
-    "date": "July 2026",
-    "excerpt": "A New Hampshire contractor collected large deposits from homeowners for renovation and building projects, then failed to complete the work or return the money. His case led to criminal theft charges and highlighted gaps in state contractor oversight.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "montana-contractor-fraud-shane-devries",
-    "title": "The Montana Contractor Who Took Over $300,000 From Homeowners",
-    "date": "July 2026",
-    "excerpt": "A Montana contractor collected substantial deposits from multiple homeowners for construction and remodeling projects, then failed to complete the work. Prosecutors pursued felony theft charges after victims reported hundreds of thousands in losses.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "benjamin-obadiah-foster-north-dakota-fraud",
-    "title": "The North Dakota Contractor Who Took Deposits and Became a Fugitive",
-    "date": "July 2026",
-    "excerpt": "A North Dakota contractor collected large deposits from homeowners for projects he never completed, then fled the state and became the subject of a nationwide manhunt. His case shows how deposit fraud can escalate into far more serious crimes.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "christopher-warren-delaware-contractor-fraud",
-    "title": "The Delaware Contractor Who Took Over $200,000 From Homeowners",
-    "date": "July 2026",
-    "excerpt": "A Delaware contractor collected substantial deposits from homeowners for renovation and construction projects, then failed to complete the work or return the money. State prosecutors pursued theft and home improvement fraud charges after multiple victims came forward.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "rhode-island-contractor-fraud-jason-guertin",
-    "title": "The Rhode Island Contractor Who Took Over $150,000 From Homeowners",
-    "date": "July 2026",
-    "excerpt": "Rhode Island contractor Jason Guertin collected large deposits from homeowners for renovation and construction projects, then failed to complete the work. He faced multiple charges after leaving customers with unfinished jobs and significant financial losses.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "nebraska-contractor-fraud-derek-buck",
-    "title": "The Nebraska Contractor Who Took Over $200,000 From Homeowners",
-    "date": "July 2026",
-    "excerpt": "A Nebraska contractor collected substantial deposits from homeowners for remodeling and construction projects, then failed to complete the work or return the money. Authorities charged him after multiple victims came forward with losses topping six figures.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "todd-brassner-utah-contractor-fraud",
-    "title": "The Utah Contractor Who Took Over $400,000 From Homeowners",
-    "date": "July 2026",
-    "excerpt": "A Utah contractor collected large deposits for home construction and remodeling projects, then failed to complete the work, leaving families out hundreds of thousands of dollars. State prosecutors charged him with multiple felony counts after homeowner complaints mounted.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "brandon-tarr-alaska-contractor-fraud",
-    "title": "The Alaska Contractor Who Took Homeowner Deposits and Left Jobs Unfinished",
-    "date": "July 2026",
-    "excerpt": "An Anchorage-area contractor collected substantial deposits from Alaska homeowners for construction and remodeling projects, then failed to complete the work. State prosecutors pursued theft and fraud charges after multiple victims came forward.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "michael-lnewman-wyoming-contractor-fraud",
-    "title": "The Wyoming Contractor Who Took Homeowner Deposits and Left Jobs Unfinished",
-    "date": "July 2026",
-    "excerpt": "A Wyoming contractor collected substantial deposits from homeowners for construction and remodeling projects, then failed to complete the work or return the money. State prosecutors pursued theft and fraud charges after multiple victims came forward.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "michael-tanner-hawaii-contractor-fraud",
-    "title": "The Hawaii Contractor Who Took Over $400,000 From Homeowners",
-    "date": "July 2026",
-    "excerpt": "A Hawaii contractor collected large deposits for home projects across Oahu, then failed to complete the work or vanished entirely. State prosecutors and the Regulated Industries Complaints Office documented hundreds of thousands in losses to trusting homeowners.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "gary-jones-new-mexico-contractor-fraud",
-    "title": "The New Mexico Contractor Who Took Over $200,000 From Homeowners",
-    "date": "July 2026",
-    "excerpt": "A New Mexico contractor collected substantial deposits from homeowners for construction and remodeling projects, then failed to complete the work. State prosecutors pursued charges after multiple victims came forward with losses exceeding $200,000.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "roland-cyr-maine-contractor-fraud",
-    "title": "The Maine Contractor Who Took Over $200,000 From Homeowners",
-    "date": "July 2026",
-    "excerpt": "A Maine builder collected large deposits for home projects, then abandoned the work and left customers with unfinished jobs. Investigators found a pattern of taking money without delivering, leading to theft charges and restitution orders.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "aurora-flores-tornado-alabama-contractor-fraud",
-    "title": "Roofing Contractor Charged With Defrauding Alabama Tornado Victims",
-    "date": "July 2026",
-    "excerpt": "After deadly tornadoes tore through Alabama, storm-chasing roofers collected insurance-claim deposits and vanished. Investigators say victims lost tens of thousands while their damaged homes sat unrepaired through the next storm season.",
-    "tag": "Disaster Recovery"
   },
   {
     "slug": "georgia-solar-fraud-vision-solar",
@@ -399,73 +63,24 @@
     "tag": "Homeowner Risk"
   },
   {
-    "slug": "chesley-cain-fema-fraud-tennessee",
-    "title": "The FEMA Contractor Fraud Case That Rocked Tennessee Flood Victims",
-    "date": "July 2026",
-    "excerpt": "After deadly flooding in Middle Tennessee, disaster survivors seeking to rebuild became targets for contractors who took payments and disappeared. This is how federal recovery programs became a hunting ground for fraud.",
-    "tag": "Disaster Recovery"
-  },
-  {
-    "slug": "michael-benson-connecticut-contractor-fraud",
-    "title": "The Connecticut Contractor Who Took Over $300,000 From Homeowners",
-    "date": "August 2026",
-    "excerpt": "A Connecticut home improvement contractor collected large deposits from multiple homeowners, then failed to complete or even begin the promised work. Prosecutors charged him with larceny after victims came forward across several towns.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "iowa-derecho-todd-mcnall-contractor-fraud",
-    "title": "The Iowa Contractor Who Took Over $180,000 From Homeowners After Storm Damage",
-    "date": "August 2026",
-    "excerpt": "A Cedar Rapids-area contractor collected deposits from homeowners for repairs and additions, then failed to complete the work or return the money. He faced multiple felony theft charges after victims came forward with losses exceeding six figures.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "roberto-vazquez-hurricane-michael-florida-fraud",
+    "slug": "hurricane-michael-florida-contractor-fraud",
     "title": "The Hurricane Michael Contractor Who Left Panhandle Homes in Ruins",
     "date": "August 2026",
     "excerpt": "After Hurricane Michael devastated Florida's Panhandle in 2018, desperate homeowners handed deposits to contractors promising rebuilds. Many were left with unfinished shells, drained savings, and no recourse as storm-chasing operators collected cash and moved on.",
     "tag": "Disaster Recovery"
   },
   {
-    "slug": "michael-esposito-tornado-kentucky-fraud",
+    "slug": "kentucky-tornado-contractor-fraud",
     "title": "The Contractor Who Preyed on Kentucky's 2021 Tornado Victims",
     "date": "August 2026",
     "excerpt": "After the December 2021 tornadoes devastated western Kentucky, storm-chasing contractors descended on Mayfield and Bowling Green. Homeowners who had lost everything paid deposits for roof and rebuild work that was never completed, compounding one of the deadliest tornado outbreaks in state history.",
     "tag": "Disaster Recovery"
   },
   {
-    "slug": "roland-behrens-north-dakota-fema-fraud",
-    "title": "The Contractor Who Defrauded FEMA and Disaster Victims Across the Dakotas",
+    "slug": "omaha-nebraska-contractor-fraud",
+    "title": "The Omaha Contractors Who Took Storm Deposits and Vanished",
     "date": "August 2026",
-    "excerpt": "A contractor operating across the northern plains billed FEMA and disaster-relief programs for repair work that was never completed, leaving flood victims without habitable homes. Federal prosecutors documented a scheme that combined homeowner deposits with fraudulent government reimbursement claims.",
-    "tag": "Insurance Fraud"
-  },
-  {
-    "slug": "long-island-contractor-fraud-thomas-farrell",
-    "title": "The Long Island Contractor Who Took Over $500K From Storm Victims",
-    "date": "August 2026",
-    "excerpt": "A Suffolk County contractor collected large deposits from homeowners for renovation and repair work he never completed. Prosecutors charged him with grand larceny and a scheme to defraud after dozens of victims came forward with losses exceeding half a million dollars.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "eric-neff-georgia-contractor-fraud",
-    "title": "The Georgia Contractor Who Took Over $600,000 in Home Renovation Deposits",
-    "date": "August 2026",
-    "excerpt": "A metro Atlanta contractor collected large upfront payments from homeowners for renovations and additions, then abandoned the projects unfinished. Prosecutors documented more than half a million dollars in losses across multiple victims before charges were filed.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "andrew-esquibel-nebraska-siding-fraud",
-    "title": "The Nebraska Siding Contractor Who Took Storm Deposits and Vanished",
-    "date": "August 2026",
-    "excerpt": "A Nebraska contractor collected deposits from homeowners for siding and roofing repairs after severe storms, then failed to complete the work or return the money. Authorities charged him after multiple victims came forward with losses.",
-    "tag": "Contractor Fraud"
-  },
-  {
-    "slug": "colton-labenz-south-dakota-contractor-fraud",
-    "title": "The South Dakota Contractor Who Took Homeowner Deposits and Left Jobs Unfinished",
-    "date": "August 2026",
-    "excerpt": "A Sioux Falls-area contractor collected tens of thousands in deposits from South Dakota homeowners, then failed to complete or even start the promised work. State authorities pursued charges after multiple victims came forward with identical stories.",
+    "excerpt": "Two Omaha-area contractors collected deposits from homeowners for siding and roofing repairs after severe storms, then failed to complete the work or return the money. Authorities charged both after victims came forward with losses.",
     "tag": "Contractor Fraud"
   }
 ]

@@ -32,11 +32,7 @@ export default function Article() {
             <h2>What Happened</h2>
             <p>Vision Solar grew rapidly through door-to-door and telephone sales, signing homeowners to solar installations frequently paired with third-party loans that could stretch to 20 or 25 years. In many reported cases, crews arrived, mounted panels, and left. But the projects stalled at the critical final steps: passing local inspection, securing utility interconnection approval, and receiving &apos;permission to operate&apos; from the power company.</p>
             <p>Until a system is interconnected and granted permission to operate, it produces no usable electricity and delivers none of the promised savings. Yet numerous customers reported that loan servicers began drawing monthly payments regardless, leaving them paying both their full utility bill and a new solar loan for hardware that sat dormant on their roofs.</p>
-            <p>By 2023, complaints had accumulated with attorneys general and consumer agencies in several states. In Pennsylvania, Attorney General Michelle Henry&apos;s office sued Vision Solar, alleging the company misrepresented savings, failed to complete installations, and left consumers financially harmed. New Jersey regulators and the Better Business Bureau also logged large volumes of complaints. The company ultimately filed for bankruptcy, leaving many customers without recourse and without functioning systems.</p>
-            <blockquote className="article-quote">
-              Consumers were promised working solar systems and lower bills, and instead were saddled with loans for equipment that produced no power.
-              <cite>— Paraphrased from the Pennsylvania Office of Attorney General, 2023</cite>
-            </blockquote>
+            <p>By 2023, complaints had accumulated with attorneys general and consumer agencies in several states. Connecticut Attorney General William Tong sued Vision Solar that March, alleging unfair and deceptive sales practices; the suit later produced a $5 million judgment against the by-then-bankrupt company. Florida Attorney General Ashley Moody filed a separate suit that December. An 18-plaintiff multistate class action followed, naming customers in Arizona, Massachusetts, New Jersey, Connecticut, Florida, and Pennsylvania who described high-pressure sales, unpermitted work, and loan payments on systems that were never connected to the grid. Vision Solar filed for Chapter 7 bankruptcy on December 28, 2023, listing $100 million to $500 million in debt and more than 60 pending legal actions across seven states — leaving many customers without recourse and without functioning systems.</p>
 
 
             <h2>Why It Was So Easy</h2>
@@ -46,8 +42,8 @@ export default function Article() {
 
 
             <h2>What the Investigations Found</h2>
-            <p>State enforcement actions and press investigations painted a consistent picture. The Pennsylvania lawsuit alleged deceptive and unfair trade practices, including failure to complete work and misrepresentation of financial benefits. Consumer reporting outlets and local news stations across Georgia, Florida, and the Northeast documented individual homeowners who had paid for months on inactive systems.</p>
-            <p>The Better Business Bureau accumulated hundreds of complaints against Vision Solar covering non-completion, poor communication, and billing disputes. As legal and financial pressure grew through 2023, the company moved toward bankruptcy, which typically halts civil claims and leaves customers as unsecured creditors with little prospect of recovery. Many were left holding loans on hardware that no licensed electrician had ever energized.</p>
+            <p>State enforcement actions painted a consistent picture. Connecticut's suit alleged deceptive and unfair trade practices, including failure to complete work and misrepresentation of financial benefits, and won a $5 million judgment. The multistate class action covered the same pattern across six states, and Vision Solar's own bankruptcy filing — over 60 pending legal actions in seven states — corroborated the scale of the complaints rather than an isolated dispute.</p>
+            <p>Bankruptcy typically halts civil claims and leaves customers as unsecured creditors with little prospect of recovery. Many were left holding loans on hardware that no licensed electrician had ever energized.</p>
 
 
             <h2>What Escrow Would Have Changed</h2>
@@ -58,10 +54,10 @@ export default function Article() {
 
             <h2>Sources</h2>
             <ul className="article-sources">
-              <li><a href="https://www.attorneygeneral.gov/taking-action/" target="_blank" rel="noopener noreferrer">Pennsylvania Office of Attorney General - Vision Solar lawsuit announcement</a></li>
-              <li><a href="https://www.bbb.org/" target="_blank" rel="noopener noreferrer">Better Business Bureau - Vision Solar business profile and complaints</a></li>
-              <li><a href="https://www.nj.com/" target="_blank" rel="noopener noreferrer">NJ.com reporting on Vision Solar complaints and bankruptcy</a></li>
-              <li><a href="https://www.seia.org/" target="_blank" rel="noopener noreferrer">Solar Energy Industries Association - interconnection and permission to operate overview</a></li>
+              <li><a href="https://portal.ct.gov/AG/Press-Releases/2023-Press-Releases/Attorney-General-Tong-Sues-Vision-Solar-Over-Unfair-and-Deceptive-Sales" target="_blank" rel="noopener noreferrer">Connecticut Attorney General — Attorney General Tong Sues Vision Solar Over Unfair and Deceptive Sales</a></li>
+              <li><a href="https://portal.ct.gov/ag/press-releases/2024-press-releases/attorney-general-tong-announces-5-million-judgment-against-bankrupt-vision-solar" target="_blank" rel="noopener noreferrer">Connecticut Attorney General — $5 Million Judgment Against Bankrupt Vision Solar</a></li>
+              <li><a href="https://www.yahoo.com/news/vision-solar-files-bankruptcy-amid-225704943.html" target="_blank" rel="noopener noreferrer">Vision Solar Files for Bankruptcy Amid Lawsuits From Two Attorneys General</a></li>
+              <li><a href="https://topclassactions.com/lawsuit-settlements/consumer-products/vision-solar-class-action-claims-company-defrauded-customers-with-nonworking-defective-systems/" target="_blank" rel="noopener noreferrer">Vision Solar Class Action — Customers Defrauded With Nonworking, Defective Systems (multistate)</a></li>
             </ul>
           </div>
 

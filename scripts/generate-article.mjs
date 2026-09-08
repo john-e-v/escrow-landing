@@ -26,34 +26,56 @@ const existingTitles = existing.map(a => a.title).join('\n- ');
 const today = new Date();
 const dateLabel = today.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
 
-// ─── 1. Ask Claude to plan the article ────────────────────────────────────────
-console.log('Generating article plan...');
+// ─── 1. Ask Claude to research and plan the article ───────────────────────────
+// Both calls get the web_search tool. Claude must find an actual, citable
+// incident before writing anything — it is not allowed to invent one.
+const WEB_SEARCH_TOOL = { type: 'web_search_20250305', name: 'web_search', max_uses: 5 };
+
+function extractText(content) {
+  return content
+    .filter((b) => b.type === 'text')
+    .map((b) => b.text)
+    .join('');
+}
+
+function extractJson(text) {
+  // The model may wrap JSON in prose when it has to explain search results;
+  // pull out the last {...} block.
+  const match = text.match(/\{[\s\S]*\}/);
+  if (!match) throw new Error(`No JSON object found in response:\n${text}`);
+  return JSON.parse(match[0]);
+}
+
+console.log('Researching a real case via web search...');
 
 const planResponse = await client.messages.create({
   model: 'claude-opus-4-8',
-  max_tokens: 1536,
+  max_tokens: 4096,
+  tools: [WEB_SEARCH_TOOL],
   messages: [{
     role: 'user',
     content: `You write articles for CLRBLT (clrblt.com), a platform that connects homeowners with contractors who use escrow-protected payments.
 
-Articles cover REAL, DOCUMENTED cases of contractor fraud (taking deposits and disappearing, doing substandard work, insurance fraud) or legitimate contractors not being paid for completed work. Every article must reference real events with real sources.
+Articles cover REAL, DOCUMENTED cases of contractor fraud (taking deposits and disappearing, doing substandard work, insurance fraud) or legitimate contractors not being paid for completed work.
+
+You MUST use the web_search tool to find an actual reported case — a real news article, court record, or state AG/DOJ/licensing-board press release naming a real person or company. Do NOT invent a name, dollar amount, or incident. If you cannot find a specific named case after searching, search for a different angle rather than fabricating one. Every URL you cite must be a URL actually returned by your web_search calls in this conversation — never a URL you recall or guess at.
 
 Existing articles (do not duplicate):
 - ${existingTitles}
 Existing slugs: ${existingSlugs}
 
-Choose a NEW topic. Respond with ONLY valid JSON, no markdown:
+Search for a NEW, real, undocumented-by-us case. Once you've found and verified one with real search results, respond with ONLY valid JSON (no markdown fences), as the last thing in your reply:
 {
   "slug": "kebab-case-slug-max-6-words",
   "title": "Compelling headline under 90 chars",
   "tag": "one of: Homeowner Risk | Contractor Fraud | Contractor Rights | Insurance Fraud | Disaster Recovery",
   "excerpt": "2-sentence summary, 40-60 words",
   "metaDescription": "SEO meta description, under 155 chars",
-  "event": "1-2 sentence description of the specific real event to cover",
+  "event": "1-2 sentence description of the specific real event, as found in your search results",
   "location": "city/state or region",
   "year": "year the event occurred",
   "sources": [
-    { "label": "Source name", "url": "https://real-url.com/article" }
+    { "label": "Source name", "url": "https://actual-url-from-search-results.com/article" }
   ],
   "linkedinCaption": "150-300 words, professional, substantive, no link in the text",
   "xCaption": "one idea, under 280 chars, ends with a hook not a period",
@@ -62,47 +84,57 @@ Choose a NEW topic. Respond with ONLY valid JSON, no markdown:
   }]
 });
 
-const plan = JSON.parse(planResponse.content[0].text);
+const plan = extractJson(extractText(planResponse.content));
+if (!plan.sources || plan.sources.length === 0) {
+  throw new Error('Plan has no sources — refusing to generate an unsourced article.');
+}
 console.log(`Article: "${plan.title}"`);
+console.log(`Sources found: ${plan.sources.map((s) => s.url).join(', ')}`);
 
 // ─── 2. Generate full article body ────────────────────────────────────────────
 console.log('Writing article body...');
 
 const bodyResponse = await client.messages.create({
   model: 'claude-opus-4-8',
-  max_tokens: 3000,
+  max_tokens: 4096,
+  tools: [WEB_SEARCH_TOOL],
   messages: [{
     role: 'user',
-    content: `Write a detailed, factual article for CLRBLT about this real event:
+    content: `Write a detailed, factual article for CLRBLT about this real, documented event:
 
 Title: ${plan.title}
 Event: ${plan.event}
 Location: ${plan.location}, ${plan.year}
+Sources already confirmed real: ${JSON.stringify(plan.sources)}
+
+Use the web_search tool as needed to confirm additional details or find direct quotes from officials, prosecutors, or news coverage of this specific case. Do not paraphrase or invent quotes — only use a quote if you can attribute it to a specific real source you found via search, and give the real outlet/date. If no real quote is available, omit the quote entirely rather than fabricating one.
 
 The article must:
 - Be 600-900 words
 - Cover: what happened, why it was easy for the fraud/non-payment to occur, what the investigation found (if any), and a section titled "What Escrow Would Have Changed" explaining how structural protection prevents this
 - Use real statistics and named sources where possible
-- Include 1-2 pull quotes (realistic paraphrases from press reports or officials, attributed to a role/outlet)
-- End with a sources section
+- End with a sources section listing only URLs that are either from the confirmed list above or that you found yourself via web_search in this conversation
 
-Respond with ONLY valid JSON, no markdown fences:
+Respond with ONLY valid JSON, no markdown fences, as the last thing in your reply:
 {
   "sections": [
     {
       "heading": "Section heading or null for intro",
       "body": "Paragraphs separated by \\n\\n",
-      "quote": null or { "text": "quote text", "attribution": "role, outlet, date" }
+      "quote": null or { "text": "real quote text", "attribution": "role, real outlet, date" }
     }
   ],
   "sources": [
-    { "label": "Display label", "url": "https://url.com" }
+    { "label": "Display label", "url": "https://real-url.com" }
   ]
 }`
   }]
 });
 
-const body = JSON.parse(bodyResponse.content[0].text);
+const body = extractJson(extractText(bodyResponse.content));
+if (!body.sources || body.sources.length === 0) {
+  body.sources = plan.sources;
+}
 
 // ─── 3. Build the page.tsx file ───────────────────────────────────────────────
 

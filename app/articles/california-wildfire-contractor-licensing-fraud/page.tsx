@@ -32,10 +32,7 @@ export default function Article() {
             <h2>What Happened</h2>
             <p>In the months following the Camp Fire, CSLB investigators documented a pattern of abuse. Unlicensed operators offered debris removal, demolition, and rebuilding services, frequently demanding large upfront payments and then disappearing or leaving jobs incomplete. Under California law, a contractor cannot collect a down payment exceeding 10 percent of the total contract price or $1,000, whichever is less. Many of the operators targeting fire victims ignored this rule entirely, collecting tens of thousands of dollars before vanishing.</p>
             <p>The CSLB conducted undercover sting operations in Butte County and other fire-affected regions. In these stings, investigators posed as homeowners seeking bids for rebuilding or cleanup work. Suspects who offered to perform work valued at $500 or more in labor and materials without a license, or who advertised without a license, were cited or arrested. Violators faced misdemeanor charges, with penalties escalating for repeat offenses and for fraud committed in a declared disaster area, which can be charged as a felony in California.</p>
-            <blockquote className="article-quote">
-              Disaster victims are especially vulnerable, and unlicensed operators know it. They show up demanding cash deposits and then they&apos;re gone, leaving homeowners with nothing.
-              <cite>— CSLB official, paraphrased from agency consumer advisories, 2019</cite>
-            </blockquote>
+            <p>In one Butte County sting alone, undercover CSLB investigators posing as fire survivors caught four individuals soliciting unlicensed repair and cleanup work in the Paradise disaster zone — all four were arrested on the spot.</p>
 
 
             <h2>Why It Was Easy for the Fraud to Occur</h2>
@@ -57,9 +54,9 @@ export default function Article() {
 
             <h2>Sources</h2>
             <ul className="article-sources">
-              <li><a href="https://www.cslb.ca.gov/Consumers/" target="_blank" rel="noopener noreferrer">California Contractors State License Board - Consumer Resources</a></li>
-              <li><a href="https://www.fire.ca.gov/incidents/2018/11/8/camp-fire/" target="_blank" rel="noopener noreferrer">Cal Fire - Camp Fire Incident Information</a></li>
-              <li><a href="https://www.cslb.ca.gov/Consumers/Disaster_Help_Center.aspx" target="_blank" rel="noopener noreferrer">CSLB Disaster Help Center</a></li>
+              <li><a href="https://www.cbsnews.com/sacramento/news/camp-fire-paradise-unlicensed-contractor-sting-4-arrested/" target="_blank" rel="noopener noreferrer">CBS Sacramento — 4 Arrested After Unlicensed Contractor Sting in Camp Fire Disaster Area</a></li>
+              <li><a href="https://www.cslb.ca.gov/Media_Room/Press_Releases/2020/January_31.aspx" target="_blank" rel="noopener noreferrer">CSLB Press Release — Camp Fire Survivors Encouraged to Stay Vigilant (Undercover Sting Results, Jan. 2020)</a></li>
+              <li><a href="https://abc7news.com/contractors-state-license-board-california-cslb-sting/5922471/" target="_blank" rel="noopener noreferrer">ABC7 San Francisco — Undercover CSLB Sting Operation in Camp Fire Zone</a></li>
               <li><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=7159" target="_blank" rel="noopener noreferrer">California Business and Professions Code Section 7159 (Down Payment Limits)</a></li>
             </ul>
           </div>

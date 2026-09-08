@@ -46,17 +46,14 @@ export default function IanArticle() {
               <li>The homeowner is left with a damaged roof, a disputed claim, and a contractor who is often now out of state</li>
             </ol>
 
-            <p>In documented cases investigated by Florida's Contractor Licensing Board, individual contractors were found to have signed AOB agreements with dozens of homeowners in a single county — collecting partial insurance payments totaling hundreds of thousands of dollars before being identified.</p>
+            <p>Several contractors were prosecuted for exactly this pattern. Justin Hoover, a Sarasota contractor, was sentenced after stealing from Hurricane Ian victims. In Naples, Luis Emilio Hernandez was indicted by federal prosecutors in a $1.26 million fraud and money-laundering scheme that targeted an elderly Ian victim. Fort Myers contractor Ricky Lynn McGraw faced charges over similar post-Ian repair fraud. Each case followed the same shape: money collected up front, insurance benefits assigned away, and little or no work delivered.</p>
 
             <h2>The Insurance Angle</h2>
             <p>AOB fraud was already so pervasive in Florida prior to Ian that the state legislature passed significant AOB reform legislation (SB 2D) in May 2022 — months before Ian hit — restricting the practice for property insurance claims. However, the reform had limited immediate impact on Ian-related fraud because many contractors had established AOB pipelines before the changes took effect, and enforcement was stretched thin by the sheer volume of post-storm activity.</p>
 
             <p>Florida's Office of Insurance Regulation estimated that fraudulent and inflated claims following Ian contributed to the collapse of multiple smaller Florida homeowners insurers in 2022–2023, compounding the damage to a market that was already under severe stress.</p>
 
-            <blockquote className="article-quote">
-              "These contractors move fast. They show up within days of a storm, they have a clipboard and a van, and they're very convincing about being on your side against the insurance company. By the time the homeowner realizes what happened, the contractor is in another state."
-              <cite>— Florida Department of Financial Services investigator, as reported by the Tampa Bay Times, January 2023</cite>
-            </blockquote>
+            <p>Florida CFO Jimmy Patronis's anti-fraud strike teams engaged nearly 2,000 consumers in the weeks after Ian made landfall, fielding complaints about exactly this pattern of assigned benefits and undelivered repairs.</p>
 
             <h2>What Would Have Helped</h2>
             <p>The AOB mechanism was specifically designed to remove the homeowner from the transaction — which is precisely what made it exploitable. Escrow works in the opposite direction: it keeps the homeowner involved at every stage of fund release, without requiring them to manage the complexity of insurance negotiations.</p>
@@ -71,10 +68,10 @@ export default function IanArticle() {
 
             <h2>Sources</h2>
             <ul className="article-sources">
-              <li><a href="https://www.myfloridacfo.com/division/consumer-services/contractor-fraud" target="_blank" rel="noopener noreferrer">Florida CFO — Post-Ian Contractor Fraud Resources</a></li>
-              <li><a href="https://www.tampabay.com/hurricane/2023/01/12/hurricane-ian-contractor-fraud/" target="_blank" rel="noopener noreferrer">Tampa Bay Times — Hurricane Ian Contractor Fraud Investigation (January 2023)</a></li>
+              <li><a href="https://myfloridacfo.com/news/pressreleases/details/2022/10/04/cfo-jimmy-patronis-anti-fraud-teams-engaged-nearly-2k-consumers-following-hurricane-ian" target="_blank" rel="noopener noreferrer">Florida CFO — Anti-Fraud Strike Teams Engaged Nearly 2,000 Consumers Following Hurricane Ian</a></li>
+              <li><a href="https://www.wtsp.com/article/news/local/sarasotacounty/sarasota-contractor-sentenced-stealing-money-hurricane-ian/67-d0e00a3d-f019-499d-b184-83d61074e622" target="_blank" rel="noopener noreferrer">WTSP — Sarasota Contractor Sentenced for Stealing From Hurricane Ian Victims (Justin Hoover)</a></li>
+              <li><a href="https://www.justice.gov/usao-mdfl/pr/naples-man-indicted-12-million-fraud-and-money-laundering-scheme-targeting-elderly" target="_blank" rel="noopener noreferrer">U.S. Department of Justice — Naples Man Indicted in $1.26M Fraud Scheme Targeting Elderly Hurricane Ian Victim</a></li>
               <li><a href="https://www.flsenate.gov/Session/Bill/2022B/2D" target="_blank" rel="noopener noreferrer">Florida Senate — SB 2D Assignment of Benefits Reform (2022)</a></li>
-              <li><a href="https://www.myfloridaho.org/hurricane-recovery-consumer-tips" target="_blank" rel="noopener noreferrer">Florida Department of Financial Services — Hurricane Recovery Consumer Tips</a></li>
             </ul>
 
           </div>

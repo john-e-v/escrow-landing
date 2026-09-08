@@ -33,10 +33,7 @@ export default function Article() {
             <p>In the days and weeks following the storm, transient repair crews—often called &quot;storm chasers&quot;—descended on Cedar Rapids and surrounding Linn County. Many went door to door offering immediate roof, tree, and siding repairs to homeowners desperate to seal their properties before the next rainfall. Some demanded large upfront deposits, sometimes in cash, promising to begin work quickly.</p>
             <p>The Iowa Attorney General&apos;s Consumer Protection Division issued public alerts warning residents about post-disaster scams. The office cautioned that some contractors collected deposits and then never returned, performed shoddy or incomplete work, or vanished entirely once payment changed hands. Others operated without the registration required of construction contractors who do business in Iowa.</p>
             <p>Under Iowa law, most contractors performing such work must register with the Iowa Division of Labor and carry a registration number. Many of the out-of-state crews working the storm zone were unregistered, making them difficult to track once they left the area.</p>
-            <blockquote className="article-quote">
-              After a disaster, dishonest operators follow the damage. Homeowners should never pay large sums up front and should always verify that a contractor is registered before signing anything.
-              <cite>— Iowa Attorney General&apos;s Office consumer alert, August 2020</cite>
-            </blockquote>
+            <p>The Iowa Attorney General's office has repeated this same warning after nearly every major storm since — a pattern consistent enough that "storm chaser" is now a standing category in the office's consumer-alert vocabulary, not a one-time response to the derecho alone.</p>
 
 
             <h2>Why the Fraud Was So Easy</h2>
@@ -57,11 +54,10 @@ export default function Article() {
 
             <h2>Sources</h2>
             <ul className="article-sources">
-              <li><a href="https://www.ncei.noaa.gov/news/2020-derecho" target="_blank" rel="noopener noreferrer">NOAA National Centers for Environmental Information – 2020 Midwest Derecho</a></li>
-              <li><a href="https://www.iowaattorneygeneral.gov/for-consumers" target="_blank" rel="noopener noreferrer">Iowa Attorney General – Consumer Protection Division</a></li>
-              <li><a href="https://www.iowadivisionoflabor.gov/contractor-registration" target="_blank" rel="noopener noreferrer">Iowa Division of Labor – Contractor Registration</a></li>
-              <li><a href="https://www.bbb.org/all/disaster-scams" target="_blank" rel="noopener noreferrer">Better Business Bureau – Storm Scam Warnings</a></li>
-              <li><a href="https://www.cedar-rapids.org/derecho_recovery.php" target="_blank" rel="noopener noreferrer">City of Cedar Rapids – Derecho Recovery</a></li>
+              <li><a href="https://www.iowaattorneygeneral.gov/newsroom/attorney-general-bird-warns-iowans-of-storm-chaser-scams-and-price-gouging" target="_blank" rel="noopener noreferrer">Iowa Attorney General — Warning on Storm Chaser Scams and Price Gouging</a></li>
+              <li><a href="https://www.weareiowa.com/article/news/local/derecho-clean-up-repair-scam-iowa-attorney-generals-office-tips-storm-chaser-damage/524-fa7a2ed8-6da3-46cb-aa4b-27eba0e45d09" target="_blank" rel="noopener noreferrer">WeAreIowa — Iowa AG Warns of "Storm Chaser" Scams Amid Derecho Damage</a></li>
+              <li><a href="https://cbs2iowa.com/news/local/ia-attorney-general-office-wants-consumers-to-submit-deracho-related-complaints" target="_blank" rel="noopener noreferrer">CBS2 Iowa — Iowa Attorney General's Office Wants Derecho-Related Complaints</a></li>
+              <li><a href="https://www.ncei.noaa.gov/news/2020-derecho" target="_blank" rel="noopener noreferrer">NOAA National Centers for Environmental Information — 2020 Midwest Derecho (background)</a></li>
             </ul>
           </div>
 

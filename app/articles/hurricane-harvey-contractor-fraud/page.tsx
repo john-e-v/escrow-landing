@@ -35,22 +35,17 @@ export default function HarveyArticle() {
 
             <p>According to the Texas Department of Insurance, the state saw a dramatic spike in "storm chaser" activity following Harvey. Many presented fake contractor licenses or business cards. Some carried permit applications they would file — creating a paper trail — then never follow through.</p>
 
-            <p>The Better Business Bureau's Storm Recovery Resource Center documented hundreds of such cases in the Houston area. One report described a contractor who collected deposits from 23 homeowners in a single subdivision before leaving the state. Total losses: over $180,000.</p>
+            <p>The Better Business Bureau's Storm Recovery Resource Center documented hundreds of such cases in the Houston area. One of the most prosecuted examples was Benjamin Wood, a Houston-area contractor who took roughly $180,000 in deposits from 26 Hurricane Harvey victims for repairs he never performed.</p>
 
             <h2>Why It Was So Easy</h2>
             <p>Harvey-displaced homeowners were operating under extreme pressure: many were staying in hotels, living with relatives, or in temporary FEMA housing. They needed repairs done quickly to return to their homes. Insurance adjusters were backed up. The urgency made standard due diligence nearly impossible to maintain.</p>
 
             <p>The fraudulent contractors understood this. Many posed as recommended by neighbors or local churches. They were professional in appearance, confident in explanation, and specific about timelines. Nothing in their presentation was an obvious red flag — until they were gone.</p>
 
-            <blockquote className="article-quote">
-              "He had a real-looking business card, a truck with a company name on it, a Texas license number. He talked about his crew. He seemed like the real thing. There was nothing that told me to say no."
-              <cite>— Houston homeowner, as reported by the Houston Chronicle, October 2017</cite>
-            </blockquote>
-
             <h2>The Investigation</h2>
             <p>The Texas AG's office launched Operation Protect Texans in September 2017, targeting contractor fraud specifically related to Harvey recovery. Multiple contractors were arrested and charged with theft and deceptive trade practices. Some were prosecuted under the state's disaster fraud statutes, which carry enhanced penalties.</p>
 
-            <p>However, recovering the money proved extremely difficult. In most cases the contractors had moved to other states. Wire transfers and cash payments left no recourse. Many victims ultimately recovered nothing.</p>
+            <p>Wood's case, prosecuted by the Harris County District Attorney's Office, took years to reach sentencing — he pleaded guilty and was sentenced to 10 years in prison in February 2020, more than two years after Harvey made landfall. Recovering the money proved extremely difficult even with a conviction: in most storm-chaser cases, contractors had moved to other states, and wire transfers or cash payments left victims with little practical recourse.</p>
 
             <h2>What Escrow Would Have Changed</h2>
             <p>In every documented case, the fraud worked because the homeowner paid directly — cash, check, or transfer — before any work began. A deposit into an escrow account held by a third party would have changed the calculus entirely:</p>
@@ -66,10 +61,10 @@ export default function HarveyArticle() {
 
             <h2>Sources</h2>
             <ul className="article-sources">
-              <li><a href="https://www.texasattorneygeneral.gov/consumer-protection/home-and-auto/contractor-fraud" target="_blank" rel="noopener noreferrer">Texas Attorney General — Contractor Fraud Resources</a></li>
-              <li><a href="https://www.bbb.org/storm-recovery" target="_blank" rel="noopener noreferrer">Better Business Bureau Storm Recovery Resource Center</a></li>
-              <li><a href="https://www.chron.com/news/houston-texas/article/Harvey-contractor-fraud-12278064.php" target="_blank" rel="noopener noreferrer">Houston Chronicle — Harvey Contractor Fraud Reports (2017)</a></li>
-              <li><a href="https://www.tdi.texas.gov/consumer/cnsmstormtips.html" target="_blank" rel="noopener noreferrer">Texas Department of Insurance — Storm Chaser Warning</a></li>
+              <li><a href="https://app.dao.hctx.net/crooked-contractor-sentenced-10-years-prison-fraud-during-hurricane-harvey" target="_blank" rel="noopener noreferrer">Harris County District Attorney's Office — Crooked Contractor Sentenced to 10 Years for Fraud During Hurricane Harvey</a></li>
+              <li><a href="https://abc13.com/hurricane-harvey-benjamin-wood-contractors-contractor-accused-of-fraud/5942731/" target="_blank" rel="noopener noreferrer">ABC13 Houston — Contractor Who Stole $180K From Dozens of Hurricane Harvey Victims Gets 10 Years</a></li>
+              <li><a href="https://www.khou.com/article/news/crime/crooked-contractor-sentenced-to-10-years-in-prison-for-fraud-during-hurricane-harvey/285-93ae445c-53eb-42b0-b068-e1acff92ed89" target="_blank" rel="noopener noreferrer">KHOU — Crooked Contractor Sentenced to 10 Years in Prison for Fraud During Hurricane Harvey</a></li>
+              <li><a href="https://www.texasattorneygeneral.gov/consumer-protection/home-and-auto/contractor-fraud" target="_blank" rel="noopener noreferrer">Texas Attorney General — Contractor Fraud Resources (background)</a></li>
             </ul>
 
           </div>
