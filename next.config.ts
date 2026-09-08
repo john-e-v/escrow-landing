@@ -13,14 +13,28 @@ const nextConfig: NextConfig = {
       ["kansas-contractor-fraud-jerry-wilson", "wichita-kansas-contractor-fraud"],
       ["todd-brassner-utah-contractor-fraud", "centerville-utah-contractor-fraud"],
       ["roberto-vazquez-hurricane-michael-florida-fraud", "hurricane-michael-florida-contractor-fraud"],
-      ["michael-esposito-tornado-kentucky-fraud", "kentucky-tornado-contractor-fraud"],
       ["andrew-esquibel-nebraska-siding-fraud", "omaha-nebraska-contractor-fraud"],
     ];
-    return renamedArticles.map(([from, to]) => ({
-      source: `/articles/${from}`,
-      destination: `/articles/${to}`,
-      permanent: true,
-    }));
+    // These two were removed outright — they never had a specific documented
+    // incident, only a real disaster and generic AG warnings. Redirect to the
+    // articles index rather than 404.
+    const removedNoIncident = [
+      "michael-esposito-tornado-kentucky-fraud",
+      "kentucky-tornado-contractor-fraud",
+      "iowa-derecho-contractor-fraud-2020",
+    ];
+    return [
+      ...renamedArticles.map(([from, to]) => ({
+        source: `/articles/${from}`,
+        destination: `/articles/${to}`,
+        permanent: true,
+      })),
+      ...removedNoIncident.map((slug) => ({
+        source: `/articles/${slug}`,
+        destination: "/articles",
+        permanent: true,
+      })),
+    ];
   },
   async rewrites() {
     return [

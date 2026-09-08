@@ -58,19 +58,22 @@ const planResponse = await client.messages.create({
 
 Articles cover REAL, DOCUMENTED cases of contractor fraud (taking deposits and disappearing, doing substandard work, insurance fraud) or legitimate contractors not being paid for completed work.
 
-You MUST use the web_search tool to find an actual reported case — a real news article, court record, or state AG/DOJ/licensing-board press release naming a real person or company. Do NOT invent a name, dollar amount, or incident. If you cannot find a specific named case after searching, search for a different angle rather than fabricating one. Every URL you cite must be a URL actually returned by your web_search calls in this conversation — never a URL you recall or guess at.
+You MUST use the web_search tool to find an actual reported case — a real news article, court record, or state AG/DOJ/licensing-board press release naming a real, specific defendant: an individual person or a specific named company. Do NOT invent a name, dollar amount, or incident. Every URL you cite must be a URL actually returned by your web_search calls in this conversation — never a URL you recall or guess at.
+
+REJECTED SHAPE — do not write this kind of article: a generic piece about "contractor fraud after [disaster]" that only cites AG consumer-alert pages, BBB warnings, or FEMA background, with no specific named defendant. A real disaster or a real general warning from a regulator is not a substitute for a specific prosecuted or reported case. If your searches for one angle turn up only general warnings and no named defendant, abandon that angle entirely and search a different state, disaster, or time period until you find an article, press release, or court record that names a specific person or company. Do not fall back to publishing the general-warnings version.
 
 Existing articles (do not duplicate):
 - ${existingTitles}
 Existing slugs: ${existingSlugs}
 
-Search for a NEW, real, undocumented-by-us case. Once you've found and verified one with real search results, respond with ONLY valid JSON (no markdown fences), as the last thing in your reply:
+Search for a NEW, real, undocumented-by-us case with a specific named defendant. Once you've found and verified one with real search results, respond with ONLY valid JSON (no markdown fences), as the last thing in your reply:
 {
   "slug": "kebab-case-slug-max-6-words",
   "title": "Compelling headline under 90 chars",
   "tag": "one of: Homeowner Risk | Contractor Fraud | Contractor Rights | Insurance Fraud | Disaster Recovery",
   "excerpt": "2-sentence summary, 40-60 words",
   "metaDescription": "SEO meta description, under 155 chars",
+  "defendantName": "the specific real person or company name at the center of the case, exactly as named in your sources — never generic like 'a contractor'",
   "event": "1-2 sentence description of the specific real event, as found in your search results",
   "location": "city/state or region",
   "year": "year the event occurred",
@@ -88,7 +91,11 @@ const plan = extractJson(extractText(planResponse.content));
 if (!plan.sources || plan.sources.length === 0) {
   throw new Error('Plan has no sources — refusing to generate an unsourced article.');
 }
+if (!plan.defendantName || /^(a|an|the)\s/i.test(plan.defendantName.trim())) {
+  throw new Error(`Plan has no specific named defendant (got: "${plan.defendantName}") — refusing to generate a generic trend piece.`);
+}
 console.log(`Article: "${plan.title}"`);
+console.log(`Defendant: ${plan.defendantName}`);
 console.log(`Sources found: ${plan.sources.map((s) => s.url).join(', ')}`);
 
 // ─── 2. Generate full article body ────────────────────────────────────────────
@@ -103,6 +110,7 @@ const bodyResponse = await client.messages.create({
     content: `Write a detailed, factual article for CLRBLT about this real, documented event:
 
 Title: ${plan.title}
+Defendant: ${plan.defendantName}
 Event: ${plan.event}
 Location: ${plan.location}, ${plan.year}
 Sources already confirmed real: ${JSON.stringify(plan.sources)}
@@ -111,6 +119,7 @@ Use the web_search tool as needed to confirm additional details or find direct q
 
 The article must:
 - Be 600-900 words
+- Name "${plan.defendantName}" explicitly in the body text (not just implied) — the first section must state their name, not refer to them only as "a contractor" or "the company." Every fact you attribute to them must come from the confirmed sources or your own web_search results, not invention.
 - Cover: what happened, why it was easy for the fraud/non-payment to occur, what the investigation found (if any), and a section titled "What Escrow Would Have Changed" explaining how structural protection prevents this
 - Use real statistics and named sources where possible
 - End with a sources section listing only URLs that are either from the confirmed list above or that you found yourself via web_search in this conversation
@@ -134,6 +143,14 @@ Respond with ONLY valid JSON, no markdown fences, as the last thing in your repl
 const body = extractJson(extractText(bodyResponse.content));
 if (!body.sources || body.sources.length === 0) {
   body.sources = plan.sources;
+}
+
+// Hard guard against the "generic body, name only in the slug" pattern —
+// require the defendant's name to actually appear in the rendered text.
+const bodyText = body.sections.map((s) => `${s.heading ?? ''} ${s.body}`).join(' ');
+const nameToken = plan.defendantName.trim().split(/\s+/).pop().replace(/[^a-zA-Z0-9]/g, '');
+if (!nameToken || !bodyText.toLowerCase().includes(nameToken.toLowerCase())) {
+  throw new Error(`Defendant "${plan.defendantName}" does not appear in the generated body text — refusing to publish a genericized article.`);
 }
 
 // ─── 3. Build the page.tsx file ───────────────────────────────────────────────
