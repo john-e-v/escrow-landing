@@ -1726,5 +1726,32 @@
     "tag": "Contractor Ops",
     "pillar": "F",
     "audience": "contractor"
+  },
+  {
+    "slug": "verify-contractor-references-actually-real",
+    "title": "How to Confirm a Contractor's References Are Real People (Not Their Buddies)",
+    "date": "September 2026",
+    "excerpt": "A glowing reference means nothing if it's the contractor's cousin reading from a script. This checklist shows you how to confirm a reference is a real past client at a real address, so you're vetting the work, not a favor.",
+    "tag": "Vetting",
+    "pillar": "C",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "customer-database-vs-notebook-contractor",
+    "title": "Customer Database vs. Notebook: When Your Contact List Starts Costing You Jobs",
+    "date": "September 2026",
+    "excerpt": "A notebook or phone contacts app works fine until you're juggling repeat clients, referral sources, and follow-ups you keep forgetting. This teardown compares the paper-and-memory approach against a real customer database, and names the point where the switch actually pays for itself.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
+  },
+  {
+    "slug": "contractor-demolished-load-bearing-wall-cost",
+    "title": "Your Contractor Took Out a Load-Bearing Wall Without an Engineer. Now the Second Floor Sags.",
+    "date": "September 2026",
+    "excerpt": "A homeowner paid for an open-concept kitchen and got a sagging ceiling instead. The contractor pulled a wall without a structural engineer's sign-off, and the fix cost more than the entire original job. Here's how it happened and what would have stopped it.",
+    "tag": "The Hidden Cost",
+    "pillar": "D",
+    "audience": "homeowner"
   }
 ]
