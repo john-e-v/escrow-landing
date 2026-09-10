@@ -1753,5 +1753,32 @@
     "tag": "The Hidden Cost",
     "pillar": "D",
     "audience": "homeowner"
+  },
+  {
+    "slug": "voice-notes-vs-written-scope",
+    "title": "Voice Memos vs. Written Scope: What Actually Holds Up When a Job Goes Sideways",
+    "date": "September 2026",
+    "excerpt": "Voice memos are fast to capture but useless as evidence when a client disputes what was agreed. This teardown compares recording verbal scope changes against writing them down, and where each actually fails.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
+  },
+  {
+    "slug": "contractor-abandoned-scaffolding-rental-charges",
+    "title": "The Contractor Left Rented Scaffolding On Your Job. Now the Rental Company Wants You to Pay.",
+    "date": "September 2026",
+    "excerpt": "A stucco crew walked off a two-story job and left the rented scaffolding standing for six weeks. When the rental company came calling, the unpaid $3,400 tab landed on the homeowner. Here's why, and the payment structure that would have stopped it.",
+    "tag": "Hidden Cost",
+    "pillar": "D",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "finished-garage-worth-it-resale",
+    "title": "Is Finishing Your Garage Worth It? Cost, ROI, and When It Backfires",
+    "date": "September 2026",
+    "excerpt": "Finishing a garage into living space can cost $15,000 to $50,000, but the resale return depends entirely on whether buyers in your area still want a garage. This breakdown covers the real numbers, the payback math, and the one condition that flips a finished garage from an asset into a liability.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
   }
 ]
