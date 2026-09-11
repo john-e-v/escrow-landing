@@ -1780,5 +1780,32 @@
     "tag": "Cost & ROI",
     "pillar": "A",
     "audience": "homeowner"
+  },
+  {
+    "slug": "contractor-billed-for-his-own-mistake",
+    "title": "The Contractor Broke a Tile Setting Another. Then Billed You for Both.",
+    "date": "September 2026",
+    "excerpt": "A tile setter cracked three finished tiles while installing the next row, then added the replacement material and labor to your invoice. Rework caused by the contractor's own error isn't a change order, and here's the structure that keeps you from paying for it.",
+    "tag": "Payment Disputes",
+    "pillar": "D",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "new-water-softener-worth-it-resale",
+    "title": "Is a Whole-House Water Softener Worth It? Cost, Payback, and When to Skip It",
+    "date": "September 2026",
+    "excerpt": "A whole-house water softener runs $1,500 to $4,000 installed and rarely adds resale value—but it can pay for itself in hard-water regions through appliance lifespan and lower repair bills. Here's the math and the one condition that flips the verdict.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "escrow-caught-uncured-countertop-seams",
+    "title": "The Countertop Seams Lifted a Week After Install. Escrow Meant the Homeowner Held Firm.",
+    "date": "September 2026",
+    "excerpt": "A homeowner noticed her new quartz countertop seams lifting and separating just days after the fabricator called the job done. Because the final payment sat in escrow instead of a cashed check, she had the leverage to demand a proper re-set before releasing a dime.",
+    "tag": "Escrow Effect",
+    "pillar": "BRIDGE",
+    "audience": "both"
   }
 ]
