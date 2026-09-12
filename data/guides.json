@@ -1807,5 +1807,32 @@
     "tag": "Escrow Effect",
     "pillar": "BRIDGE",
     "audience": "both"
+  },
+  {
+    "slug": "new-kitchen-appliances-worth-it-resale",
+    "title": "Are High-End Kitchen Appliances Worth It? Cost, Resale Value, and When to Skip It",
+    "date": "September 2026",
+    "excerpt": "Upgrading to pro-grade kitchen appliances rarely pays back at resale, though it depends on your home's price tier. This guide breaks down the real cost, the recovery percentages, and the one scenario where premium appliances actually move the needle.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "escrow-caught-window-flashing-skipped",
+    "title": "The Windows Went In Without Flashing. Escrow Meant the Homeowner Held Firm.",
+    "date": "September 2026",
+    "excerpt": "A $22K window replacement looked flawless from the inside — until a rainstorm revealed water tracking down the studs. Because the final payment sat in escrow, the homeowner had the leverage to force a proper re-install instead of eating a hidden rot problem.",
+    "tag": "The Escrow Effect",
+    "pillar": "BRIDGE",
+    "audience": "both"
+  },
+  {
+    "slug": "retaining-wall-cost-2026",
+    "title": "How Much Does a Retaining Wall Cost in 2026?",
+    "date": "September 2026",
+    "excerpt": "A retaining wall runs $3,500 to $12,000 for a typical residential job, but engineered walls over 4 feet can climb past $25,000. Height, material, drainage, and soil conditions are what actually move the number.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
   }
 ]
