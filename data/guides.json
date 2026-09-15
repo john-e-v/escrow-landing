@@ -1834,5 +1834,32 @@
     "tag": "Cost & Timeline",
     "pillar": "B",
     "audience": "homeowner"
+  },
+  {
+    "slug": "client-wants-to-pay-early-for-discount",
+    "title": "The Client Offered to Prepay the Whole Job for a Discount: Why It Costs You Later",
+    "date": "September 2026",
+    "excerpt": "A client offering to prepay the full contract for a discount sounds like a cash-flow win, but it strips your leverage and exposes you to chargebacks and scope demands. Milestone-released escrow gets you the same funded certainty without handing back margin or control.",
+    "tag": "Payment Terms",
+    "pillar": "E",
+    "audience": "contractor"
+  },
+  {
+    "slug": "contractor-wont-give-written-contract",
+    "title": "The Contractor Wants to Start on a Handshake: Why No Written Contract Ends the Deal",
+    "date": "September 2026",
+    "excerpt": "A contractor who won't sign a written contract before starting is telling you exactly how the job will go when something breaks. Here's the exact script to request one today, and what has to be in it before you hand over a cent.",
+    "tag": "Before You Hire",
+    "pillar": "C",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "reporting-dashboard-vs-manual-reports",
+    "title": "Reporting Dashboard vs. Manual Reports: Where Your Numbers Actually Lie",
+    "date": "September 2026",
+    "excerpt": "A live dashboard promises instant visibility, but it only reflects the data you actually enter — and most contractors enter it late or not at all. This teardown compares automated dashboards against manual reports and shows where each one quietly misleads you.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
   }
 ]
