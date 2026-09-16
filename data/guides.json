@@ -1861,5 +1861,32 @@
     "tag": "Contractor Ops",
     "pillar": "F",
     "audience": "contractor"
+  },
+  {
+    "slug": "verify-contractor-license-matches-company-name",
+    "title": "The License Was Real — But It Belonged to Someone Else. How to Check the Name Matches",
+    "date": "September 2026",
+    "excerpt": "A valid license number means nothing if it's not tied to the person standing in your driveway. This checklist walks you through matching the license, the business name, and the human you're actually hiring — in under 10 minutes.",
+    "tag": "Vetting & Protection",
+    "pillar": "C",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "gps-tracking-app-vs-check-in-text",
+    "title": "GPS Fleet Tracking vs. Crew Check-In Texts: What Actually Tells You Where Your Trucks Are",
+    "date": "September 2026",
+    "excerpt": "GPS fleet tracking promises real-time truck locations, but the monthly per-vehicle cost and privacy friction rarely pencil out for a three-truck operation. This teardown compares hardware GPS against a simple check-in habit, and where each one actually earns its keep.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
+  },
+  {
+    "slug": "contractor-abandoned-dumpster-full-debris",
+    "title": "The Contractor Left a Full Dumpster in Your Driveway. Now the Rental Company Bills You.",
+    "date": "September 2026",
+    "excerpt": "A contractor rented the dumpster in his name, filled it, then vanished before hauling it away. Six weeks later the homeowner is fielding overage fees, daily rental charges, and a lien threat for a contract they never signed.",
+    "tag": "Hidden Cost",
+    "pillar": "D",
+    "audience": "homeowner"
   }
 ]
