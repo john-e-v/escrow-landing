@@ -1888,5 +1888,32 @@
     "tag": "Hidden Cost",
     "pillar": "D",
     "audience": "homeowner"
+  },
+  {
+    "slug": "contract-management-app-vs-email-folder",
+    "title": "Contract Management App vs. Email Folder: Where Your Signed Docs Actually Break",
+    "date": "September 2026",
+    "excerpt": "Most contractors store signed contracts, change orders, and lien waivers in an email folder and a phone camera roll. That works until a dispute forces you to prove which version the client actually signed—and when they signed it.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
+  },
+  {
+    "slug": "contractor-quoted-stock-cabinets-billed-custom",
+    "title": "The Cabinets Were 'Custom' on the Invoice — But Stock on the Wall",
+    "date": "September 2026",
+    "excerpt": "A homeowner paid a custom-cabinet line item and got big-box stock boxes with a face-frame upgrade. The $9,400 gap only surfaced at final walkthrough. Here's how vague material specs let contractors bill up while installing down.",
+    "tag": "Hidden Cost",
+    "pillar": "D",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "new-roof-vs-new-windows-worth-it",
+    "title": "New Roof vs. New Windows: Which Is Worth It First?",
+    "date": "September 2026",
+    "excerpt": "It depends on which one is actively failing — but if both are due, the roof wins nearly every time. This breakdown compares cost, ROI, and the resale math that decides which upgrade earns your dollars first.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
   }
 ]
