@@ -1915,5 +1915,32 @@
     "tag": "Cost & ROI",
     "pillar": "A",
     "audience": "homeowner"
+  },
+  {
+    "slug": "contractor-started-late-season-frost-heave",
+    "title": "The Fence Posts Weren't Set Below Frost Line. By Spring, Half the Fence Leaned.",
+    "date": "September 2026",
+    "excerpt": "A homeowner paid $6,800 for a new fence in November. By April, twelve posts had heaved out of the ground and the whole run listed like a shipwreck. The contractor set the posts 18 inches deep in a 42-inch frost zone — and the money was already gone.",
+    "tag": "Project Postmortem",
+    "pillar": "D",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "new-roof-vs-kitchen-remodel-worth-it",
+    "title": "New Roof vs. Kitchen Remodel: Which Is Worth It First?",
+    "date": "September 2026",
+    "excerpt": "When you can only fund one, the roof wins if yours is past 20 years or leaking — protecting the house always beats improving it. This guide breaks down the cost, ROI, and the one condition that flips the answer toward the kitchen.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "daily-log-clause-contract-record",
+    "title": "The Daily Log Clause That Makes Your Notes Legal Evidence",
+    "date": "September 2026",
+    "excerpt": "A daily log only wins disputes if the contract says it's the official record. This clause turns your field notes into binding documentation the client agreed to before day one.",
+    "tag": "Dispute-Proofing",
+    "pillar": "G",
+    "audience": "contractor"
   }
 ]
