@@ -1942,5 +1942,32 @@
     "tag": "Dispute-Proofing",
     "pillar": "G",
     "audience": "contractor"
+  },
+  {
+    "slug": "new-driveway-worth-it-resale",
+    "title": "Is Replacing Your Driveway Worth It? Cost, Resale Value, and When to Skip It",
+    "date": "September 2026",
+    "excerpt": "A new driveway rarely pays for itself in resale dollars, but it can make or break a buyer's first impression. Here's the math on cost, recovery, and the one condition that flips the verdict.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "punch-list-clause-defines-completion",
+    "title": "The Punch-List Clause That Caps What Counts as 'Not Done'",
+    "date": "September 2026",
+    "excerpt": "A vague punch list lets a client hold your final payment hostage over paint touch-ups. This clause defines what qualifies as punch-list work, sets a completion window, and separates minor items from your right to get paid.",
+    "tag": "Contract Clauses",
+    "pillar": "G",
+    "audience": "contractor"
+  },
+  {
+    "slug": "popcorn-ceiling-removal-cost-2026",
+    "title": "How Much Does Popcorn Ceiling Removal Cost in 2026?",
+    "date": "September 2026",
+    "excerpt": "Popcorn ceiling removal runs $1 to $3 per square foot, or $900 to $2,800 for an average room-heavy home—unless the texture contains asbestos, which can triple the bill. Here's what actually moves the number and why the range swings so hard.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
   }
 ]
