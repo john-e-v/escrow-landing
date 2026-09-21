@@ -1987,5 +1987,32 @@
     "tag": "Payment Terms",
     "pillar": "E",
     "audience": "contractor"
+  },
+  {
+    "slug": "crawl-space-encapsulation-cost-2026",
+    "title": "How Much Does Crawl Space Encapsulation Cost in 2026?",
+    "date": "September 2026",
+    "excerpt": "Crawl space encapsulation runs $5,000 to $15,000 for most homes, but severe moisture damage can push it past $30,000. The range hinges on square footage, existing damage, drainage needs, and whether you need a dehumidifier or sump pump added.",
+    "tag": "Cost & ROI",
+    "pillar": "B",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "client-wants-to-pay-when-financing-clears-bank",
+    "title": "The Client Says the Bank 'Hasn't Released the Draw Yet': Why That's Not Your Cash Flow Problem",
+    "date": "September 2026",
+    "excerpt": "When a client blames a construction loan draw for a late payment, they're asking you to float their financing gap out of your own pocket. The fix is structural: money that's earmarked and held before the milestone starts, so a bank's paperwork delay never becomes your unpaid labor.",
+    "tag": "Contractor Ops",
+    "pillar": "E",
+    "audience": "contractor"
+  },
+  {
+    "slug": "verify-contractor-license-suspended-history",
+    "title": "How to Check If a Contractor's License Was Ever Suspended (Not Just Active)",
+    "date": "September 2026",
+    "excerpt": "A license can read 'active' today and still hide a suspension from two years ago. This checklist walks you through pulling a contractor's full disciplinary history from your state board before you sign anything.",
+    "tag": "Vetting & Protection",
+    "pillar": "C",
+    "audience": "homeowner"
   }
 ]
