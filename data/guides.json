@@ -2014,5 +2014,32 @@
     "tag": "Vetting & Protection",
     "pillar": "C",
     "audience": "homeowner"
+  },
+  {
+    "slug": "client-wants-to-pay-after-warranty-period",
+    "title": "The Client Wants to Hold Final Payment Until the Warranty Period Ends: Why That's Not How It Works",
+    "date": "September 2026",
+    "excerpt": "Some clients try to withhold your final payment for months, claiming they want to 'make sure nothing breaks' before they release it. That's not a warranty holdback — it's an interest-free loan you never agreed to make. Here's how to separate payment from warranty so you get paid on completion.",
+    "tag": "Payment Ops",
+    "pillar": "E",
+    "audience": "contractor"
+  },
+  {
+    "slug": "verify-contractor-not-blacklisted-registry",
+    "title": "How to Check if a Contractor Is on Your State's Unlicensed or Barred List",
+    "date": "September 2026",
+    "excerpt": "An active license isn't the whole story—some contractors operate under cease-and-desist orders or sit on a state's barred list. This checklist shows you the exact registries to search before you sign, so a banned operator doesn't end up on your job.",
+    "tag": "Vetting & Protection",
+    "pillar": "C",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "estimating-app-vs-spreadsheet-formulas",
+    "title": "Estimating in a Spreadsheet vs. an App: Where Your Markup Actually Disappears",
+    "date": "September 2026",
+    "excerpt": "A spreadsheet estimate feels flexible until a broken formula quietly eats your margin. This teardown compares spreadsheet estimating against purpose-built apps, names the real tradeoffs of both, and shows where your markup actually leaks between the two.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
   }
 ]
