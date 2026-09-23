@@ -2041,5 +2041,32 @@
     "tag": "Contractor Ops",
     "pillar": "F",
     "audience": "contractor"
+  },
+  {
+    "slug": "verify-contractor-license-city-vs-state",
+    "title": "State License Isn't Enough: How to Check Your City's Contractor Requirements Too",
+    "date": "September 2026",
+    "excerpt": "A valid state license doesn't mean a contractor is legal to work in your city. Many municipalities require separate local registration, business licenses, or trade permits that state boards never track.",
+    "tag": "Vetting & Protection",
+    "pillar": "C",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "invoicing-vs-crm-where-billing-lives",
+    "title": "Where Your Billing Actually Lives: Standalone Invoicing vs. CRM Module",
+    "date": "September 2026",
+    "excerpt": "Contractors keep asking whether billing belongs in a standalone invoicing tool or bolted onto the CRM. The honest answer depends on where your job data already lives — and whether you can pull it back out when you leave.",
+    "tag": "Tool Stack",
+    "pillar": "F",
+    "audience": "contractor"
+  },
+  {
+    "slug": "contractor-abandoned-job-winter-cold",
+    "title": "The Contractor Left Your House Open to the Elements Over Winter. Who Pays the Damage?",
+    "date": "September 2026",
+    "excerpt": "A framer left a half-built addition tarped and exposed through three months of winter. When the homeowner returned, warped subfloor and mold had turned a $40K addition into a $58K rebuild. Here's why nobody warned them, and what would have stopped it.",
+    "tag": "Job Gone Wrong",
+    "pillar": "D",
+    "audience": "homeowner"
   }
 ]
