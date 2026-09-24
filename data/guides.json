@@ -2068,5 +2068,32 @@
     "tag": "Job Gone Wrong",
     "pillar": "D",
     "audience": "homeowner"
+  },
+  {
+    "slug": "sms-app-vs-crm-messaging",
+    "title": "Texting Clients From Your Phone vs. a CRM: Where Your Records Actually Vanish",
+    "date": "September 2026",
+    "excerpt": "Client texts sent from your personal phone feel fast, but they leave no searchable trail and die when a crew member quits. Here's the honest tradeoff between personal SMS and CRM-based messaging—and where each one actually costs you.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
+  },
+  {
+    "slug": "contractor-backcharged-you-for-delay-you-didnt-cause",
+    "title": "The Contractor Back-Charged You for a Delay You Didn't Cause",
+    "date": "September 2026",
+    "excerpt": "A tile crew showed up two weeks late, then billed the homeowner $3,200 in 'standby' charges for a delay the contractor's own scheduling caused. Here's how vague delay language turns a contractor's mistake into your invoice line item.",
+    "tag": "Payment Disputes",
+    "pillar": "D",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "new-garage-worth-it-detached-vs-attached",
+    "title": "Is Building a Detached Garage Worth It? Cost, ROI, and When It Doesn't Pay",
+    "date": "September 2026",
+    "excerpt": "A detached garage runs $35K-$70K and returns roughly 65-80% at resale in most markets. This breakdown shows the real math, the payback timeline, and the one condition that flips the verdict from smart investment to money pit.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
   }
 ]
