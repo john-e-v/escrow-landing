@@ -2095,5 +2095,32 @@
     "tag": "Cost & ROI",
     "pillar": "A",
     "audience": "homeowner"
+  },
+  {
+    "slug": "contractor-parked-materials-on-neighbor-lot",
+    "title": "The Contractor Stockpiled Materials on the Wrong Lot. The Neighbor Wants Them Gone.",
+    "date": "September 2026",
+    "excerpt": "A siding crew unloaded three pallets of material onto the vacant lot next door to save a few steps. Two weeks later the neighbor's attorney sent a trespass notice, and the homeowner was the one holding the bill. Here's how staging on land you don't control becomes your problem.",
+    "tag": "Job Site Risk",
+    "pillar": "D",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "new-bathroom-addition-worth-it-resale",
+    "title": "Is Adding a Second Bathroom Worth It? Cost, Resale Value, and When It Doesn't Pay",
+    "date": "September 2026",
+    "excerpt": "Adding a second bathroom is usually worth it when your home has only one — the resale bump and daily livability both pay off. But the math flips when you're carving space out of a bedroom or fighting a plumbing run that triples the cost.",
+    "tag": "Cost & ROI",
+    "pillar": "A",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "escrow-caught-foundation-waterproofing-skipped",
+    "title": "The Foundation Waterproofing Got Skipped Before Backfill. Escrow Meant the Homeowner Held Firm.",
+    "date": "September 2026",
+    "excerpt": "A homeowner's new basement addition passed the framing walkthrough, but the exterior waterproofing membrane was never applied before the crew backfilled. Because payment sat in escrow, the homeowner didn't fund a leak they'd have paid to fix twice.",
+    "tag": "The Escrow Effect",
+    "pillar": "BRIDGE",
+    "audience": "both"
   }
 ]
