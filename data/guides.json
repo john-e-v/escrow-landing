@@ -2149,5 +2149,32 @@
     "tag": "Cost Guide",
     "pillar": "B",
     "audience": "homeowner"
+  },
+  {
+    "slug": "escrow-caught-hardwood-floor-gaps",
+    "title": "The Hardwood Floor Was Laid Over Wet Subfloor. Escrow Meant the Homeowner Held Firm.",
+    "date": "September 2026",
+    "excerpt": "A flooring crew installed engineered hardwood over a subfloor that never hit moisture spec, and by month two the boards were cupping. Because payment sat in escrow, the homeowner had leverage to force a full tear-out and reinstall instead of eating a $9K redo alone.",
+    "tag": "Escrow Effect",
+    "pillar": "BRIDGE",
+    "audience": "both"
+  },
+  {
+    "slug": "soundproofing-room-cost-2026",
+    "title": "How Much Does It Cost to Soundproof a Room in 2026?",
+    "date": "September 2026",
+    "excerpt": "Soundproofing a single room runs $1,000 to $5,000 in 2026, but a full home theater or recording space can hit $10,000 or more. The gap comes down to how much sound you're actually trying to stop and how much of the wall you're willing to open up.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "client-wants-to-pay-two-checks-avoid-taxes",
+    "title": "The Client Wants to Pay in Two Checks to 'Keep It Under Reporting': Why That's Your Problem",
+    "date": "September 2026",
+    "excerpt": "When a client asks you to split payment into smaller checks to dodge reporting thresholds, you're the one who eats the audit risk and the non-payment exposure. Structure the deal through milestone escrow so the money moves in full and on the record every time.",
+    "tag": "Payment Red Flags",
+    "pillar": "E",
+    "audience": "contractor"
   }
 ]
