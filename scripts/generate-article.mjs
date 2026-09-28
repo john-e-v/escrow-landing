@@ -38,6 +38,22 @@ function extractText(content) {
     .join('');
 }
 
+// With web_search enabled the model wraps sentences in citation markup
+// <cite index="...">…</cite> and sometimes <mark>. escapeJsx would render
+// those as visible literal text, so strip any tag from every string the model
+// returns, keeping the text inside. Covers page copy, metadata, and the social
+// captions that get distributed.
+function stripMarkup(value) {
+  if (typeof value === 'string') {
+    return value.replace(/<\/?[a-zA-Z][^>]*>/g, '').replace(/ {2,}/g, ' ').trim();
+  }
+  if (Array.isArray(value)) return value.map(stripMarkup);
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(Object.entries(value).map(([k, v]) => [k, stripMarkup(v)]));
+  }
+  return value;
+}
+
 function extractJson(text) {
   // The model may wrap JSON in prose when it has to explain search results;
   // pull out the last {...} block.
@@ -87,7 +103,7 @@ Search for a NEW, real, undocumented-by-us case with a specific named defendant.
   }]
 });
 
-const plan = extractJson(extractText(planResponse.content));
+const plan = stripMarkup(extractJson(extractText(planResponse.content)));
 if (!plan.sources || plan.sources.length === 0) {
   throw new Error('Plan has no sources — refusing to generate an unsourced article.');
 }
@@ -140,7 +156,7 @@ Respond with ONLY valid JSON, no markdown fences, as the last thing in your repl
   }]
 });
 
-const body = extractJson(extractText(bodyResponse.content));
+const body = stripMarkup(extractJson(extractText(bodyResponse.content)));
 if (!body.sources || body.sources.length === 0) {
   body.sources = plan.sources;
 }
