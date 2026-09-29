@@ -18,6 +18,7 @@ export default function Guide() {
           <div className="hero-badge">Escrow Effect · August 2026</div>
           <h1>The Contractor Asked for a Wire &apos;Straight to the Supplier.&apos; Escrow Meant the Homeowner Didn&apos;t Bite.</h1>
           <p className="hero-subtitle">A homeowner mid-remodel got a call: wire $18K directly to the tile supplier to &apos;lock in pricing before it goes up.&apos; Because every dollar was already staged in escrow, there was nothing to wire—and no way to lose it to a redirect scam.</p>
+        <p className="hero-subtitle" style={{ fontSize: '0.85rem', opacity: 0.65, marginTop: 8 }}>Illustrative example — a realistic scenario built from common escrow-protected outcomes, not a report of one specific, documented case.</p>
         </div>
       </section>
 

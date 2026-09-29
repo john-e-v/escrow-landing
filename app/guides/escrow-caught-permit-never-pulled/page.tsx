@@ -18,6 +18,7 @@ export default function Guide() {
           <div className="hero-badge">Escrow Effect · July 2026</div>
           <h1>The Contractor Skipped the Permit. Escrow Meant the Homeowner Held the Leverage.</h1>
           <p className="hero-subtitle">A homeowner&apos;s addition passed the framing stage before anyone realized no permit had ever been pulled. Because payment sat in escrow tied to inspection milestones, the contractor fixed it on his own dime instead of the homeowner eating a stop-work order.</p>
+        <p className="hero-subtitle" style={{ fontSize: '0.85rem', opacity: 0.65, marginTop: 8 }}>Illustrative example — a realistic scenario built from common escrow-protected outcomes, not a report of one specific, documented case.</p>
         </div>
       </section>
 

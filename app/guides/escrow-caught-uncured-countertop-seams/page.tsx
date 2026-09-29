@@ -18,6 +18,7 @@ export default function Guide() {
           <div className="hero-badge">Escrow Effect · September 2026</div>
           <h1>The Countertop Seams Lifted a Week After Install. Escrow Meant the Homeowner Held Firm.</h1>
           <p className="hero-subtitle">A homeowner noticed her new quartz countertop seams lifting and separating just days after the fabricator called the job done. Because the final payment sat in escrow instead of a cashed check, she had the leverage to demand a proper re-set before releasing a dime.</p>
+        <p className="hero-subtitle" style={{ fontSize: '0.85rem', opacity: 0.65, marginTop: 8 }}>Illustrative example — a realistic scenario built from common escrow-protected outcomes, not a report of one specific, documented case.</p>
         </div>
       </section>
 

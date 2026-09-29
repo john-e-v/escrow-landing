@@ -18,6 +18,7 @@ export default function Guide() {
           <div className="hero-badge">Escrow Effect · August 2026</div>
           <h1>The Contractor Swapped in an Unlicensed Sub. Escrow Meant the Homeowner Paid Nothing.</h1>
           <p className="hero-subtitle">A homeowner hired a licensed contractor for an electrical panel job, but the crew that showed up was an unlicensed sub the contractor quietly subbed out. Because payment sat in escrow tied to a passed inspection, the failed permit never cost the homeowner a dime.</p>
+        <p className="hero-subtitle" style={{ fontSize: '0.85rem', opacity: 0.65, marginTop: 8 }}>Illustrative example — a realistic scenario built from common escrow-protected outcomes, not a report of one specific, documented case.</p>
         </div>
       </section>
 

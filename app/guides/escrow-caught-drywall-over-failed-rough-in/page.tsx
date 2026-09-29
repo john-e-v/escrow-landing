@@ -18,6 +18,7 @@ export default function Guide() {
           <div className="hero-badge">Escrow Effect · August 2026</div>
           <h1>The Drywall Went Up Over a Failed Rough-In. Escrow Meant the Homeowner Wasn&apos;t Stuck.</h1>
           <p className="hero-subtitle">A contractor closed up walls before the rough-in inspection passed, hiding electrical that would have failed. Because the milestone payment sat in escrow, the homeowner had the leverage to force the tear-out at the contractor&apos;s cost — not their own.</p>
+        <p className="hero-subtitle" style={{ fontSize: '0.85rem', opacity: 0.65, marginTop: 8 }}>Illustrative example — a realistic scenario built from common escrow-protected outcomes, not a report of one specific, documented case.</p>
         </div>
       </section>
 

@@ -162,11 +162,12 @@ CTA: clrblt.com/master ("See contractor plans").`,
     name: 'The Escrow Effect',
     audience: 'both',
     intentPattern: 'bottom-funnel connective tissue, not a search-query match',
-    format: 'Case-study format — a real or realistic composite project where escrow-first payment prevented a specific failure.',
+    format: 'Case-study format — an illustrative, composite project where escrow-first payment prevented a specific failure. Not a report of a real, documented incident.',
     examples: [],
     contentRules: `THE ESCROW EFFECT — cross-audience bridge (bottom-funnel)
 
-A real or realistic composite project where escrow-first payment prevented the exact kind of failure described in Pillar D (homeowner) or Pillar E (contractor) posts. clrblt.com's actual mechanism gets to be the hero of the story without ever reading as an ad — because the story does the work, not a pitch.
+An illustrative, composite project — built from common, realistic patterns of the exact kind of failure described in Pillar D (homeowner) or Pillar E (contractor) posts — where escrow-first payment prevented a specific failure. This is NOT a real, documented incident, and the piece must never imply that it is: no invented specific dollar figures presented as if audited, no quotes attributed to a role as if a real named person was actually interviewed. The page itself will carry a disclosure noting this is illustrative — write the piece so that disclosure is true, not undercut by prose that reads as investigative reporting.
+clrblt.com's actual mechanism gets to be the hero of the story without ever reading as an ad — because the story does the work, not a pitch.
 Open with the outcome (what was prevented / what went right), then walk through why.
 CTA: clrblt.com/create for a homeowner-angled bridge, clrblt.com/master for a contractor-angled one — pick based on which side of the story is the protagonist.`,
   },

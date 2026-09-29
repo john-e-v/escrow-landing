@@ -18,6 +18,7 @@ export default function Guide() {
           <div className="hero-badge">Escrow Effect · July 2026</div>
           <h1>The Supplier Never Delivered. The Homeowner&apos;s Material Deposit Was Still Safe.</h1>
           <p className="hero-subtitle">A homeowner wired $9,200 for custom cabinets that never arrived after the supplier folded. Because the funds sat in escrow tied to delivery milestones, the money never left the account, and the homeowner recovered every cent to re-order elsewhere.</p>
+        <p className="hero-subtitle" style={{ fontSize: '0.85rem', opacity: 0.65, marginTop: 8 }}>Illustrative example — a realistic scenario built from common escrow-protected outcomes, not a report of one specific, documented case.</p>
         </div>
       </section>
 

@@ -18,6 +18,7 @@ export default function Guide() {
           <div className="hero-badge">Escrow Effect · July 2026</div>
           <h1>The Inspector Failed the Job. Escrow Meant the Homeowner Hadn&apos;t Paid Yet.</h1>
           <p className="hero-subtitle">A $38K basement finish looked done until the framing inspection failed on egress and fire-blocking. Because the final milestone sat in escrow, the homeowner held every dollar of leverage until the contractor corrected the work and passed re-inspection.</p>
+        <p className="hero-subtitle" style={{ fontSize: '0.85rem', opacity: 0.65, marginTop: 8 }}>Illustrative example — a realistic scenario built from common escrow-protected outcomes, not a report of one specific, documented case.</p>
         </div>
       </section>
 

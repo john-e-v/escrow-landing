@@ -135,6 +135,15 @@ Respond with ONLY valid JSON, no markdown fences:
   const ctaUrl = body.ctaUrl || (pillar.audience === 'contractor' ? '/master' : '/create');
   const ctaText = body.ctaText || 'Get Escrow-Protected Bids';
 
+  // The Escrow Effect (BRIDGE) pillar is explicitly a real-or-composite
+  // case study, not reporting on a documented incident — the model has no
+  // source to cite either way. Hard-code the disclosure here rather than
+  // trust it to always appear in the generated copy, since a reader has no
+  // way to tell a composite scenario from a real one otherwise.
+  const disclosureJsx = pillar.letter === 'BRIDGE'
+    ? `\n          <p className="hero-subtitle" style={{ fontSize: '0.85rem', opacity: 0.65, marginTop: 8 }}>Illustrative example — a realistic scenario built from common escrow-protected outcomes, not a report of one specific, documented case.</p>`
+    : '';
+
   const pageContent = `import Link from 'next/link';
 
 export default function Guide() {
@@ -154,7 +163,7 @@ export default function Guide() {
         <div className="container hero-content">
           <div className="hero-badge">${escapeJsx(plan.tag)} · ${dateLabel}</div>
           <h1>${escapeJsx(plan.title)}</h1>
-          <p className="hero-subtitle">${escapeJsx(plan.excerpt)}</p>
+          <p className="hero-subtitle">${escapeJsx(plan.excerpt)}</p>${disclosureJsx}
         </div>
       </section>
 

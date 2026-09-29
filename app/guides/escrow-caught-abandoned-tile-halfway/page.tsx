@@ -18,6 +18,7 @@ export default function Guide() {
           <div className="hero-badge">Escrow Effect · August 2026</div>
           <h1>The Tile Setter Quit at 50% and Demanded Full Pay. Escrow Meant the Homeowner Said No.</h1>
           <p className="hero-subtitle">A bathroom tile job stalled at the halfway mark when the setter demanded the full balance to &apos;finish next week&apos; — a week that never came. Because the money sat in escrow tied to completion, the homeowner released nothing and hired a finisher without eating a double payment.</p>
+        <p className="hero-subtitle" style={{ fontSize: '0.85rem', opacity: 0.65, marginTop: 8 }}>Illustrative example — a realistic scenario built from common escrow-protected outcomes, not a report of one specific, documented case.</p>
         </div>
       </section>
 

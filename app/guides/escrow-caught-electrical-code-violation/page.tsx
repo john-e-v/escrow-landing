@@ -18,6 +18,7 @@ export default function Guide() {
           <div className="hero-badge">Escrow Effect · August 2026</div>
           <h1>The Electrician Buried Undersized Wire in the Wall. Escrow Meant the Homeowner Didn&apos;t Pay for a Fire Hazard.</h1>
           <p className="hero-subtitle">A homeowner&apos;s panel upgrade passed the eye test until the inspector flagged 14-gauge wire feeding a 20-amp circuit. Because payment sat in escrow tied to inspection sign-off, the homeowner had leverage to force the fix instead of eating a rewire.</p>
+        <p className="hero-subtitle" style={{ fontSize: '0.85rem', opacity: 0.65, marginTop: 8 }}>Illustrative example — a realistic scenario built from common escrow-protected outcomes, not a report of one specific, documented case.</p>
         </div>
       </section>
 

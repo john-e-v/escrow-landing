@@ -18,6 +18,7 @@ export default function Guide() {
           <div className="hero-badge">Escrow Effect · August 2026</div>
           <h1>The Plumbing Rough-In Leaked Behind the Wall. Escrow Meant the Homeowner Held Firm.</h1>
           <p className="hero-subtitle">A homeowner nearly signed off on a bathroom rough-in before a pressure test revealed a slow leak behind the new drywall line. Because payment sat in escrow tied to inspection, the contractor fixed it on his dime instead of the homeowner&apos;s.</p>
+        <p className="hero-subtitle" style={{ fontSize: '0.85rem', opacity: 0.65, marginTop: 8 }}>Illustrative example — a realistic scenario built from common escrow-protected outcomes, not a report of one specific, documented case.</p>
         </div>
       </section>
 

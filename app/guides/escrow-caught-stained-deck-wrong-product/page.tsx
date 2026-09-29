@@ -18,6 +18,7 @@ export default function Guide() {
           <div className="hero-badge">Escrow Effect · September 2026</div>
           <h1>The Deck Was Sealed With the Wrong Product. Escrow Meant the Homeowner Didn&apos;t Pay for a Redo.</h1>
           <p className="hero-subtitle">A homeowner spec&apos;d a semi-transparent stain rated for their climate. The crew used a leftover solid-color sealer that peeled within one season. Because the final payment sat in escrow, the homeowner didn&apos;t fund the mistake — the contractor came back and did it right.</p>
+        <p className="hero-subtitle" style={{ fontSize: '0.85rem', opacity: 0.65, marginTop: 8 }}>Illustrative example — a realistic scenario built from common escrow-protected outcomes, not a report of one specific, documented case.</p>
         </div>
       </section>
 

@@ -18,6 +18,7 @@ export default function Guide() {
           <div className="hero-badge">Escrow Effect · August 2026</div>
           <h1>The Final Invoice Came in $8K Over the Contract. Escrow Meant It Didn&apos;t Get Paid.</h1>
           <p className="hero-subtitle">A homeowner&apos;s contractor tacked $8,000 of unapproved &apos;extras&apos; onto the final invoice and expected a wire on the spot. Because the money sat in escrow tied to the signed scope, the padded bill never cleared—and the dispute got settled before a dime moved.</p>
+        <p className="hero-subtitle" style={{ fontSize: '0.85rem', opacity: 0.65, marginTop: 8 }}>Illustrative example — a realistic scenario built from common escrow-protected outcomes, not a report of one specific, documented case.</p>
         </div>
       </section>
 

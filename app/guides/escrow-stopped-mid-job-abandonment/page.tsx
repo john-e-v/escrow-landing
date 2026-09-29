@@ -18,6 +18,7 @@ export default function Guide() {
           <div className="hero-badge">Escrow Effect · July 2026</div>
           <h1>The Framer Walked Off at 60%. Escrow Meant the Homeowner Didn&apos;t Lose a Dime.</h1>
           <p className="hero-subtitle">A garage-to-ADU conversion stalled when the framing crew vanished at 60% complete—but the homeowner had only released payment for verified milestones. Here&apos;s how escrow-first structuring turned a nightmare into a manageable delay instead of a five-figure loss.</p>
+        <p className="hero-subtitle" style={{ fontSize: '0.85rem', opacity: 0.65, marginTop: 8 }}>Illustrative example — a realistic scenario built from common escrow-protected outcomes, not a report of one specific, documented case.</p>
         </div>
       </section>
 

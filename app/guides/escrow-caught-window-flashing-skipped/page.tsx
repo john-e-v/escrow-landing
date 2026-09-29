@@ -15,9 +15,10 @@ export default function Guide() {
 
       <section className="hero" style={{ paddingBottom: 40, paddingTop: 120 }}>
         <div className="container hero-content">
-          <div className="hero-badge">The Escrow Effect · September 2026</div>
+          <div className="hero-badge">Escrow Effect · September 2026</div>
           <h1>The Windows Went In Without Flashing. Escrow Meant the Homeowner Held Firm.</h1>
           <p className="hero-subtitle">A $22K window replacement looked flawless from the inside — until a rainstorm revealed water tracking down the studs. Because the final payment sat in escrow, the homeowner had the leverage to force a proper re-install instead of eating a hidden rot problem.</p>
+        <p className="hero-subtitle" style={{ fontSize: '0.85rem', opacity: 0.65, marginTop: 8 }}>Illustrative example — a realistic scenario built from common escrow-protected outcomes, not a report of one specific, documented case.</p>
         </div>
       </section>
 

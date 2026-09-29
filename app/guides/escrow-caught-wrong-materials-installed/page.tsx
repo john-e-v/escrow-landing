@@ -18,6 +18,7 @@ export default function Guide() {
           <div className="hero-badge">Escrow Effect · August 2026</div>
           <h1>The Contractor Installed the Cheaper Fixtures. Escrow Meant the Homeowner Caught It Before Paying.</h1>
           <p className="hero-subtitle">A homeowner speced quartz counters and mid-grade cabinet hardware, then noticed the installed materials didn&apos;t match the contract. Because the final milestone was still in escrow, she had leverage to force the swap instead of eating a $7K substitution.</p>
+        <p className="hero-subtitle" style={{ fontSize: '0.85rem', opacity: 0.65, marginTop: 8 }}>Illustrative example — a realistic scenario built from common escrow-protected outcomes, not a report of one specific, documented case.</p>
         </div>
       </section>
 

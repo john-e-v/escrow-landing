@@ -18,6 +18,7 @@ export default function Guide() {
           <div className="hero-badge">Escrow Effect · September 2026</div>
           <h1>The Hardwood Floor Was Laid Over Wet Subfloor. Escrow Meant the Homeowner Held Firm.</h1>
           <p className="hero-subtitle">A flooring crew installed engineered hardwood over a subfloor that never hit moisture spec, and by month two the boards were cupping. Because payment sat in escrow, the homeowner had leverage to force a full tear-out and reinstall instead of eating a $9K redo alone.</p>
+        <p className="hero-subtitle" style={{ fontSize: '0.85rem', opacity: 0.65, marginTop: 8 }}>Illustrative example — a realistic scenario built from common escrow-protected outcomes, not a report of one specific, documented case.</p>
         </div>
       </section>
 
