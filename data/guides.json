@@ -2176,5 +2176,32 @@
     "tag": "Payment Red Flags",
     "pillar": "E",
     "audience": "contractor"
+  },
+  {
+    "slug": "mold-remediation-cost-2026",
+    "title": "How Much Does Mold Remediation Cost in 2026?",
+    "date": "September 2026",
+    "excerpt": "Mold remediation runs $1,500 to $9,000 for most homes in 2026, but a whole-house infestation can top $30,000. The range hinges on how much surface is contaminated, what caused it, and whether the source is still leaking.",
+    "tag": "Cost & Timeline",
+    "pillar": "B",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "client-wants-to-pay-in-crypto",
+    "title": "The Client Wants to Pay in Crypto: Why That's Not a Payment Until It Clears",
+    "date": "September 2026",
+    "excerpt": "Crypto payments look modern, but they carry volatility risk, no chargeback protection you control, and settlement lag that can leave you holding the loss. Here's why a milestone-based escrow structure protects your cash better than any wallet transfer.",
+    "tag": "Payment Ops",
+    "pillar": "E",
+    "audience": "contractor"
+  },
+  {
+    "slug": "verify-contractor-license-number-real",
+    "title": "How to Verify a Contractor's License Number Is Real (Not Just Copied Off Someone Else)",
+    "date": "September 2026",
+    "excerpt": "A license number on a business card means nothing until you confirm it belongs to the person standing in your driveway. This checklist walks you through verifying the number is real, active, and actually theirs — in under ten minutes, for free.",
+    "tag": "Vetting & Protection",
+    "pillar": "C",
+    "audience": "homeowner"
   }
 ]
