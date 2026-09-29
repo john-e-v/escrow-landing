@@ -2203,5 +2203,32 @@
     "tag": "Vetting & Protection",
     "pillar": "C",
     "audience": "homeowner"
+  },
+  {
+    "slug": "client-wants-to-pay-when-relatives-visit",
+    "title": "The Client Wants to Wait to Pay Until 'After the Holidays': Why the Calendar Isn't Your Problem",
+    "date": "September 2026",
+    "excerpt": "When a client asks to push final payment past a holiday, a vacation, or 'a busy month,' they're borrowing your cash flow for free. The fix isn't a firmer conversation — it's a payment structure that releases funds on completion, not on their schedule.",
+    "tag": "Contractor Ops",
+    "pillar": "E",
+    "audience": "contractor"
+  },
+  {
+    "slug": "verify-contractor-name-on-quote-matches-license",
+    "title": "The Name on the Quote Didn't Match the License. Here's How to Catch It.",
+    "date": "September 2026",
+    "excerpt": "A contractor can hand you a real license number that belongs to a different business entity entirely. This checklist walks you through matching the name on your quote to the name on the license, the insurance certificate, and the state registration before you sign.",
+    "tag": "Vetting & Protection",
+    "pillar": "C",
+    "audience": "homeowner"
+  },
+  {
+    "slug": "lead-tracking-crm-vs-sticky-notes",
+    "title": "Lead Tracking in a CRM vs. Sticky Notes: Where Your Follow-Ups Actually Die",
+    "date": "September 2026",
+    "excerpt": "Most contractors don't lose leads to bad closing — they lose them to follow-ups that never happen. This teardown compares tracking leads in a CRM against the notebook-and-sticky-note pile, including where each one quietly costs you booked jobs.",
+    "tag": "Contractor Ops",
+    "pillar": "F",
+    "audience": "contractor"
   }
 ]
