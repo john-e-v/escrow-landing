@@ -28,7 +28,7 @@ export default function Guide() {
 
             <p>$14,200. That was the final draw the homeowner was about to release the morning the backfill trucks showed up — and the exact amount that stayed locked in escrow when she asked one question the crew couldn&apos;t answer.</p>
             <p>&quot;Where&apos;s the waterproofing membrane?&quot;</p>
-            <p>The framing walkthrough had gone well. The addition looked square, the foundation walls were cured, and the inspector had signed off on the structural elements. On paper, the project was tracking. But waterproofing the exterior of a below-grade wall is a step you can only do while the wall is still exposed. Once soil goes back against it, that window is closed. There&apos;s no fixing it later without excavating everything you just buried.</p>
+            <p>The foundation itself looked fine. The addition was square, the walls were poured and cured, and nothing about the concrete work raised a flag. In most jurisdictions, exterior waterproofing isn&apos;t a step a city inspector separately signs off on — it&apos;s a manufacturer-spec, best-practice item that falls to the contractor&apos;s own process, not a permitted inspection line item. That gap is exactly why it needs its own checkpoint. Waterproofing the exterior of a below-grade wall is a step you can only do while the wall is still exposed. Once soil goes back against it, that window is closed. There&apos;s no fixing it later without excavating everything you just buried.</p>
 
 
             <h2>The step that vanishes</h2>
